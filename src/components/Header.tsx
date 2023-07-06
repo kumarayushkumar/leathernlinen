@@ -1,5 +1,4 @@
 import { Link } from 'react-router-dom'
-import { CartIcon } from '../images/icon'
 
 export default function Header() {  
   return (
@@ -17,8 +16,11 @@ export default function Header() {
 
         <nav>
           <Link to="/">Home</Link>
-          <Link to="/cart">Cart</Link>
-          <CartIcon />
+          <Link to="#services">Services</Link>
+          <Link to="#latest-work">Latest Work</Link>
+          <Link to="#about-us">About Us</Link>
+          <Link to="#form">Contact Us</Link>
+          <Link to="/product">Product</Link>
         </nav>
         
       </div>

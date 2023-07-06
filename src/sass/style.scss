@@ -1,14 +1,10 @@
+@use 'body';
 @use 'header';
-@use 'main';
-@use 'productPopUp';
+@use 'hero';
 @use 'productCard';
-@use 'productSection';
+@use 'services';
+@use 'aboutUs';
+@use 'form';
+@use 'latestWork';
 @use 'footer';
-
-* {
-    margin: 0;
-    box-sizing: border-box;
-    text-decoration: none;
-}
-
 
