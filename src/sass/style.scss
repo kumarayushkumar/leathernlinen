@@ -1,0 +1,14 @@
+@use 'header';
+@use 'main';
+@use 'productPopUp';
+@use 'productCard';
+@use 'productSection';
+@use 'footer';
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+
