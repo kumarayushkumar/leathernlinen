@@ -1,0 +1,48 @@
+@use 'custom' as *;
+@use 'body' as *;
+
+
+header {
+  background-color: $primary;
+  color: $white;
+  text-align: center;
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 12rem; 
+  align-items: center;
+
+  .leather {
+    font-size: 3rem;
+    font-family: 'Fasthand', sans-serif;
+  }
+
+  .linen {
+    font-size: 3rem;
+    font-family: 'BebasNeue', sans-serif;
+  }
+
+  .ampersand {
+    font-size: 2.25rem;
+    font-weight: 300;
+    padding: 0.1rem;
+    font-family: 'Lobster', sans-serif;
+  }
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  
+  a {
+    font-family: 'Body1', 'sans-serif';
+    color: $white;
+    text-decoration: none;
+    font-size: 1.125rem;
+    font-weight: 600;
+    margin-left: 2rem;
+   }
+}
