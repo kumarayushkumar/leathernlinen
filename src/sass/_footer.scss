@@ -1,0 +1,169 @@
+@use './custom' as *;
+
+footer {
+    padding-top: 0.75rem;
+    background-color: #151414;
+}
+
+.contact {
+    position: relative;
+
+    &__icon {
+        width: 2.125rem;
+        padding-top: 0.5rem;
+        @include media-breakpoint-up(sm) { width: 3.75rem; }
+    }
+
+    a {
+        text-decoration: none;
+        color: $white;
+        font-size: 1rem;
+        @include media-breakpoint-up(sm) { font-size: 1.4rem; }
+    }
+
+    p {
+        font-size: 0.86rem;
+        color: rgba($gray-300,0.6);
+        @include media-breakpoint-up(sm) { font-size: 1rem; }
+    }
+
+    &__info {
+        padding: 0.4rem 0.2rem;
+        font-weight: 600;
+        @include media-breakpoint-up(sm) { padding: 0.4rem; }
+
+    }
+}
+
+.f-social {
+    background-color: #212121;
+
+    a {
+        color: $white;
+
+        i {
+            font-size: 1rem;
+            margin: 0 1rem;
+            @include media-breakpoint-up(sm) { font-size: 1.675rem; }
+        }
+    }
+}
+
+
+.f-inline {
+    width:60px;
+    height: 2px;
+}
+
+.f-list {
+    display: block;
+    list-style-type: none;
+    position: relative;
+    padding: 0;
+
+    li {
+        text-decoration: none;
+        margin-bottom: 0.4rem;
+        a {
+            text-decoration: none;
+            color: $white;
+
+            &:hover {
+                color: $primary;
+            }
+        }
+    }
+}
+
+.f-bt {
+    background-color: #000;
+
+    &-cpyrt {
+        color: rgba($gray-600,1);
+        font-weight: 600;
+
+        a {
+            text-decoration: none;
+            color: rgba($gray-300,1);
+            padding: 0;
+            margin: 0;
+
+            &:hover {
+                color: $primary;
+                text-decoration: underline;
+            }
+        }
+    }
+}
+
+.growigh {
+    text-decoration: none;
+    font-size: 1.1rem;
+    color: rgba($white, 0.8);
+    
+    .growigh__name {
+        color: rgba($white,0.65);
+        font-weight: 600;
+    }
+
+    .growigh__w {
+        color: rgba(#ffb428,0.65);
+        font-weight: 600;
+    }
+}
+
+.btt {
+    position: fixed;
+    z-index: 100;
+    width: 2.4rem;
+    height: 2.4rem;
+    right: 1rem;
+    bottom: 1rem;
+    background-color: $tertiary;
+
+    @include media-breakpoint-up(sm) {
+        width: 3rem;
+        height: 3rem;
+        right: 1.8rem;
+        bottom: 1.8rem;
+    }
+
+    .icon-chevron-up {
+        color: $white;
+        font-size: 1.4rem;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+    }
+}
+
+.whatsapp-button {
+    position: fixed;
+    z-index: 100;
+    width: 2.4rem;
+    height: 2.4rem;
+    right: 1rem;
+    bottom: 4.2rem;
+    background-color: #49C95A;
+
+    @include media-breakpoint-up(sm) {
+        width: 3rem;
+        height: 3rem;
+        right: 1.8rem;
+        bottom: 5.8rem;
+    }
+
+    .icon-whatsapp {
+        color: $white;
+        font-size: 1.5rem;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+
+        @include media-breakpoint-up(sm) {
+            font-size: 2rem;
+        }
+    }
+}

@@ -1,7 +1,9 @@
 * {
   margin: 0;
   box-sizing: border-box;
-  text-decoration: none;
+  text-decoration: none;  
+  font-family: 'Body2', sans-serif;
+  scroll-behavior: smooth;
 }
 
 @font-face {
@@ -26,5 +28,10 @@
 
 @font-face {
   font-family: 'Body2';
-  src: url('../assets/fonts/Gabriela-Regular.ttf') format('truetype'); 
+  src: url('../assets/fonts/Domine-VariableFont_wght.ttf') format('truetype'); 
 }  
+
+
+.bdr-round {
+  border-radius: 1rem;
+}
