@@ -4,7 +4,7 @@ import ContactUs from "../components/ContactUs.tsx"
 import Hero from "../components/Hero.tsx"
 import AboutUs from "../components/AboutUs.tsx"
 import LatestWork from "../components/LatestWork.tsx"
-import Product from "../components/Product.tsx"
+// import Product from "../components/Product.tsx"
 
 
 function Home() {
@@ -12,7 +12,7 @@ function Home() {
     <>
       <Header />
       <Hero />
-      <Product />
+      {/* <Product /> */}
       <AboutUs />
       <LatestWork />
       <ContactUs />

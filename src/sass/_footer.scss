@@ -2,7 +2,7 @@
 
 footer {
     padding-top: 0.75rem;
-    background-color: #151414;
+    background-image: linear-gradient(135deg,#151515, #201024);
 }
 
 .contact {
@@ -36,7 +36,7 @@ footer {
 }
 
 .f-social {
-    background-color: #212121;
+    // background-color: #212121;
 
     a {
         color: $white;
@@ -76,23 +76,24 @@ footer {
 }
 
 .f-bt {
-    background-color: #000;
+    background-color: #101112;
 
     &-cpyrt {
         color: rgba($gray-600,1);
         font-weight: 600;
+        font-size: 1.1rem;
 
-        a {
-            text-decoration: none;
-            color: rgba($gray-300,1);
-            padding: 0;
-            margin: 0;
+        // a {
+        //     text-decoration: none;
+        //     color: rgba($gray-300,1);
+        //     padding: 0;
+        //     margin: 0;
 
-            &:hover {
-                color: $primary;
-                text-decoration: underline;
-            }
-        }
+        //     &:hover {
+        //         color: $primary;
+        //         text-decoration: underline;
+        //     }
+        // }
     }
 }
 
@@ -102,14 +103,15 @@ footer {
     color: rgba($white, 0.8);
     
     .growigh__name {
-        color: rgba($white,0.65);
+        color: rgba($white,0.60);
         font-weight: 600;
+        
+        &__w {
+            color: rgba(#ffb428,0.60);
+            font-weight: 600;
+        }
     }
-
-    .growigh__w {
-        color: rgba(#ffb428,0.65);
-        font-weight: 600;
-    }
+    
 }
 
 .btt {
