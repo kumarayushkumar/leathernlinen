@@ -3,7 +3,7 @@ import Footer from "../components/Footer.tsx"
 import ContactUs from "../components/ContactUs.tsx"
 import Hero from "../components/Hero.tsx"
 import AboutUs from "../components/AboutUs.tsx"
-import LatestWork from "../components/LatestWork.tsx"
+import LatestWork from "../components/Client.tsx"
 // import Product from "../components/Product.tsx"
 
 

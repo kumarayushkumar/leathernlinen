@@ -60,8 +60,8 @@ export default function Header() {
             <p>Hello World!</p>
           </div> */}
 
+          <Link to="/#latest-work">Clients</Link>
           <Link to="/#about-us">About Us</Link>
-          <Link to="/#latest-work">Latest Work</Link>
           <Link to="/#contact-us">Contact Us</Link>
         </nav>
 
