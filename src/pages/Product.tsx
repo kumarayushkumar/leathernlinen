@@ -16,7 +16,7 @@ export default function Product() {
             </div>
 
             <div className="col-9">
-              {/* <ProductContent /> */}
+              <ProductContent />
             </div>
           </div>
         </div>

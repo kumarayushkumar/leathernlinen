@@ -9,3 +9,62 @@
   }
   
 }
+.section{
+
+  .heading{
+    span{
+      color:$secondary;
+      font-family: 'roboto';
+    }
+  }
+  .arr_card{
+    display:flex;
+    max-width: 150rem;
+    overflow-y: scroll;
+    &::-webkit-scrollbar {
+      display: none;
+    }
+    .card{
+      max-width: 20rem;
+      min-width: 20rem;
+      height: 25rem;
+      margin-inline: 0.7rem;
+      // overflow: hidden;
+      .image{
+        width: 100%;
+        height: 80%;
+        display: flex;
+        justify-content: center;
+        object-fit:center;
+        overflow: hidden;
+  
+        img{
+          
+          transition: all 0.5s ease-in-out;
+          object-fit: cover;
+          height: 100%;
+          &:hover{
+            transform: scale(1.1);
+          }
+        }
+      }
+  
+      .content{
+        padding: 1rem;
+        background-color: white;
+        h6{
+          font-weight: 700;
+          font-size: 1.3rem;
+        }
+        p{
+          margin: 0;
+  
+        }
+      }
+    }
+  }
+
+}
+
+
+
