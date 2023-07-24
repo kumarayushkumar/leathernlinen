@@ -186,7 +186,7 @@ export default function ProductContent() {
           {Object.keys(products).map((productType) => (
             <div className="section" key={productType}>
               <h5 className="heading">Would you like to add <span>{productType}</span> to your enquiry?</h5>
-              <div className='arr_card mt-5'>
+              <div className='arr_card mt-4'>
               {Object.keys(products[productType]).map((productKey) => {
                 const product = products[productType][productKey];
                 return (
