@@ -2,6 +2,7 @@ import Footer from "../components/Footer";
 import Header from "../components/Header";
 import ProductContent from "../components/ProdcutContent";
 import ProductNavBar from "../components/ProductNavBar";
+import productList from "../data/productList";
 
 export default function Product() {
   return (
@@ -16,7 +17,7 @@ export default function Product() {
             </div>
 
             <div className="col-9">
-              <ProductContent />
+              <ProductContent productList={productList} />
             </div>
           </div>
         </div>

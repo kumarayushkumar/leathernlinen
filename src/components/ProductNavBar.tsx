@@ -1,14 +1,14 @@
-import Dropdown from 'react-bootstrap/Dropdown';
 import { useState } from 'react';
 import dropdownbtn from '../assets/images/dropdown.svg';
-  export default function ProductNavBar() {
-    const [ishidden,setishidden]=useState(false);
+
+export default function ProductNavBar() {
+  const [ishidden, setishidden] = useState(false);
   return (
     <section className='Navbar'>
       <div className="container-fluid">
         <div className="row">
           <div className="col-10 product_left">
-            <button className='cat_btn active' onClick={() =>{
+            <button className='cat_btn active' onClick={() => {
               setishidden(!ishidden);
             }}>Categories
               <span className={`btn ${ishidden}`} ><img src={dropdownbtn} alt="" /></span>
