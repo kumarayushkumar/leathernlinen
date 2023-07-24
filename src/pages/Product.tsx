@@ -11,7 +11,7 @@ export default function Product() {
       <section id="product">
         <div className="container-fluid">
           <div className="row">
-            <div className="col-3">
+            <div className="col-2">
               <ProductNavBar />
             </div>
 

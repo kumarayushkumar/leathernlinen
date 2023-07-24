@@ -4,7 +4,7 @@ import dropdownbtn from '../assets/images/dropdown.svg';
   export default function ProductNavBar() {
     const [ishidden,setishidden]=useState(false);
   return (
-    <section>
+    <section className='Navbar'>
       <div className="container-fluid">
         <div className="row">
           <div className="col-10 product_left">
@@ -14,7 +14,7 @@ import dropdownbtn from '../assets/images/dropdown.svg';
               <span className={`btn ${ishidden}`} ><img src={dropdownbtn} alt="" /></span>
             </button>
             <ul className={`mt-2 list ${ishidden}`} >
-              <li className={`element active ${ishidden}`} >Packaging</li>
+              <li className={`element ${ishidden} active`} >Packaging</li>
               <li className={`element ${ishidden}`} >DrinkWare</li>
               <li className={`element ${ishidden}`} >Tumblers & Mugs</li>
               <li className={`element ${ishidden}`} >Totes</li>

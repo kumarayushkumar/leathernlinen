@@ -1,5 +1,9 @@
 @use './custom' as *;
 @use './body' as *;
+.Navbar{
+    position: sticky;
+    top: 0;
+}
 
 .product_left{
     ul{
