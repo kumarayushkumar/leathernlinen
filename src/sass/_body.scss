@@ -30,7 +30,12 @@
 @font-face {
   font-family: 'Body2';
   src: url('../assets/fonts/Domine-VariableFont_wght.ttf') format('truetype'); 
-}  
+} 
+
+@font-face{
+  font-family: 'roboto';
+  src: url('https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto:wght@100;400;500;700;900&display=swap') format('truetype');
+}
 
 
 .bdr-round {

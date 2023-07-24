@@ -14,7 +14,7 @@ export default function Header() {
         <nav className="text-white">
 
           <div className="dropdown">
-            <Link to="/products">Products</Link>
+            <Link to="/product">Products</Link>
 
             <div className="dropdown-content">
               <div className="row px-2">

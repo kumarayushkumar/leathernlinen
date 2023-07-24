@@ -1,0 +1,49 @@
+@use './custom' as *;
+@use './body' as *;
+
+.product_left{
+    ul{
+        padding: 0;
+        padding-left: 0.5rem;
+    }
+    .cat_btn{
+        width: 100%; 
+        text-align: left; 
+        border: none;
+      }
+    
+    .element{
+        font-family: 'roboto';
+        font-weight:500;
+        padding-bottom:1px;
+        padding-top: 0.5rem;
+        display: block;
+        color: black;
+        transition-duration:0.5s ;
+    }
+    .element.active{
+        font-weight: 700;
+        width: fit-content;
+        border-bottom: 2px solid #ff808b;
+    }
+    .element.true{
+        color: transparent;
+        border: none;
+    }
+    .list{
+        height: 450px;
+        transition-duration: 0.5s;
+        overflow: hidden;
+    }
+    .btn{
+        transform: rotate(0deg);
+        transition: all 0.5s linear;
+    }
+    .list.true{
+        height:0px;
+    }
+    .btn.true{
+        transform:rotate(-180deg)
+        
+    }
+}
