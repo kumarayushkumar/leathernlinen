@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom'
+import Logo from '../assets/images/logo.png'
 
 export default function Header() {
   return (
@@ -7,7 +8,11 @@ export default function Header() {
       <div className="header-content">
 
         <div className="logo">
-          <h1><span className="leather">Leather</span><span className="ampersand"> & </span><span className="linen">Linen</span></h1>
+          {/* <h1><span className="leather">Leather</span><span className="ampersand"> & </span><span className="linen">Linen</span></h1>
+           */}
+          <div className="logo">
+            <img src={Logo} alt="logo" />
+          </div>
           <p>Corpotate Gifiting</p>
         </div>
 
