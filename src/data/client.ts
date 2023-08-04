@@ -23,10 +23,10 @@ const clientLogo = [
   { img: client6 },
   { img: client7 },
   { img: client8 },
-  { img: client9 },
+  // { img: client9 },
   { img: client10 },
   { img: client11 },
-  { img: client12 },
+  // { img: client12 },
   { img: client13 },
   { img: client14 },
   { img: client15 }
