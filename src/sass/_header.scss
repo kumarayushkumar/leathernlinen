@@ -10,25 +10,25 @@ header {
 .header-content {
   display: flex;
   justify-content: space-between;
-  padding: 1rem 12rem; 
+  padding: 0rem 12rem; 
   align-items: center;
 
-  .leather {
-    font-size: 3rem;
-    font-family: 'Fasthand', sans-serif;
-  }
+  // .leather {
+  //   font-size: 3rem;
+  //   font-family: 'Fasthand', sans-serif;
+  // }
 
-  .linen {
-    font-size: 3rem;
-    font-family: 'BebasNeue', sans-serif;
-  }
+  // .linen {
+  //   font-size: 3rem;
+  //   font-family: 'BebasNeue', sans-serif;
+  // }
 
-  .ampersand {
-    font-size: 2.25rem;
-    font-weight: 300;
-    padding: 0.1rem;
-    font-family: 'Lobster', sans-serif;
-  }
+  // .ampersand {
+  //   font-size: 2.25rem;
+  //   font-weight: 300;
+  //   padding: 0.1rem;
+  //   font-family: 'Lobster', sans-serif;
+  // }
 
   p {
     margin-top: 0;
@@ -36,6 +36,12 @@ header {
     font-size: 1.4rem;
     font-weight: 600;
     padding-top: 0;
+  }
+}
+
+.logo-img {
+  img {
+    max-width: 140px;
   }
 }
 

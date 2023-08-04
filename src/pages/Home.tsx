@@ -13,8 +13,8 @@ function Home() {
       <Header />
       <Hero />
       {/* <Product /> */}
-      <AboutUs />
       <Client />
+      <AboutUs />
       <ContactUs />
       <Footer />
     </>

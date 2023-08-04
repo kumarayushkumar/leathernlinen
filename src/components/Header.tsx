@@ -10,10 +10,10 @@ export default function Header() {
         <div className="logo">
           {/* <h1><span className="leather">Leather</span><span className="ampersand"> & </span><span className="linen">Linen</span></h1>
            */}
-          <div className="logo">
+          <div className="logo-img">
             <img src={Logo} alt="logo" />
           </div>
-          <p>Corpotate Gifiting</p>
+          {/* <p>Corpotate Gifiting</p> */}
         </div>
 
         <nav className="text-white">

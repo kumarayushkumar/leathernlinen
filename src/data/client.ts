@@ -14,7 +14,7 @@ import client13 from '../assets/images/Client_logos/client-13.png'
 import client14 from '../assets/images/Client_logos/client-14.png'
 import client15 from '../assets/images/Client_logos/client-15.png'
 
-export const clientLogo = {
+const clientLogo = {
   client1,
   client2,
   client3,
@@ -31,3 +31,5 @@ export const clientLogo = {
   client14,
   client15
 }
+
+export default clientLogo
