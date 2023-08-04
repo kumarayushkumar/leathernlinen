@@ -19,14 +19,14 @@ export default function ProductNavBar() {
               <li className={`element ${ishidden}`} >Tumblers & Mugs</li>
               <li className={`element ${ishidden}`} >Totes</li>
               <li className={`element ${ishidden}`} >Backpacks & Bags</li>
-              <li className={`element ${ishidden}`} >Notebooks & Pens</li>
+              <li className={`element ${ishidden}`}  >Notebooks & Pens</li>
               <li className={`element ${ishidden}`} >T-Shirts</li>
               <li className={`element ${ishidden}`} >Polos & Shirts</li>
               <li className={`element ${ishidden}`} >Hoodies & Sweats</li>
               <li className={`element ${ishidden}`} >Outerwear</li>
               <li className={`element ${ishidden}`} >Accessories</li>
               <li className={`element ${ishidden}`} >Tech</li>
-              <li className={`element ${ishidden}`} >Others</li>
+              <a href="#Others" ><li className={`element ${ishidden}`}>Others</li></a>
             </ul>
           </div>
         </div>

@@ -14,8 +14,8 @@ export default function ProductContent({ productList }: { productList: ProductLi
       <section className="product_content">
         <div>
           {Object.keys(productList).map((productType) => (
-            <div className="section" key={productType}>
-              <h5 className="heading">Would you like to add <span>{productType}</span> to your enquiry?</h5>
+            <div className="section" key={productType} id={productType}>
+              <h5 className="heading" >Would you like to add <span>{productType}</span> to your enquiry?</h5>
               <div className='arr_card mt-4'>
                 {Object.keys(productList[ productType] ).map((productKey) => {
                   const product = productList[productType][productKey]

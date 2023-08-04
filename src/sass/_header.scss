@@ -10,33 +10,38 @@ header {
 .header-content {
   display: flex;
   justify-content: space-between;
-  padding: 0rem 12rem; 
+  padding: 0rem 12rem;
   align-items: center;
 
-  // .leather {
-  //   font-size: 3rem;
-  //   font-family: 'Fasthand', sans-serif;
-  // }
-
-  // .linen {
-  //   font-size: 3rem;
-  //   font-family: 'BebasNeue', sans-serif;
-  // }
-
-  // .ampersand {
-  //   font-size: 2.25rem;
-  //   font-weight: 300;
-  //   padding: 0.1rem;
-  //   font-family: 'Lobster', sans-serif;
-  // }
-
-  p {
-    margin-top: 0;
-    font-family: 'Body1', 'sans-serif';
-    font-size: 1.4rem;
-    font-weight: 600;
-    padding-top: 0;
+  @media(max-width:858px) {
+    padding: 0 2rem;
   }
+
+
+// .leather {
+//   font-size: 3rem;
+//   font-family: 'Fasthand', sans-serif;
+// }
+
+// .linen {
+//   font-size: 3rem;
+//   font-family: 'BebasNeue', sans-serif;
+// }
+
+// .ampersand {
+//   font-size: 2.25rem;
+//   font-weight: 300;
+//   padding: 0.1rem;
+//   font-family: 'Lobster', sans-serif;
+// }
+
+p {
+  margin-top: 0;
+  font-family: 'Body1', 'sans-serif';
+  font-size: 1.4rem;
+  font-weight: 600;
+  padding-top: 0;
+}
 }
 
 .logo-img {
@@ -49,7 +54,7 @@ nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  
+
   a {
     font-family: 'Body1', 'sans-serif';
     color: $white;
@@ -57,25 +62,25 @@ nav {
     font-size: 1.125rem;
     font-weight: 600;
     margin-left: 2rem;
-   }
+  }
 
-   .dropdown {
+  .dropdown {
     position: relative;
     display: inline-block;
   }
-  
+
   .dropdown-content {
     display: none;
     position: absolute;
     background-color: #f9f9f9;
     min-width: 20rem;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     padding: 0.75rem 0rem;
     z-index: 999;
     border-radius: 0.25rem;
     justify-content: left;
     align-items: left;
-    
+
     a {
       padding: 0.25rem 0.5rem;
       margin: 0;
@@ -91,13 +96,15 @@ nav {
       scale: 1.1;
     }
   }
-  
+
   .dropdown:hover .dropdown-content {
     display: block;
   }
 }
 
 .vertical-line {
-  border-left: 1px solid #adadad; /* Adjust the color and thickness as desired */
-  padding-left: 15px; /* Adjust the padding to create space between the line and content */
+  border-left: 1px solid #adadad;
+  /* Adjust the color and thickness as desired */
+  padding-left: 15px;
+  /* Adjust the padding to create space between the line and content */
 }

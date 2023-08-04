@@ -38,9 +38,12 @@
         border: none;
     }
     .list{
-        height: 450px;
+        height: 100rem;
+        min-width: 15rem;
         transition-duration: 0.5s;
         overflow: hidden;
+        position: absolute;
+        z-index: 50;
     }
     .btn{
         transform: rotate(0deg);
