@@ -4,6 +4,7 @@ import ContactUs from "../components/ContactUs.tsx"
 import Hero from "../components/Hero.tsx"
 import AboutUs from "../components/AboutUs.tsx"
 import Client from "../components/Client.tsx"
+import Slider from "../components/Slider.tsx"
 // import Product from "../components/Product.tsx"
 
 
@@ -13,7 +14,8 @@ function Home() {
       <Header />
       <Hero />
       {/* <Product /> */}
-      <Client />
+      {/* <Client /> */}
+      <Slider/>
       <AboutUs />
       <ContactUs />
       <Footer />

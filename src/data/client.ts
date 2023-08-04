@@ -14,22 +14,22 @@ import client13 from '../assets/images/Client_logos/client-13.png'
 import client14 from '../assets/images/Client_logos/client-14.png'
 import client15 from '../assets/images/Client_logos/client-15.png'
 
-const clientLogo = {
-  client1,
-  client2,
-  client3,
-  client4,
-  client5,
-  client6,
-  client7,
-  client8,
-  client9,
-  client10,
-  client11,
-  client12,
-  client13,
-  client14,
-  client15
-}
+const clientLogo = [
+  { img: client1 },
+  { img: client2 },
+  { img: client3 },
+  { img: client4 },
+  { img: client5 },
+  { img: client6 },
+  { img: client7 },
+  { img: client8 },
+  { img: client9 },
+  { img: client10 },
+  { img: client11 },
+  { img: client12 },
+  { img: client13 },
+  { img: client14 },
+  { img: client15 }
+]
 
 export default clientLogo
