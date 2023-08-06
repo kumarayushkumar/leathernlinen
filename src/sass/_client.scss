@@ -1,11 +1,11 @@
 @use 'custom' as *;
 
-.courosel {
+.carousel {
 	align-items: center;
 	background-color: rgba($grey, 0.3);
 	display: flex;
 	justify-content: center;
-	padding: 2rem 0rem;
+	padding: 3rem 0rem;
 }
 
 // @mixin white-gradient {
@@ -38,7 +38,7 @@ $animationSpeed: 60s;
 
 	img {
 		filter: grayscale(90%);
-		max-width: 200px;
+		max-width: 140px;
 		margin: 0 1.5rem;
 	}
 
