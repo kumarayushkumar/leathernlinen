@@ -4,6 +4,7 @@ import productList from '../data/productList'
 export default function Header() {
   const handleScrollToSection = (sectionId: string) => {
     const section = document.getElementById(sectionId);
+    
     if(section !=null){
       section.scrollIntoView({ behavior: 'smooth' });
     }
@@ -31,8 +32,7 @@ export default function Header() {
               <div className="row px-2">
                 <div className="col-6 p-2">
                   {Object.entries(productList).map(([productType]) => (
-                    <Link to={"/product/#"+productType.replace(/\s/g,"_")} onClick={()=>handleScrollToSection(productType.replace(/\s/g,"_"))} >{productType}</Link>
-                    
+                    <Link to={"/product/#"+productType.replace(/\s/g,"_")} onClick={()=>handleScrollToSection(productType.replace(/\s/g,"_"))} >{productType}</Link>      
                   ))}
                 </div>
 

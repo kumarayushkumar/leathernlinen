@@ -2,18 +2,18 @@ import clientLogo from '../data/client'
 
 function Client() {
   return (
-    <section id="client" className="carousel">
+    <section id="client" className="courosel">
       <div className="slider">
         <div className="slide-track">
-          {clientLogo.map((client, index) => (
-            <div className="slide" key={index}>
-              <img src={client.img} alt="" />
+          {clientLogo.map((clientKey) => (
+            <div className="slide ">
+              <img src={clientKey.img}  alt="" />
             </div>
           ))}
         </div>
       </div>
     </section>
-  );
+  )
 }
 
-export default Client;
+export default Client

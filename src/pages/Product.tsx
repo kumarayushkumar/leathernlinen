@@ -1,6 +1,6 @@
 import Footer from "../components/Footer";
 import Header from "../components/Header";
-import ProductContent from "../components/ProductContent";
+import ProductContent from "../components/ProdcutContent";
 import ProductNavBar from "../components/ProductNavBar";
 import productList from "../data/productList";
 
