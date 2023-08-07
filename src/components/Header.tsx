@@ -1,7 +1,13 @@
 import { Link } from 'react-router-dom'
 import Logo from '../assets/images/logo.png'
-
+import productList from '../data/productList'
 export default function Header() {
+  const handleScrollToSection = (sectionId: string) => {
+    const section = document.getElementById(sectionId);
+    if(section !=null){
+      section.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
   return (
     <header id="header" className="header shadow">
 
@@ -24,20 +30,10 @@ export default function Header() {
             <div className="dropdown-content">
               <div className="row px-2">
                 <div className="col-6 p-2">
-                  <Link to="/products/#sweatshirts">Sweatshirts</Link>
-                  <Link to="/products/#shirts">Shirts</Link>
-                  <Link to="/products/#bottles">Bottles</Link>
-                  <Link to="/products/#mugs">Mugs</Link>
-                  <Link to="/products/#tumbler">Tumbler</Link>
-                  <Link to="/products/#sipper">Sipper</Link>
-                  <Link to="/products/#diary">Diary</Link>
-                  <Link to="/products/#tote-bags">Tote Bags</Link>
-                  <Link to="/products/#backpacks">Backpacks</Link>
-                  <Link to="/products/#keyrings">Keyrings</Link>
-                  <Link to="/products/#pens">Pens</Link>
-                  <Link to="/products/#metal-pens">Metal Pens</Link>
-                  <Link to="/products/#umbrella">Umbrella</Link>
-                  <Link to="/products/#beanie">Beanie</Link>
+                  {Object.entries(productList).map(([productType]) => (
+                    <Link to={"/product/#"+productType.replace(/\s/g,"_")} onClick={()=>handleScrollToSection(productType.replace(/\s/g,"_"))} >{productType}</Link>
+                    
+                  ))}
                 </div>
 
                 <div className="col-6 p-2 vertical-line">

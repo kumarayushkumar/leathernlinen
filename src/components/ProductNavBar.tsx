@@ -1,7 +1,23 @@
 import { useState } from 'react';
 import dropdownbtn from '../assets/images/dropdown.svg';
-
-export default function ProductNavBar() {
+type ProductList = {
+  [key: string]: {
+    [key: string]: {
+      name: string;
+      image: string;
+      price: number;
+    }
+  }
+}
+export default function ProductNavBar({ productList }: { productList: ProductList }) {
+  const [activeBtn, setActiveBtn] = useState(0);
+  const handleScrollToSection = (sectionId: string,index:number) => {
+    const section = document.getElementById(sectionId);
+    setActiveBtn(index);
+    if(section !=null){
+      section.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
   const [ishidden, setishidden] = useState(false);
   return (
     <section className='Navbar'>
@@ -14,19 +30,9 @@ export default function ProductNavBar() {
               <span className={`btn ${ishidden}`} ><img src={dropdownbtn} alt="" /></span>
             </button>
             <ul className={`mt-2 list ${ishidden}`} >
-              <li className={`element ${ishidden} active`} >Packaging</li>
-              <li className={`element ${ishidden}`} >DrinkWare</li>
-              <li className={`element ${ishidden}`} >Tumblers & Mugs</li>
-              <li className={`element ${ishidden}`} >Totes</li>
-              <li className={`element ${ishidden}`} >Backpacks & Bags</li>
-              <li className={`element ${ishidden}`}  >Notebooks & Pens</li>
-              <li className={`element ${ishidden}`} >T-Shirts</li>
-              <li className={`element ${ishidden}`} >Polos & Shirts</li>
-              <li className={`element ${ishidden}`} >Hoodies & Sweats</li>
-              <li className={`element ${ishidden}`} >Outerwear</li>
-              <li className={`element ${ishidden}`} >Accessories</li>
-              <li className={`element ${ishidden}`} >Tech</li>
-              <a href="#Others" ><li className={`element ${ishidden}`}>Others</li></a>
+              {Object.keys(productList).map((productType,index) => (
+                <li onClick={() => handleScrollToSection(productType.replace(/\s/g,"_"),index)} className={`element ${ishidden} ${activeBtn === index ? 'active' : ''}`}>{productType}</li>
+              ))}
             </ul>
           </div>
         </div>

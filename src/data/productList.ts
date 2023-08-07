@@ -1,8 +1,8 @@
-import bag1 from '../assets/images/Bags/bag1.png';
+// import bag1 from '../assets/images/Bags/bag1.png';
 
-import caps1 from '../assets/images/Caps/caps1.png';
+// import caps1 from '../assets/images/Caps/caps1.png';
 
-import drinkware1 from '../assets/images/Drinkware/drinkware1.png';
+// import drinkware1 from '../assets/images/Drinkware/drinkware1.png';
 
 import img from '../assets/images/bag.jpg';
 

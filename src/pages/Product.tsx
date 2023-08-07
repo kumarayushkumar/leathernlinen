@@ -7,13 +7,13 @@ import productList from "../data/productList";
 export default function Product() {
   return (
     <>
-      <Header />
+      <Header productList={productList}/>
 
       <section id="product">
         <div className="container-fluid">
           <div className="row">
             <div className="col-2">
-              <ProductNavBar />
+              <ProductNavBar productList={productList} />
             </div>
 
             <div className="col-9">
