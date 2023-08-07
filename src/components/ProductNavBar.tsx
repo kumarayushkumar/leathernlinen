@@ -1,43 +1,64 @@
 import { useState } from 'react';
-import dropdownbtn from '../assets/images/dropdown.svg';
+import dropdownBtnImage from '../assets/images/dropdown.svg';
+
 type ProductList = {
   [key: string]: {
     [key: string]: {
       name: string;
       image: string;
       price: number;
-    }
-  }
+    };
+  };
+};
+
+interface ProductNavBarProps {
+  productList: ProductList;
 }
-export default function ProductNavBar({ productList }: { productList: ProductList }) {
-  const [activeBtn, setActiveBtn] = useState(0);
-  const handleScrollToSection = (sectionId: string,index:number) => {
+
+function ProductNavBar({ productList }: ProductNavBarProps) {
+  const [activeIndex, setActiveIndex] = useState(0);
+  const [isHidden, setIsHidden] = useState(false);
+
+  const handleScrollToSection = (sectionId: string, index: number) => {
     const section = document.getElementById(sectionId);
-    setActiveBtn(index);
-    if(section !=null){
+    setActiveIndex(index);
+    if (section !== null) {
       section.scrollIntoView({ behavior: 'smooth' });
     }
   };
-  const [ishidden, setishidden] = useState(false);
+
   return (
-    <section className='Navbar'>
+    <section className="Navbar">
       <div className="container-fluid">
         <div className="row">
           <div className="col-10 product_left">
-            <button className='cat_btn active' onClick={() => {
-              setishidden(!ishidden);
-            }}>Categories
-              <span className={`btn ${ishidden}`} ><img src={dropdownbtn} alt="" /></span>
+            <button
+              className={`cat_btn ${isHidden ? 'active' : ''}`}
+              onClick={() => {
+                setIsHidden(!isHidden);
+              }}
+            >
+              Categories
+              <span className={`btn ${isHidden ? 'active' : ''}`}>
+                <img src={dropdownBtnImage} alt="Dropdown Icon" />
+              </span>
             </button>
-            <ul className={`mt-2 list ${ishidden}`} >
-              {Object.keys(productList).map((productType,index) => (
-                <li onClick={() => handleScrollToSection(productType.replace(/\s/g,"_"),index)} className={`element ${ishidden} ${activeBtn === index ? 'active' : ''}`}>{productType}</li>
+            <ul className={`mt-2 list ${isHidden ? 'active' : ''}`}>
+              {Object.keys(productList).map((productType, index) => (
+                <li
+                  key={productType}
+                  onClick={() => handleScrollToSection(productType.replace(/\s/g, '_'), index)}
+                  className={`element ${activeIndex === index ? 'active' : ''}`}
+                >
+                  {productType}
+                </li>
               ))}
             </ul>
           </div>
         </div>
       </div>
     </section>
-
-  )
+  );
 }
+
+export default ProductNavBar;

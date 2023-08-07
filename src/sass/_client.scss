@@ -1,11 +1,17 @@
 @use 'custom' as *;
 
+#client {
+	h4 {
+		font-weight: 600;
+	}
+}
+
 .carousel {
 	align-items: center;
-	background-color: rgba($grey, 0.3);
+	// background-color: rgba($grey, 0.3);
 	display: flex;
 	justify-content: center;
-	padding: 2rem 0rem;
+	padding: 1rem 0rem;
 }
 
 // @mixin white-gradient {
@@ -37,9 +43,9 @@ $animationSpeed: 60s;
 	width: 100%;
 
 	img {
-		filter: grayscale(90%);
-		max-width: 200px;
-		margin: 0 1.5rem;
+		filter: grayscale(10%);
+		max-width: 150px;
+		margin: 0 1rem;
 	}
 
 
@@ -64,6 +70,6 @@ $animationSpeed: 60s;
 	.slide {
 		margin: 1rem;
 		overflow: hidden;
-		margin: 1.5rem;
+		margin: 1.25rem;
 	}
 }

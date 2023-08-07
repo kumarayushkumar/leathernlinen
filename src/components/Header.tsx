@@ -25,7 +25,7 @@ export default function Header() {
 
         <nav className="text-white">
 
-          <div className="dropdown">
+          {/* <div className="dropdown">
             <Link to="/product">Products</Link>
 
             <div className="dropdown-content">
@@ -53,14 +53,9 @@ export default function Header() {
 
             </div>
 
-          </div>
-
-          {/* <Link className="dropdown" to="/#product">Product</Link>
-
-          <div className="dropdown-content">
-            <p>Hello World!</p>
           </div> */}
 
+          <Link to="/product">Products</Link>
           <Link to="/#latest-work">Clients</Link>
           <Link to="/#about-us">About Us</Link>
           <Link to="/#contact-us">Contact Us</Link>

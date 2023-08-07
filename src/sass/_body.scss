@@ -2,46 +2,25 @@
   margin: 0;
   box-sizing: border-box;
   text-decoration: none;  
-  font-family: 'Body2', sans-serif;
+  font-family: 'Body', sans-serif;
   scroll-behavior: smooth;
   list-style: none;
 }
 
-// @font-face {
-//   font-family: 'FastHand';
-//   src: url('../assets/fonts/Fasthand-Regular.ttf') format('truetype'); 
-// }
-
-// @font-face {
-//   font-family: 'BebasNeue';
-//   src: url('../assets/fonts/BebasNeue-Regular.ttf') format('truetype'); 
-// }
-
-// @font-face {
-//   font-family: 'Lobster';
-//   src: url('../assets/fonts/Lobster-Regular.ttf') format('truetype'); 
-// }
-
 @font-face {
-  font-family: 'Body1';
-  src: url('../assets/fonts/BacasimeAntique-Regular.ttf') format('truetype'); 
+  font-family: 'Lead';
+  src: url('../assets/fonts/Montserrat-VariableFont_wght.ttf') format('truetype'); 
 }
 
 @font-face {
-  font-family: 'Body2';
-  src: url('../assets/fonts/Domine-VariableFont_wght.ttf') format('truetype'); 
-} 
-
-@font-face {
-  font-family: 'roboto';
+  font-family: 'Body';
   src: url('../assets/fonts/Roboto-Regular.ttf') format('truetype'); 
 }
 
 @font-face {
-  font-family: 'roboto';
+  font-family: 'Head';
   src: url('../assets/fonts/Roboto-Medium.ttf') format('truetype'); 
 }
-
 
 .bdr-round {
   border-radius: 1rem;

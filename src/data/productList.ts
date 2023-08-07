@@ -30,7 +30,7 @@ const productList = {
       image: img,
     },
   },
-  'DrinkWare': {
+  'Drink Bottles': {
     product1: {
       name: 'Laptop',
       image: img,
