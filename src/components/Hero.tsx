@@ -7,7 +7,6 @@ export default function Hero() {
     <section id="hero">
       <div id="carouselExampleControls" className="carousel slide" data-ride="carousel">
         <div className="carousel-inner">
-
           <div className="carousel-item ">
             <img className="d-block w-100" src={Bag} alt="First slide" />
             <div className="carousel-caption d-none d-md-block">
