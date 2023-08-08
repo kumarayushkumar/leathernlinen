@@ -13,7 +13,20 @@
 	justify-content: center;
 }
 
-
+.card{
+	margin-inline:1rem !important ;
+	border: none !important;
+	display: flex !important;
+	align-items: center;
+	justify-content: center;
+	img{
+		width: 100%;
+		filter: grayscale(10%);
+		max-width: 150px;
+		margin: 0 1rem;
+		
+	}
+}
 
 $animationSpeed: 60s;
 
@@ -28,7 +41,9 @@ $animationSpeed: 60s;
 	}
 }
 
-
+.slidernew{
+	width: 100%;
+}
 // Styling
 .slider {
 	// background: white;
