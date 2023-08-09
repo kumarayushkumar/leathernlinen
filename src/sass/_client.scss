@@ -1,8 +1,9 @@
 @use 'custom' as *;
 
 #client {
-	h4 {
-		font-weight: 600;
+	h5 {
+		font-weight: 500;
+		font-family: 'Lead', 'sans-serif';
 	}
 }
 
@@ -13,13 +14,14 @@
 	justify-content: center;
 }
 
-.card{
-	margin-inline:1rem !important ;
+.card {
+	margin-inline: 1rem !important ;
 	border: none !important;
 	display: flex !important;
 	align-items: center;
 	justify-content: center;
-	img{
+
+	img {
 		width: 100%;
 		filter: grayscale(10%);
 		max-width: 150px;
@@ -32,18 +34,11 @@ $animationSpeed: 60s;
 
 // Animation
 @keyframes scroll {
-	0% {
-		transform: translateX(0);
-	}
-
-	100% {
-		transform: translateX(calc(-250px * 7))
-	}
+	0% { transform: translateX(0); }
+	100% { transform: translateX(calc(-250px * 7)) }
 }
 
-.slidernew{
-	width: 100%;
-}
+.slidernew{ width: 100% }
 // Styling
 .slider {
 	// background: white;

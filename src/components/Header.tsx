@@ -20,7 +20,7 @@ export default function Header() {
           <Link to="/#contact-us">Contact Us</Link>
         </nav>
 
-        <button className='downloadbtn'>Download Brochure</button>
+        <Link to="#contact-us" className='downloadbtn'>Download Brochure</Link>
 
       </div>
 
