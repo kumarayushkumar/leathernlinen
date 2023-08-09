@@ -2,7 +2,7 @@ import clientLogo from '../data/client';
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 
 function Client() {
   const [slidesToShow, setSlidesToShow] = useState(4); // Default slides to show
@@ -35,7 +35,7 @@ function Client() {
     };
   }, []);
 
-  var settings = {
+  let settings = {
     infinite: true,
     slidesToShow: slidesToShow,
     slidesToScroll: 1,
