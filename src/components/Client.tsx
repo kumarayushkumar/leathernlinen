@@ -52,19 +52,6 @@ function Client() {
           </div>
         </div>
       </div>
-
-      {/* <div className="container mt-3 carousel">
-        <div className="slider">
-          <div className="slide-track">
-            {clientLogo.map((client, index) => (
-              <div className="slide" key={index}>
-                <img src={client.img} alt={`Client Logo ${index}`} />
-              </div>
-            ))}
-          </div>
-        </div>
-      </div> */}
-
       <div className='container mt-4 pt-3'>
         <Slider className='slidernew' {...settings}>
           {clientLogo.map((client, index) => (
