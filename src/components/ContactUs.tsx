@@ -8,7 +8,7 @@ export default function ContactUs() {
           <p className="fw-light mt-1 mt-md-2 text-white lead">Feel free to leave a message</p>
         </div>
 
-        <div className="row text-white mt-2 bg-sec bdr-round">
+        <div className="row text-white mt-2 bg-sec">
           <div className="col-12 col-lg-6 shadow p-4 p-sm-5">
             <div className="info">
               <h4 className="display-4 fw-bold">100% Satisfaction Guaranteed</h4>
@@ -21,7 +21,7 @@ export default function ContactUs() {
             </div>
           </div>
 
-          <div className="col-12 col-lg-6 bg-white shadow p-4 p-sm-5 bdr-round">
+          <div className="col-12 col-lg-6 bg-white shadow p-4 p-sm-5 ">
             <div className="form">
               <h3 className="mb-3 mb-sm-5">Start Your Project</h3>
               <form action="index1.php" method="POST" className="row">

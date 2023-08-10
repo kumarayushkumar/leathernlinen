@@ -1,11 +1,4 @@
-* {
-  margin: 0;
-  box-sizing: border-box;
-  text-decoration: none;  
-  font-family: 'Body', sans-serif;
-  scroll-behavior: smooth;
-  list-style: none;
-}
+@use 'custom' as *;
 
 @font-face {
   font-family: 'Lead';
@@ -22,6 +15,30 @@
   src: url('../assets/fonts/Roboto-Medium.ttf') format('truetype'); 
 }
 
+* {
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;  
+  font-family: 'Body', sans-serif;
+  scroll-behavior: smooth;
+  list-style: none;
+}
+
 .bdr-round {
-  border-radius: 1rem;
+  border-radius: 0.5rem;
+}
+
+.downloadbtn{
+  border: 1.5px solid $black;
+  border-radius: 25px;
+  padding: 0.5rem 1.5rem;
+  transition-duration: 0.5s;
+  text-decoration: none;
+  color: $black;
+  font-family: 'Lead', 'sans-serif';
+
+  &:hover{
+    color: $white;
+    background-color: $black;
+  }
 }

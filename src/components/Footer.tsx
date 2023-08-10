@@ -1,11 +1,13 @@
+import { Link } from 'react-router-dom'
+
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faWhatsapp } from '@fortawesome/free-brands-svg-icons'
+import { faFacebook, faInstagram, faTwitter, faWhatsapp } from '@fortawesome/free-brands-svg-icons'
 import { faChevronUp } from '@fortawesome/free-solid-svg-icons'
 
 export default function Footer() {
-    return (
-        <footer>
-            <div className="container">
+  return (
+    <footer>
+      {/* <div className="container">
                 <div className="row ">
                     <div className="col-md-6 contact pt-1 d-md-block d-lg-flex d-flex">
                         <div className="contact__icon me-2"><svg xmlns="http://www.w3.org/2000/svg" className="icon icon-tabler icon-tabler-phone-call" viewBox="0 0 24 24" strokeWidth="1.5" stroke="#909010" fill="none" strokeLinecap="round" strokeLinejoin="round">
@@ -31,9 +33,9 @@ export default function Footer() {
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> */}
 
-            {/* <div className="f-social">
+      {/* <div className="f-social">
             <div className="container">
                 <div className="row py-4 text-center text-white mx-auto">
                     <div className="col-lg-5 fw-bold">Connect with us on social media</div>
@@ -48,53 +50,62 @@ export default function Footer() {
             </div>
         </div> */}
 
-            <div className="container">
-                <div className="row text-white justify-content-center mt-4">
-                    <div className="col-md-4">
-                        <h3 className="fw-bold">Leather & Linen</h3>
-                        <hr className="d-block mb-md-2 f-inline mt-3" />
-                        <h4 className="lh-lg pe-lg-2">Corporate gifting</h4>
-                    </div>
+      <div className="container">
+        <div className="row justify-content-center mt-4">
+          <div className="col-md-4">
+            <h3 className="fw-bold display-5 text-primary">Merch n Gifts</h3>
+            <hr className="d-block mb-md-2 f-inline mt-3" />
+            <h4 className="lh-lg pe-lg-2 text-secondary">Corporate gifting</h4>
+          </div>
 
-                    <div className="col-md-4">
-                        <h4 className="fw-bold">Our Products</h4>
-                        <hr className="d-block mb-md-3 f-inline" />
-                        <ul className="f-list">
-                            <li><a href="#service-1">Bottles/Tumbler/Shaker/Sipper</a></li>
-                            <li><a href="#service-2">Tote Bag/Bagpack/Office Bag</a></li>
-                            <li><a href="#service-3">Round Neck/Collar t-shirt</a></li>
-                        </ul>
-                    </div>
+          <div className="col-md-4">
+            <h4 className="fw-bold">Address</h4>
+            <hr className="d-block mb-md-2 f-inline mt-3" />
+            <p className="lh-lg pe-lg-2"><a href="https://goo.gl/maps/8CjjoQL2qvrH2cig6" target="_blank" rel="noopener noreferrrer">New Delhi, INDIA</a></p>
+          </div>
 
-                    <div className="col-md-4">
-                        <h4 className="fw-bold">Address</h4>
-                        <hr className="d-block mb-md-2 f-inline mt-3" />
-                        <p className="lh-lg pe-lg-2"><a href="https://goo.gl/maps/8CjjoQL2qvrH2cig6" target="_blank" rel="noopener noreferrrer">New Delhi, INDIA</a></p>
-                    </div>
-
-                </div>
+          <div className="col-md-4">
+            <div className="d-flex mt-4 f-social">
+              <a className="" href="https://api.whatsapp.com/send/?phone=919557914389&text&app_absent=0" target="_blank" rel="noopener noreferrrer">
+                <FontAwesomeIcon className="icon-whatsapp" icon={faFacebook} />
+              </a>
+              <a className="" href="https://api.whatsapp.com/send/?phone=919557914389&text&app_absent=0" target="_blank" rel="noopener noreferrrer">
+                <FontAwesomeIcon className="icon-whatsapp" icon={faTwitter} />
+              </a>
+              <a className="" href="https://api.whatsapp.com/send/?phone=919557914389&text&app_absent=0" target="_blank" rel="noopener noreferrrer">
+                <FontAwesomeIcon className="icon-whatsapp" icon={faInstagram} />
+              </a>
             </div>
-
-            <div className="f-bt">
-                <div className="container">
-                    <div className="row text-center text-white pt-3 pb-3">
-                        <div className="col-12 mt-1 mb-2 mt-sm-2 mb-sm-3 ">
-                            <div className="f-bt-cpyrt">Leather & Linen </div>
-                            <div className="mt-4">
-                                <a className="growigh" href="https://www.growigh.com" target="_blank" rel="noopener noreferrrer">Made with ❤️ by <span className="growigh__name">Gro<span className="growigh__name__w">w</span>igh</span></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+            <div className="d-flex mt-4 f-social">
+              <Link to="#contact-us" className='downloadbtn'>Download Brochure</Link>
             </div>
+          </div>
 
-            <a className="whatsapp-button shadow rounded-circle" href="https://api.whatsapp.com/send/?phone=919557914389&text&app_absent=0" target="_blank" rel="noopener noreferrrer">
-                <FontAwesomeIcon className="icon-whatsapp" icon={faWhatsapp} />
-            </a>
+        </div>
 
-            <a className="btt shadow btn-primary rounded-circle" href="#header">
-                <FontAwesomeIcon className="icon-chevron-up" icon={faChevronUp} />
-            </a>
-        </footer>
-    )
+        <div className="row text-center text-black pt-3 pb-3">
+          <div className="col-12 mt-1 mb-2 mt-sm-2 mb-sm-3 ">
+            <div className="f-bt-cpyrt">© Merch n Gifts</div>
+            <div className="mt-2">
+              <a className="growigh" href="https://www.growigh.com" target="_blank" rel="noopener noreferrrer">Made with ❤️ by <span className="growigh__name">Gro<span className="growigh__name__w">w</span>igh</span></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* <div className="f-bt">
+        <div className="container">
+
+        </div>
+      </div> */}
+
+      <a className="btt btt__whatsapp shadow rounded-circle" href="https://api.whatsapp.com/send/?phone=919557914389&text&app_absent=0" target="_blank" rel="noopener noreferrrer">
+        <FontAwesomeIcon className="icon-whatsapp" icon={faWhatsapp} />
+      </a>
+
+      <a className="btt btt__chevron-up shadow rounded-circle" href="#header">
+        <FontAwesomeIcon className="icon-chevron-up" icon={faChevronUp} />
+      </a>
+    </footer>
+  )
 }
