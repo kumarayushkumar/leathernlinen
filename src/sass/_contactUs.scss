@@ -3,51 +3,57 @@
 #contact-us {
   background-color: rgba($secondary, $alpha: 0.99);
   background-image: linear-gradient(135deg, $secondary, #4b031b);
-  padding: 4rem 6rem; 
+  padding: 4rem 6rem;
 
   @include media-breakpoint-down(sm) {
-      padding-top: 1rem;
-      padding-bottom: 2rem
+    padding-top: 1rem;
+    padding-bottom: 2rem
   }
 
-  .bg-sec { background-color: rgba($tertiary, $alpha: 0.8); }
+  .bg-sec {
+    background-color: rgba($primary, $alpha: 1);
+  }
 }
 
 .info {
   padding: 2.5rem 0;
 
-  @include media-breakpoint-up(sm) { padding: 3rem 0; }
+  @include media-breakpoint-up(sm) {
+    padding: 3rem 0;
+  }
 
   &__list {
-      position: relative;
-      list-style: none;
-      display: block;
-      padding-top: 0.4rem;
-      padding-left: 0.5rem;
-      margin-bottom: 0;
-       
-      li::before {
-          font-family: "Font Awesome 5 Free";
-          content: "\f00c";
-          font-weight: 600;
-          margin-right: 0.5rem;
-          font-size: 1.2rem;
-      }
+    position: relative;
+    list-style: none;
+    display: block;
+    padding-top: 0.4rem;
+    padding-left: 0.5rem;
+    margin-bottom: 0;
+
+    li::before {
+      font-family: "Font Awesome 5 Free";
+      content: "\f00c";
+      font-weight: 600;
+      margin-right: 0.5rem;
+      font-size: 1.2rem;
+    }
   }
 }
 
 .form {
   button {
-      border: none;
-      color: $white;
+    border: none;
+    color: $white;
 
-      a {
-        color: $white;
-        text-decoration: none;
-      }
+    a {
+      color: $white;
+      text-decoration: none;
+    }
   }
 
-  h3 { color: $primary; }
+  h3 {
+    color: $primary;
+  }
 
 }
 

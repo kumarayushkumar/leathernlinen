@@ -1,4 +1,5 @@
 import img from "../assets/images/bag.jpg"
+
 const AboutUsData = [
     {
       id: "Who-we-are",

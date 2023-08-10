@@ -28,7 +28,7 @@ function ProductNavBar({ productList }: ProductNavBarProps) {
   };
 
   return (
-    <section className="Navbar">
+    <section className="navbar">
       <div className="container-fluid">
         <div className="row">
           <div className="col-10 product_left">

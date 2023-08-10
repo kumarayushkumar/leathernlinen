@@ -4,68 +4,62 @@
   padding-top: 2rem;
   background-color: rgba($grey, 0.15);
 
-  a {
-    text-decoration: none; 
-  }
-  
+  a { text-decoration: none; }
+
 }
 
-.section{
-  .heading{
-    span{
-      color:$secondary;
+.section {
+  .heading {
+    span {
+      color: $secondary;
       font-family: 'roboto';
       font-size: 1.5rem;
     }
   }
-  .arr_card{
-    display:flex;
+
+  .arr_card {
+    display: flex;
     max-width: 150rem;
     overflow-y: scroll;
-    &::-webkit-scrollbar {
-      display: none;
-    }
-    .card{
+
+    &::-webkit-scrollbar { display: none; }
+
+    .card {
       max-width: 20rem;
       min-width: 20rem;
       height: 25rem;
       margin-inline: 0.7rem;
+
       // overflow: hidden;
-      .image{
+      .image {
         width: 100%;
         height: 80%;
         display: flex;
         justify-content: center;
-        object-fit:center;
+        object-fit: center;
         overflow: hidden;
-  
-        img{
-          
+
+        img {
           transition: all 0.5s ease-in-out;
           object-fit: cover;
           height: 100%;
-          &:hover{
-            transform: scale(1.1);
-          }
+
+          &:hover { transform: scale(1.1); }
         }
       }
-  
-      .content{
+
+      .content {
         padding: 1rem;
         background-color: white;
-        h6{
+
+        h6 {
           font-weight: 700;
           font-size: 1.3rem;
         }
-        p{
-          margin: 0;
-  
-        }
+
+        p { margin: 0; }
       }
     }
   }
 
 }
-
-
-

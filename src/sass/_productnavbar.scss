@@ -1,60 +1,67 @@
 @use './custom' as *;
 @use './body' as *;
-.Navbar{
-    position: sticky;
-    top: 0;
+
+.navbar {
+  position: sticky;
+  top: 0;
 }
 
-.product_left{
-    ul{
-        padding: 0;
-        padding-left: 0.5rem;
-    }
-    .cat_btn{
-        width: fit-content; 
-        text-align: left; 
-        border: none;
-        font-size: 1.5rem;
-        font-weight: 500;
-        display: flex;
-      }
-    
-    .element{
-        font-family: 'roboto';
-        font-weight:500;
-        padding-bottom:1px;
-        padding-top: 0.5rem;
-        display: block;
-        color: black;
-        transition-duration:0.5s ;
-        cursor:default;
-    }
-    .element.active{
-        font-weight: 700;
-        width: fit-content;
-        border-bottom: 2px solid #ff808b;
-    }
-    .element.true{
-        color: transparent;
-        border: none;
-    }
-    .list{
-        height: 100rem;
-        min-width: 15rem;
-        transition-duration: 0.5s;
-        overflow: hidden;
-        position: absolute;
-        z-index: 50;
-    }
-    .btn{
-        transform: rotate(0deg);
-        transition: all 0.5s linear;
-    }
-    .list.true{
-        height:0px;
-    }
-    .btn.true{
-        transform:rotate(-180deg)
-        
-    }
+.product_left {
+  ul {
+    padding: 0;
+    padding-left: 0.5rem;
+  }
+
+  .cat_btn {
+    width: fit-content;
+    text-align: left;
+    border: none;
+    font-size: 1.5rem;
+    font-weight: 500;
+    display: flex;
+  }
+
+  .element {
+    font-family: 'roboto';
+    font-weight: 500;
+    padding-bottom: 1px;
+    padding-top: 0.5rem;
+    display: block;
+    color: black;
+    transition-duration: 0.5s;
+    cursor: default;
+  }
+
+  .element.active {
+    font-weight: 700;
+    width: fit-content;
+    border-bottom: 2px solid #ff808b;
+  }
+
+  .element.true {
+    color: transparent;
+    border: none;
+  }
+
+  .list {
+    height: 100rem;
+    min-width: 15rem;
+    transition-duration: 0.5s;
+    overflow: hidden;
+    position: absolute;
+    z-index: 50;
+  }
+
+  .btn {
+    transform: rotate(0deg);
+    transition: all 0.5s linear;
+  }
+
+  .list.true {
+    height: 0px;
+  }
+
+  .btn.true {
+    transform: rotate(-180deg)
+  }
 }
