@@ -35,7 +35,7 @@ function Client() {
     };
   }, []);
 
-  let settings = {
+  const settings = {
     infinite: true,
     slidesToShow: slidesToShow,
     slidesToScroll: 1,
@@ -44,11 +44,11 @@ function Client() {
     pauseOnHover: false
   };
   return (
-    <section id="client" className="d-block mt-3">
+    <section id="client" className="d-block mt-4 pt-2">
       <div className="container">
         <div className="row text-center">
           <div className="col-12">
-            <h4 className='text-secondary'>Brands we've worked with:</h4>
+            <h5 className='text-secondary'>Brands we've worked with:</h5>
           </div>
         </div>
       </div>
@@ -65,7 +65,7 @@ function Client() {
         </div>
       </div> */}
 
-      <div className='container mt-4'>
+      <div className='container mt-4 pt-3'>
         <Slider className='slidernew' {...settings}>
           {clientLogo.map((client, index) => (
             <div key={index} className='card'>
