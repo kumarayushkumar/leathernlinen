@@ -4,10 +4,8 @@ import Logo from '../assets/images/logo.png'
 export default function Header() {
 
   return (
-    <header id="header" className="header shadow">
-
+    <header id="header" className="header">
       <div className="header-content">
-
         <div className="logo">
           <div className="logo-img">
             <img src={Logo} alt="logo" />
