@@ -8,12 +8,13 @@ export default function Header() {
       <div className="header-content">
         <div className="logo">
           <div className="logo-img">
-            <img src={Logo} alt="logo" />
+            {/* <img src={Logo} alt="logo" /> */}
           </div>
         </div>
 
         <nav>
           <Link to="/product">Products</Link>
+          <Link to="/product">Services</Link>
           <Link to="/#latest-work">Clients</Link>
           <Link to="/#about-us">About Us</Link>
           <Link to="/#contact-us">Contact Us</Link>

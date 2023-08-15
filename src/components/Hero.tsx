@@ -3,7 +3,7 @@ import sliderimg from "../data/slider"
 export default function Hero() {
   return (
     <section id="hero">
-      <div id="carouselExampleControls" className="carousel slide" data-bs-ride="carousel">
+      <div id="carouselExampleControls" className="carousel slide" data-bs-ride="carousel" data-bs-interval="1000">
         <div className="carousel-inner">
           {sliderimg.map((item,index)=>(
             <div key={index} className={"carousel-item "+ (item.status!=undefined?item.status:"")}>

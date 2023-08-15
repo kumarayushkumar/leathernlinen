@@ -48,7 +48,7 @@ function Client() {
       <div className="container">
         <div className="row text-center">
           <div className="col-12">
-            <h5 className='text-secondary'>Brands we've worked with:</h5>
+            <h5 className='text-black'>Brands we've worked with:</h5>
           </div>
         </div>
       </div>

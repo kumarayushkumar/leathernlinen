@@ -110,7 +110,7 @@ const productList = {
       image: img,
     }
   },
-  'Outerwear': {
+  'Headwear': {
     product1: {
       name: 'Laptop',
       image: img,
