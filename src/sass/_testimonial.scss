@@ -1,0 +1,6 @@
+@use './custom' as *;
+@use './body' as *;
+
+#testimonial {
+  background-color: $primary;
+}

@@ -15,7 +15,7 @@ export default function Header() {
         <nav>
           <Link to="/product">Products</Link>
           <Link to="/product">Services</Link>
-          <Link to="/#latest-work">Clients</Link>
+          {/* <Link to="/#latest-work">Clients</Link> */}
           <Link to="/#about-us">About Us</Link>
           <Link to="/#contact-us">Contact Us</Link>
         </nav>

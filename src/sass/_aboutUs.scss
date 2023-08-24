@@ -1,8 +1,6 @@
 @use 'custom' as *;
 
 #about-us {
-
-  // background-color: rgba($secondary, $alpha: 0.99);
   .aboutus-card {
     margin-top: 3rem;
     display: flex;
@@ -66,6 +64,10 @@
         }
       }
     }
+  }
+
+  #why-choose-us {
+    background-color: $grey;
   }
 
 }
