@@ -4,85 +4,52 @@
 footer {
   padding-top: 0.75rem;
   background-color: $black;
-}
+  color: $primary;
 
-// .contact {
-//   position: relative;
-
-//   &__icon {
-//     width: 2.125rem;
-//     padding-top: 0.5rem;
-
-//     @include media-breakpoint-up(sm) {
-//       width: 3.75rem;
-//     }
-//   }
-
-//   a {
-//     text-decoration: none;
-//     color: $white;
-//     font-size: 1rem;
-
-//     @include media-breakpoint-up(sm) {
-//       font-size: 1.4rem;
-//     }
-//   }
-
-//   p {
-//     font-size: 0.86rem;
-//     color: rgba($gray-300, 0.6);
-
-//     @include media-breakpoint-up(sm) {
-//       font-size: 1rem;
-//     }
-//   }
-
-//   &__info {
-//     padding: 0.4rem 0.2rem;
-//     font-weight: 600;
-
-//     @include media-breakpoint-up(sm) {
-//       padding: 0.4rem;
-//     }
-
-//   }
-// }
-
-// .f-social {
-//   a {
-//     color: $black;
-
-//     svg {
-//       font-size: 1rem;
-//       margin: 0 1rem;
-
-//       @include media-breakpoint-up(sm) {
-//         font-size: 2.5rem;
-//       }
-//     }
-//   }
-// }
-
-// .f-inline {
-//   width: 60px;
-//   height: 2px;
-// }
-
-.growigh {
-  text-decoration: none;
-  font-size: 1.1rem;
-  color: rgba($white, 0.8);
-
-  .growigh__name {
-    color: rgba($white, 0.60);
-    font-weight: 600;
-
-    &__w {
-      color: rgba(#ffb428, 0.60);
-      font-weight: 600;
+  .logo {
+    span {
+      font-weight: 500;
+      font-size: 2.5rem;
+      font-family: 'Lead', 'sans-serif';
     }
   }
 
+  a { text-decoration: none; }
+
+  ul {
+    list-style: none;
+    font-size: 1.2rem;
+
+    li { padding-bottom: 0.675rem; }
+  }
+}
+
+.dowload-catalogue {
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+
+.dowload-catalogue-img { max-width: 120px; }
+
+.f-social {
+  svg {
+    font-size: 1rem;
+    margin: 0 0.675rem;
+
+    @include media-breakpoint-up(sm) { font-size: 2.5rem; }
+  }
+}
+
+.growigh {
+  font-size: 1.05rem;
+  color: rgba($white, 0.99);
+
+  .growigh__name {
+    color: rgba($white, 0.99);
+    font-size: 1.2rem;
+
+    &__w { color: rgba(#ffb428, 0.99); }
+  }
 }
 
 .btt {
@@ -112,18 +79,14 @@ footer {
   bottom: 1rem;
   background-color: $primary;
 
-  @include media-breakpoint-up(sm) {
-    bottom: 1.8rem;
-  }
+  @include media-breakpoint-up(sm) { bottom: 1.8rem; }
 }
 
 .btt__whatsapp {
   bottom: 4rem;
   background-color: #49C95A;
 
-  @include media-breakpoint-up(sm) {
-    bottom: 5.8rem;
-  }
+  @include media-breakpoint-up(sm) { bottom: 5.8rem; }
 }
 
 .icon-chevron-up {

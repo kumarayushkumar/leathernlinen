@@ -17,29 +17,26 @@ header {
     padding: 0 2rem;
   }
 
-  // .leather {
-  //   font-size: 3rem;
-  //   font-family: 'Fasthand', sans-serif;
-  // }
-
-  // .linen {
-  //   font-size: 3rem;
-  //   font-family: 'BebasNeue', sans-serif;
-  // }
-
-  // .ampersand {
-  //   font-size: 2.25rem;
-  //   font-weight: 300;
-  //   padding: 0.1rem;
-  //   font-family: 'Lobster', sans-serif;
-  // }
-
   p {
     margin-top: 0;
-    font-family: 'Body', 'sans-serif';
     font-size: 1.4rem;
     font-weight: 600;
     padding-top: 0;
+  }
+
+  .downloadbtn{
+    border: 1.5px solid $black;
+    border-radius: 25px;
+    padding: 0.5rem 1.5rem;
+    transition-duration: 0.5s;
+    text-decoration: none;
+    color: $black;
+    font-family: 'Lead', 'sans-serif';
+  
+    &:hover{
+      color: $white;
+      background-color: $black;
+    }
   }
 }
 
