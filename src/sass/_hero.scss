@@ -2,40 +2,71 @@
   overflow: hidden;
   align-items: center;
   justify-content: center;
+  .carousel{
+    display:flex;
+    // flex-direction: column-reverse; //1
+    
 
-  .carousel-item {
-    height: 80vh;
-    .text{
-      position: absolute;
-      color:#cdcec8;
+  }
+  .text{
+    position: absolute; //2
+    z-index: 10;
+    color:#cdcec8;
+    margin-left: 3rem;
+    width: 80%;
+    animation: apper 2s forwards;
+    h1{
+      font-size: 2rem;
+      @media screen and (max-width:800px){
+        font-size: 1.5rem;
+      }
+    }
+    .color1{
+      color: #82bbcf;
+    }
+    .color2{
+      color: #febe43;
+    }
+    .color3{
+      color: #d5a0ba;
+    }
+  }
+  @keyframes apper {
+    0%{
+      top: 10%;
+      opacity: 0;
+    }
+    100%{
       top: 15%;
-      left: 15%;
-      animation: apper 2s forwards;
-      .color1{
-        color: #82bbcf;
-      }
-      .color2{
-        color: #febe43;
-      }
-      .color3{
-        color: #d5a0ba;
-      }
+      opacity: 1;
     }
-    @keyframes apper {
-      0%{
-        top: 10%;
-        opacity: 0;
-      }
-      100%{
-        top: 15%;
-        opacity: 1;
-      }
-      
-    }
+    
+  }
+  .carousel-item {
+    height: 40vw;
+    position: relative;
     img {
-      float: right;
+      position: absolute;
+      // left: 20%; //3
+      right: 0%;
       height: 100%;
-      max-width: 80%;
+      
+
+    }
+  }
+
+  @media screen and (max-width:1380px){
+    .carousel{
+      flex-direction: column-reverse;
+    }
+    .text{
+      position: initial;
+    }
+    .carousel-item{
+      img{
+        left: 20%;
+        right:initial ;
+      }
     }
   }
 }
