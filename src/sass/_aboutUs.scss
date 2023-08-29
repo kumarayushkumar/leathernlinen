@@ -71,3 +71,38 @@
   }
 
 }
+
+.container-fluid
+{
+  display: flex;
+  background-color: #c3f905;
+  margin-top: 2rem;
+}
+
+.who-we-are
+{
+  margin: 0 3rem;
+}
+
+.heading
+{
+  font-size: 3rem;
+  font-weight: 700;
+  position: absolute;
+  margin-top: -2rem;
+  text-align: left;
+  max-width: 30%;
+  line-height: 1;
+}
+
+.who-we-are-text
+{
+  position: relative;
+  margin-top: 4.5rem;
+  font-size: 0.9rem;
+}
+
+.blend-img
+{
+  height: 100%;
+}
