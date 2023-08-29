@@ -6,6 +6,7 @@ import { faChevronUp } from '@fortawesome/free-solid-svg-icons'
 import { faLinkedinIn } from '@fortawesome/free-brands-svg-icons/faLinkedinIn'
 
 import catalogueCover from '../assets/images/catalogue_cover.png'
+import Logo from './Logo'
 
 export default function Footer() {
   return (
@@ -14,7 +15,7 @@ export default function Footer() {
 
         <div className="row">
           <div className="col-12 mb-4 mt-3 mb-md-5">
-            <h3 className="logo">merch<span>N</span>gifts</h3>
+            <Logo/>
           </div>
         </div>
 

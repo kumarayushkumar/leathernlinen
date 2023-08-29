@@ -242,6 +242,8 @@
   -webkit-animation-timing-function: var(--fa-animation-timing, steps(8));
           animation-timing-function: var(--fa-animation-timing, steps(8)); }
 
+
+
 @media (prefers-reduced-motion: reduce) {
   .fa-beat,
   .fa-bounce,

@@ -1,13 +1,13 @@
 import { Link } from 'react-router-dom'
+import Logo from './Logo'
 
 export default function Header() {
 
   return (
     <header id="header" className="header">
       <div className="header-content">
-        <div className="logo">
-          <Link to="/"></Link>
-        </div>
+        
+      <Logo/>
 
         <nav>
           <Link to="/product">Products</Link>

@@ -1,0 +1,21 @@
+.logo {
+    display: flex;
+    left: 7.5%;
+    align-items: center;
+    gap: 2px;
+    color: #c3f905;
+    font-weight: 600;
+    span {
+      font-weight: 500;
+      font-size: 2rem;
+      font-family: 'Lead', 'sans-serif';
+    }
+    .merch{
+        margin-top: -5px;
+        font-size: 1.3rem;
+    }
+    .gifts{
+        margin-bottom: -5px;
+        font-size: 1.3rem;
+    }
+  }
