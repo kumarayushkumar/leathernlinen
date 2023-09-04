@@ -1,5 +1,6 @@
 import data from "../data/testimonial";
 import aboutus from "../assets/images/About_Us/who_we_are.png";
+import { Clothblob } from "../assets/images/About_Us/illustrations/blobs";
 
 // drop down
 // whoe we are
@@ -79,6 +80,12 @@ export default function AboutUs() {
             your business is our business and your success is our success. We
             strive to match our products to your overall business profile
           </div>
+        </div>
+      </div>
+      <div className="section2">
+        <div className="text"></div>
+        <div className="image">
+          <Clothblob/>
         </div>
       </div>
     </section>
