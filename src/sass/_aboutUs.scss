@@ -69,40 +69,80 @@
   #why-choose-us {
     background-color: $grey;
   }
-
 }
 
 .container-fluid
 {
-  display: flex;
   background-color: #c3f905;
-  margin-top: 2rem;
-}
-
-.who-we-are
-{
-  margin: 0 3rem;
+  height: 50vh;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin: 2rem 0;
+  position: relative;
 }
 
 .heading
 {
-  font-size: 3rem;
+  font-size: 3vw;
   font-weight: 700;
   position: absolute;
-  margin-top: -2rem;
-  text-align: left;
-  max-width: 30%;
-  line-height: 1;
+  margin-top: -1.8rem;
+  max-width: 25%;
+  line-height: 0.9;
 }
 
 .who-we-are-text
 {
   position: relative;
-  margin-top: 4.5rem;
-  font-size: 0.9rem;
+  margin: 3.5rem 0;
+  font-size: 1.2vw;
+  min-height: 50vh;
+  max-width: 90%;
 }
 
 .blend-img
 {
-  height: 100%;
+  width: 100%;
+  height: auto !important;
+}
+
+.container-fluid-choseus
+{
+  background-color: rgb(180, 180, 180);
+  display: flex;
+  justify-content: space-between;
+  height: 25vh;
+}
+
+.why-to-choose-us
+{
+  max-width: 30%;
+  position: relative;
+}
+
+.heading-choose-us
+{
+  font-size: 3vw;
+  font-weight: 700;
+  position: absolute;
+  right: 5;
+  margin-top: -2.5rem;
+  color: #c3f905;
+  text-align: end; 
+}
+
+.choose-us-text
+{
+  font-size: 1vw;
+  margin: 2rem;
+  height: auto;
+  
+}
+.illutration-images
+{
+  width: 10%;
+  max-width: 20%;
+  height: auto;
+  display: flex;
 }
