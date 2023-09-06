@@ -1,148 +1,260 @@
-@use 'custom' as *;
+@use "custom" as *;
 
-#about-us {
-  .aboutus-card {
-    margin-top: 3rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
-    .text,
-    .img {
-      width: 45%;
-      text-align: left;
-    }
-
-    .text {
-      h1 {
-        font-weight: 400;
-      }
-    }
-
-    .img {
-      img {
-        width: 100%;
-        height: 100%;
-      }
-    }
-
-    &.alternate {
-      flex-direction: row-reverse;
-    }
-  }
-
-  .testmonial-card {
-    display: flex;
-
-    .testmonial {
-      width: 25rem;
-      display: flex;
-      flex-direction: column-reverse;
-      margin: 2rem;
-
-      .img {
-        width: 100%;
-        height: 100%;
-
-        img {
-          width: 100%;
-          height: 100%;
-
-        }
-      }
-
-      .text {
-        margin-top: 2rem;
-
-        h1 {
-          font-size: 1.5rem;
-          font-weight: 400;
-        }
-
-        p {
-          padding: 1rem;
-        }
-      }
-    }
-  }
-
-  #why-choose-us {
-    background-color: $grey;
-  }
-}
-
-.container-fluid
-{
+#whoweare {
+  margin-top: 5rem;
+  position: relative;
   background-color: #c3f905;
-  height: 50vh;
   width: 100%;
-  display: flex;
-  justify-content: space-between;
-  margin: 2rem 0;
+  .text {
+    max-width: 50%;
+    margin-left: 1rem;
+    .heading {
+      position: absolute;
+      top: -2rem;
+      font-size: 4rem;
+      font-weight: 900;
+      max-width: 30rem;
+    }
+    .content {
+      margin-top: 8rem;
+    }
+  }
+  .image {
+    margin-right: 1rem;
+    img {
+      object-fit: cover;
+      height: 100%;
+    }
+  }
+}
+
+#whychooseus {
+  margin-top: 10rem;
+  background: linear-gradient(#dcdcdc 75%, #ffffff 25%);
   position: relative;
+  padding-top: 4rem;
+
+  .heading {
+    position: absolute;
+    top: -3.59rem;
+    right: 1rem;
+    font-weight: 900;
+    font-size: 4rem;
+    background: linear-gradient(#b6ea01 60%, #93c700 40%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  .text {
+    width: 30%;
+  }
+  .image {
+    width: 70%;
+    margin-top: 3%;
+    .caption {
+      width: 100%;
+      margin-left: 2rem;
+    }
+    .illustration {
+      width: 25%;
+    }
+  }
+  @media screen and (max-width: 1120px) {
+    background: linear-gradient(#dcdcdc 100%, #ffffff 0%);
+    .fluid-container {
+      flex-direction: column;
+      .text {
+        width: 100%;
+      }
+    }
+
+    .image {
+      width: 100%;
+    }
+  }
+  @media screen and (max-width: 640px) {
+    .heading {
+      font-size: 3rem;
+      top: -2.75rem;
+    }
+  }
+  @media screen and (max-width: 478px) {
+    .heading {
+      font-size: 2rem;
+      top: -1.75rem;
+    }
+  }
 }
 
-.heading
-{
-  font-size: 3vw;
-  font-weight: 700;
-  position: absolute;
-  margin-top: -1.8rem;
-  max-width: 25%;
-  line-height: 0.9;
-}
-
-.who-we-are-text
-{
-  position: relative;
-  margin: 3.5rem 0;
-  font-size: 1.2vw;
-  min-height: 50vh;
-  max-width: 90%;
-}
-
-.blend-img
-{
-  width: 100%;
-  height: auto !important;
-}
-
-.container-fluid-choseus
-{
-  background-color: rgb(180, 180, 180);
+#whymerchendise {
+  margin-top: 10rem;
   display: flex;
-  justify-content: space-between;
-  height: 25vh;
+  justify-content: center;
+  .center {
+    position: relative;
+    display: flex;
+    width: fit-content;
+    .background {
+      z-index: -5;
+      width: 60%;
+
+      position: absolute;
+      top: -15%;
+      right: -10%;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .blob {
+        height: 100%;
+        width: 100%;
+      }
+      .blob-inside {
+        position: absolute;
+        height: 80%;
+        width: 80%;
+      }
+    }
+    .image {
+      width: 35rem;
+      height: 35rem;
+      img {
+        height: 100%;
+        width: 100%;
+      }
+    }
+    .text {
+      .heading {
+        margin-right: 6rem;
+        font-size: 3rem;
+        font-weight: 800;
+        color: #828282;
+      }
+      .content {
+        color: #828282;
+        font-weight: 500;
+        font-size: 1.2rem;
+      }
+
+      .content p:nth-child(odd) {
+        margin-left: 40%;
+      }
+      .content p:nth-child(even) {
+        margin-top: 3rem;
+        width: 100%;
+      }
+    }
+  }
 }
 
-.why-to-choose-us
-{
-  max-width: 30%;
-  position: relative;
-}
-
-.heading-choose-us
-{
-  font-size: 3vw;
-  font-weight: 700;
-  position: absolute;
-  right: 5;
-  margin-top: -2.5rem;
-  color: #c3f905;
-  text-align: end; 
-}
-
-.choose-us-text
-{
-  font-size: 1vw;
-  margin: 2rem;
-  height: auto;
-  
-}
-.illutration-images
-{
-  width: 10%;
-  max-width: 20%;
-  height: auto;
+#doyouknowthat {
+  margin-top: 10rem;
   display: flex;
+  justify-content: center;
+  .center {
+    width: 100%;
+    flex-direction: row-reverse;
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    .background {
+      z-index: -5;
+      width: 60%;
+
+      position: absolute;
+      top: -50%;
+      left: -5%;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .blob {
+        height: 100%;
+        width: 100%;
+      }
+      .blob-inside {
+        position: absolute;
+        height: 80%;
+        width: 80%;
+      }
+    }
+    .heading {
+      font-weight: 600;
+      font-size: 2rem;
+      position: absolute;
+      left: 50%;
+      top: -5%;
+    }
+    .text {
+      .content {
+        color: black;
+        font-weight: 500;
+        font-size: 1.5rem;
+        margin-top: 5rem;
+      }
+    }
+    .image {
+      width: 35rem;
+      height: 35rem;
+      img {
+        height: 100%;
+        width: 100%;
+      }
+    }
+  }
+}
+
+#advertisingspecialty {
+  margin-top: 15rem;
+  display: flex;
+  justify-content: center;
+  .center {
+    position: relative;
+    width: fit-content;
+    display: flex;
+    justify-content: space-around;
+    .background {
+      z-index: -5;
+      width: 60%;
+
+      position: absolute;
+      top: -15%;
+      right:0%;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .blob {
+        height: 100%;
+        width: 100%;
+      }
+      .blob-inside {
+        position: absolute;
+        height: 80%;
+        width: 80%;
+      }
+      .blob-inside-2 {
+        position: absolute;
+        height: 79%;
+        width: 79%;
+      }
+    }
+    .text{
+      .heading {
+        font-weight: 600;
+        font-size: 1.5rem;
+      }
+      .content{
+        margin-top: 1rem;
+        margin-left: 1rem;
+        font-size: 1.2rem;
+      }
+    }
+    .image{
+      width: 50%;
+      img{
+        margin-top: 20rem;
+        width: 100%;
+      }
+    }
+  }
 }

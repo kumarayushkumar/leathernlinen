@@ -8,12 +8,12 @@ import Testimonial from "../components/Testimonial.tsx"
 export default function Home() {
   return (
     <>
-      <Header />
-      <Hero />
-      <Client />
-      <AboutUs />
+      {/* <Header /> */}
+      {/* <Hero /> */}
+      {/* <Client /> */}
+      {/* <AboutUs /> */}
       <Testimonial />
-      <Footer />
+      {/* <Footer /> */}
     </>
   )
 }
