@@ -6,18 +6,19 @@ export default function Header() {
   return (
     <header id="header" className="header">
       <div className="header-content">
-        
-      <Logo/>
-
+        <Logo />
         <nav>
-          <Link to="/product">Products</Link>
-          <Link to="/product">Services</Link>
-          {/* <Link to="/#latest-work">Clients</Link> */}
-          <Link to="/#about-us">About Us</Link>
-          <Link to="/contact-us">Contact Us</Link>
+          <ul>
+            <li><Link to="/product">Products</Link></li>
+            <li><Link to="/product">Services</Link></li>
+            {/* <Link to="/#latest-work">Clients</Link> */}
+            <li><Link to="/#about-us">About Us</Link></li>
+            <li><Link to="/contact-us">Contact Us</Link></li>
+            <li> <Link to="/contact-us" className="downloadbtn">Download Brochure</Link></li>
+
+          </ul>
         </nav>
 
-        <Link to="/contact-us" className="downloadbtn">Download Brochure</Link>
 
       </div>
 

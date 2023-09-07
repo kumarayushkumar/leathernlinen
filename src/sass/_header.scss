@@ -5,17 +5,18 @@ header {
   background-color: $white;
   text-align: center;
   font-family: 'Lead', 'sans-serif';
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }
 
 .header-content {
+  width: 90%;
   display: flex;
   justify-content: space-between;
-  padding: 0rem 12rem;
   align-items: center;
 
-  @media(max-width:858px) {
-    padding: 0 2rem;
-  }
+ 
 
   p {
     margin-top: 0;
@@ -50,7 +51,31 @@ nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  ul{
+    margin-top: 1rem;
+    li{
+      display:inline;
+    }
+  }
+  
+  
+  
+  @media screen and (max-width:820px){
+    position: absolute;
+    top: 0;
+    width: 100%;
+    ul{
 
+      li{
+        display: block;
+        margin-block: 1rem;
+        .downloadbtn{
+          border: none !important;
+        }
+      }
+    }
+  }
+  
   a {
     font-family: 'Lead', 'sans-serif';
     color: $black;
