@@ -1,13 +1,19 @@
 import { Link } from 'react-router-dom'
 import Logo from './Logo'
+import { Hamburger } from '../assets/images/icon'
+import { useState } from 'react'
 
 export default function Header() {
+  const [nav,setnav] =useState(false);
+  const navhandler =() =>{
+    setnav(!nav)
+  }
 
   return (
     <header id="header" className="header">
       <div className="header-content">
         <Logo />
-        <nav>
+        <nav className={nav?"active":""}>
           <ul>
             <li><Link to="/product">Products</Link></li>
             <li><Link to="/product">Services</Link></li>
@@ -18,7 +24,7 @@ export default function Header() {
 
           </ul>
         </nav>
-
+        <Hamburger className='hamburger' onClick={navhandler}/>
 
       </div>
 

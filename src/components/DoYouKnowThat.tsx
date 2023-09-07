@@ -1,6 +1,6 @@
-
 import { Tumblerblob } from '../assets/images/About_Us/illustrations/Blobs'
 import img from '../assets/images/About_Us/img2.png';
+
 function DoYouKnowThat() {
     return (
         <div className="doyouknowthat" id="doyouknowthat">
@@ -10,7 +10,6 @@ function DoYouKnowThat() {
                     <Tumblerblob  fill='#cbc7c8' className='blob-inside' dur="30s" />
                 </div>
 
-                <div className="heading">"Do you know that? <br /> The Evidence lies in the figures."</div>
                 <div className="text">
                     <div className="content">
                         <p>
@@ -33,6 +32,7 @@ function DoYouKnowThat() {
                         </p>
                     </div>
                 </div>
+                <div className="heading">"Do you know that? <br /> The Evidence lies in the figures."</div>
 
                 <div className="image">
                     <img src={img} alt="" />

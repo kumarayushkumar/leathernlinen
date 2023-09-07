@@ -5,8 +5,22 @@
   position: relative;
   background-color: #c3f905;
   width: 100%;
+  @media screen and (max-width:700px) {
+    .d-flex{
+      flex-direction: column-reverse;
+      justify-content: center !important;
+      align-items: center;
+      .image{
+        margin-top: 10rem;
+        margin-right: 0;
+      }
+      .text{
+        width: 80%;
+      }
+    }
+  }
   .text {
-    max-width: 50%;
+    width: 50%;
     margin-left: 1rem;
     .heading {
       position: absolute;
@@ -21,8 +35,15 @@
   }
   .image {
     margin-right: 1rem;
+    min-width: 25rem;
+
+    display: flex;
+    justify-content: center;
+
+
     img {
       object-fit: cover;
+      width: 100%;
       height: 100%;
     }
   }
@@ -92,14 +113,18 @@
   .center {
     position: relative;
     display: flex;
-    width: fit-content;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+
+    
     .background {
       z-index: -5;
       width: 60%;
 
       position: absolute;
-      top: -15%;
-      right: -10%;
+      top: -20%;
+      right: 0;
 
       display: flex;
       justify-content: center;
@@ -114,6 +139,7 @@
         width: 80%;
       }
     }
+
     .image {
       width: 35rem;
       height: 35rem;
@@ -124,7 +150,8 @@
     }
     .text {
       .heading {
-        margin-right: 6rem;
+        word-wrap: break-word;
+        margin-inline: 1rem;
         font-size: 3rem;
         font-weight: 800;
         color: #828282;
@@ -141,6 +168,44 @@
       .content p:nth-child(even) {
         margin-top: 3rem;
         width: 100%;
+      }
+    }
+  }
+  @media screen and (max-width: 952px) {
+    .center {
+      flex-direction: column-reverse;
+      align-items: center;
+      .background {
+        margin: auto;
+        width: 40rem;
+        right: -15%;
+        top: 0%;
+        .blob {
+          height: 100%;
+          width: 100%;
+        }
+        .blob-inside {
+          position: absolute;
+          height: 80%;
+          width: 80%;
+        }
+      }
+      .image {
+        display: flex;
+        justify-content: center;
+        align-items: baseline;
+        width: 25rem;
+        img {
+          margin-top: 25%;
+          width: 25rem;
+          height: 25rem;
+        }
+      }
+      .text{
+        margin-left: 2rem;
+        .content{
+          margin-left: 1rem;
+        }
       }
     }
   }
@@ -201,6 +266,47 @@
       }
     }
   }
+  @media screen and (max-width: 952px) {
+    .center {
+      flex-direction: column-reverse;
+      align-items: center;
+      .background {
+        margin: auto;
+        width: 100%;
+        left: -5%;
+        top: -10%;
+        .blob {
+          height: 100%;
+          width: 100%;
+        }
+        .blob-inside {
+          position: absolute;
+          height: 80%;
+          width: 80%;
+        }
+      }
+      .heading {
+        margin-top: 5rem;
+        font-size: 1.8rem;
+        position:initial;
+      }
+      .image {
+        width: 25rem;
+        height: 25rem;
+        img {
+          height: 100%;
+          width: 100%;
+        }
+      }
+      .text{
+        margin-left: 2rem;
+        .content{
+          margin-left: 1rem;
+          font-size: 1.2rem;
+        }
+      }
+    }
+  }
 }
 
 #advertisingspecialty {
@@ -218,7 +324,7 @@
 
       position: absolute;
       top: -15%;
-      right:0%;
+      right: 0%;
 
       display: flex;
       justify-content: center;
@@ -238,22 +344,64 @@
         width: 79%;
       }
     }
-    .text{
+    .text {
       .heading {
         font-weight: 600;
         font-size: 1.5rem;
       }
-      .content{
+      .content {
         margin-top: 1rem;
         margin-left: 1rem;
         font-size: 1.2rem;
       }
     }
-    .image{
+    .image {
       width: 50%;
-      img{
+      img {
         margin-top: 20rem;
         width: 100%;
+      }
+    }
+  }
+  @media screen and (max-width: 952px) {
+    margin-top: 5rem;
+    .center {
+      flex-direction: column-reverse;
+      .background {
+        margin: auto;
+        width: 100%;
+        left: -5%;
+        top: -10%;
+        .blob {
+          height: 100%;
+          width: 100%;
+        }
+        .blob-inside {
+          position: absolute;
+          height: 80%;
+          width: 80%;
+        }
+      }
+      .heading {
+        margin-top: 5rem;
+        font-size: 1.8rem;
+        position:initial;
+      }
+      .image {
+        width: 25rem;
+        height: 18rem;
+        img {
+          margin-top: 5rem;
+          height: 100%;
+          width: 100%;
+        }
+      }
+      .text{
+        margin-left: 2rem;
+        .content{
+          margin-left: 1rem;
+          font-size: 1.2rem;
+        }
       }
     }
   }
