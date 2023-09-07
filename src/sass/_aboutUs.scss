@@ -5,16 +5,16 @@
   position: relative;
   background-color: #c3f905;
   width: 100%;
-  @media screen and (max-width:700px) {
-    .d-flex{
+  @media screen and (max-width: 700px) {
+    .d-flex {
       flex-direction: column-reverse;
       justify-content: center !important;
       align-items: center;
-      .image{
+      .image {
         margin-top: 10rem;
         margin-right: 0;
       }
-      .text{
+      .text {
         width: 80%;
       }
     }
@@ -39,7 +39,6 @@
 
     display: flex;
     justify-content: center;
-
 
     img {
       object-fit: cover;
@@ -117,7 +116,6 @@
     align-items: center;
     width: 80%;
 
-    
     .background {
       z-index: -5;
       width: 60%;
@@ -178,8 +176,8 @@
       .background {
         margin: auto;
         width: 40rem;
-        right: -15%;
-        top: 0%;
+        right: -25%;
+        top: 3%;
         .blob {
           height: 100%;
           width: 100%;
@@ -201,9 +199,9 @@
           height: 25rem;
         }
       }
-      .text{
+      .text {
         margin-left: 2rem;
-        .content{
+        .content {
           margin-left: 1rem;
         }
       }
@@ -288,7 +286,7 @@
       .heading {
         margin-top: 5rem;
         font-size: 1.8rem;
-        position:initial;
+        position: initial;
       }
       .image {
         width: 25rem;
@@ -298,9 +296,9 @@
           width: 100%;
         }
       }
-      .text{
+      .text {
         margin-left: 2rem;
-        .content{
+        .content {
           margin-left: 1rem;
           font-size: 1.2rem;
         }
@@ -358,13 +356,14 @@
     .image {
       width: 50%;
       img {
-        margin-top: 20rem;
+        margin-top: 10rem;
         width: 100%;
       }
     }
   }
   @media screen and (max-width: 952px) {
     margin-top: 5rem;
+    align-items: center;
     .center {
       flex-direction: column-reverse;
       .background {
@@ -385,7 +384,7 @@
       .heading {
         margin-top: 5rem;
         font-size: 1.8rem;
-        position:initial;
+        position: initial;
       }
       .image {
         width: 25rem;
@@ -396,13 +395,26 @@
           width: 100%;
         }
       }
-      .text{
+      .text {
         margin-left: 2rem;
-        .content{
+        .content {
           margin-left: 1rem;
           font-size: 1.2rem;
         }
       }
+    }
+  }
+}
+
+@media screen and (max-width: 530px) {
+  .background {
+    .blob {
+      width: 30rem !important;
+      height: 30rem !important;
+    }
+    .blob-inside {
+      width: 25rem !important;
+      height: 25rem !important;
     }
   }
 }
