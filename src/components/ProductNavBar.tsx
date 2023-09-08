@@ -1,31 +1,31 @@
-import { useState } from 'react';
-import dropdownBtnImage from '../assets/images/dropdown.svg';
+import { useState } from 'react'
+import dropdownBtnImage from '../assets/images/dropdown.svg'
 
 type ProductList = {
   [key: string]: {
     [key: string]: {
-      name: string;
-      image: string;
-      price: number;
-    };
-  };
-};
+      name: string
+      image: string
+      price: number
+    }
+  }
+}
 
 interface ProductNavBarProps {
-  productList: ProductList;
+  productList: ProductList
 }
 
 function ProductNavBar({ productList }: ProductNavBarProps) {
-  const [activeIndex, setActiveIndex] = useState(0);
-  const [isHidden, setIsHidden] = useState(false);
+  const [activeIndex, setActiveIndex] = useState(0)
+  const [isHidden, setIsHidden] = useState(false)
 
   const handleScrollToSection = (sectionId: string, index: number) => {
-    const section = document.getElementById(sectionId);
-    setActiveIndex(index);
+    const section = document.getElementById(sectionId)
+    setActiveIndex(index)
     if (section !== null) {
-      section.scrollIntoView({ behavior: 'smooth' });
+      section.scrollIntoView({ behavior: 'smooth' })
     }
-  };
+  }
 
   return (
     <section className="navbar">
@@ -35,8 +35,7 @@ function ProductNavBar({ productList }: ProductNavBarProps) {
             <button
               className={`cat_btn ${isHidden ? 'active' : ''}`}
               onClick={() => {
-                setIsHidden(!isHidden);
-                console.log(isHidden)
+                setIsHidden(!isHidden)
               }}
             >
               Categories
@@ -59,7 +58,7 @@ function ProductNavBar({ productList }: ProductNavBarProps) {
         </div>
       </div>
     </section>
-  );
+  )
 }
 
-export default ProductNavBar;
+export default ProductNavBar

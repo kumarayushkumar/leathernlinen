@@ -1,8 +1,7 @@
-
 import { Clothblob } from '../assets/images/About_Us/illustrations/Blobs'
-import img from '../assets/images/About_Us/img1.png';
+import img from '../assets/images/About_Us/img1.png'
 
-function WhyMerchenDise() {
+export default function WhyMerchenDise() {
   return (
     <div className="whymerchendise" id="whymerchendise">
       <div className="center">
@@ -12,7 +11,7 @@ function WhyMerchenDise() {
         </div>
 
         <div className="text">
-          <div className="heading">Why merchandise <br/> and gifts
+          <div className="heading">Why merchandise <br /> and gifts
           </div>
           <div className="content">
             <p>
@@ -44,5 +43,3 @@ function WhyMerchenDise() {
     </div>
   )
 }
-
-export default WhyMerchenDise

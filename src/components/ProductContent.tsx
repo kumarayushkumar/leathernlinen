@@ -1,26 +1,26 @@
 type Product = {
-  name: string;
-  image: string;
-  price: number;
-};
+  name: string
+  image: string
+  price: number
+}
 
 type ProductType = {
-  [key: string]: Product;
-};
+  [key: string]: Product
+}
 
 type ProductList = {
-  [key: string]: ProductType;
-};
+  [key: string]: ProductType
+}
 
 interface ProductContentProps {
-  productList: ProductList;
+  productList: ProductList
 }
 
 function ProductCard({ product }: { product: Product }) {
   const formattedPrice = new Intl.NumberFormat('en-US', {
     style: 'currency',
     currency: 'USD',
-  }).format(product.price);
+  }).format(product.price)
 
   return (
     <div className="card mb-5">
@@ -32,11 +32,11 @@ function ProductCard({ product }: { product: Product }) {
         <p>From {formattedPrice} per unit</p>
       </div>
     </div>
-  );
+  )
 }
 
 function ProductTypeSection({ productType, products }: { productType: string; products: ProductType }) {
-  const formattedProductType = productType.replace(/\s/g, '_');
+  const formattedProductType = productType.replace(/\s/g, '_')
   return (
     <div className="section" key={productType} id={formattedProductType}>
       {/* <h5 className="heading">
@@ -48,7 +48,7 @@ function ProductTypeSection({ productType, products }: { productType: string; pr
         ))}
       </div>
     </div>
-  );
+  )
 }
 
 export default function ProductContent({ productList }: ProductContentProps) {
@@ -60,5 +60,5 @@ export default function ProductContent({ productList }: ProductContentProps) {
         ))}
       </div>
     </section>
-  );
+  )
 }

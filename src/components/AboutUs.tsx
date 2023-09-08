@@ -1,8 +1,8 @@
-import Whoweare from "./Whoweare";
-import WhyChooseUs from "./WhyChooseUs";
-import WhyMerchenDise from "./WhyMerchenDise";
-import DoYouKnowThat from "./DoYouKnowThat";
-import AdvertisingSpeciality from "./AdvertisingSpeciality";
+import Whoweare from "./Whoweare"
+import WhyChooseUs from "./WhyChooseUs"
+import WhyMerchenDise from "./WhyMerchenDise"
+import DoYouKnowThat from "./DoYouKnowThat"
+import AdvertisingSpeciality from "./AdvertisingSpeciality"
 // drop down
 // whoe we are
 // why merchanise gift
@@ -15,10 +15,10 @@ export default function AboutUs() {
   return (
     <>
       <Whoweare />
-      <WhyMerchenDise/>
-      <DoYouKnowThat/>
-      <AdvertisingSpeciality/>
-      <WhyChooseUs/>
+      <WhyMerchenDise />
+      <DoYouKnowThat />
+      <AdvertisingSpeciality />
+      <WhyChooseUs />
     </>
-  );
+  )
 }
