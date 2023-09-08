@@ -23,6 +23,7 @@ export default function Footer() {
           <div className="col-md-4">
             <h5><a href="tel: +61415816522">P: +61415816522</a></h5>
             <h5><a href="mailto:naseem.khan10@gmail.com">E: naseem.khan10@gmail.com</a></h5>
+            <h5> Address: Level 5/1-3 Fitzwilliam St, Parramatta NSW 215</h5>
             <h5 className="mt-4">Copyright @ merchNgifts</h5>
           </div>
 

@@ -36,6 +36,7 @@ function ProductNavBar({ productList }: ProductNavBarProps) {
               className={`cat_btn ${isHidden ? 'active' : ''}`}
               onClick={() => {
                 setIsHidden(!isHidden);
+                console.log(isHidden)
               }}
             >
               Categories

@@ -44,7 +44,7 @@ function Client() {
     pauseOnHover: false
   };
   return (
-    <section id="client" className="d-block mt-4 pt-2">
+    <section id="client" className="d-block pt-2">
       <div className="container">
         <div className="row text-center">
           <div className="col-12">

@@ -19,11 +19,13 @@
     font-size: 1.5rem;
     font-weight: 500;
     display: flex;
+    background-color: transparent;
   }
 
   .element {
-    font-family: 'roboto';
+    font-family: 'Font';
     font-weight: 500;
+    font-size: 1.1rem;
     padding-bottom: 1px;
     padding-top: 0.5rem;
     display: block;
@@ -55,13 +57,15 @@
   .btn {
     transform: rotate(0deg);
     transition: all 0.5s linear;
+    outline: none;
+    border: none;
   }
 
-  .list.true {
+  .list.active {
     height: 0px;
   }
 
-  .btn.true {
+  .btn.active {
     transform: rotate(-180deg)
   }
 }
