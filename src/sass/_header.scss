@@ -38,7 +38,7 @@ header {
     transition-duration: 0.5s;
     text-decoration: none;
     color: $black;
-    font-family: "Lead", "sans-serif";
+    font-family: 'Font';
 
     &:hover {
       color: $white;
@@ -67,7 +67,16 @@ nav {
     margin-top: 1rem;
     li {
       display: inline;
+      a{
+        font-size: 1rem;
+        font-family: 'Font';
+        color: #4c4c4c;
+      }
+      a:hover{
+        font-size: 1.2rem;
+      }
     }
+
   }
 
   a {

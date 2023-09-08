@@ -20,7 +20,7 @@ export default function Header() {
             {/* <Link to="/#latest-work">Clients</Link> */}
             <li><Link to="/#about-us">About Us</Link></li>
             <li><Link to="/contact-us">Contact Us</Link></li>
-            <li> <Link to="/contact-us" className="downloadbtn">Download Brochure</Link></li>
+            {/* <li> <Link to="/contact-us" className="downloadbtn">Download Brochure</Link></li> */}
 
           </ul>
         </nav>

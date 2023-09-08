@@ -39,9 +39,9 @@ function ProductTypeSection({ productType, products }: { productType: string; pr
   const formattedProductType = productType.replace(/\s/g, '_');
   return (
     <div className="section" key={productType} id={formattedProductType}>
-      <h5 className="heading">
+      {/* <h5 className="heading">
         Would you like to add <span>{productType}</span> to your enquiry?
-      </h5>
+      </h5> */}
       <div className="arr_card mt-4">
         {Object.entries(products).map(([productKey, product]) => (
           <ProductCard key={productKey} product={product} />

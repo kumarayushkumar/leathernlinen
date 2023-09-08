@@ -51,19 +51,16 @@ export default function Footer() {
               <a className="" href="" target="_blank" rel="noopener noreferrrer">
                 <FontAwesomeIcon className="" icon={faLinkedinIn} />
               </a>
+              <a className="" href="" target="_blank" rel="noopener noreferrrer">
+                <FontAwesomeIcon className="" icon={faWhatsapp} />
+              </a>
 
             </div>
           </div>
 
         </div>
 
-        <div className="row text-center text-black pt-3 pb-3">
-          <div className="col-12 mt-1 mb-2 mt-sm-2 mb-sm-3 ">
-            <div className="mt-2">
-              <a className="growigh" href="https://www.growigh.com" target="_blank" rel="noopener noreferrrer">Made with ❤️ by <span className="growigh__name">Gro<span className="growigh__name__w">w</span>igh</span></a>
-            </div>
-          </div>
-        </div>
+        
 
       </div>
 

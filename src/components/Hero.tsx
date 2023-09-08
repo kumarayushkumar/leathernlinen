@@ -7,7 +7,7 @@ export default function Hero() {
         <div className={"text"}>
           <h1>fill the <span className="color1">colors </span> at your special occasions</h1>
           <h1>fill the <span className="color2">colors </span> at your merchandise</h1>
-          <h1>fill the <span className="color3">colors </span> with you gift</h1>
+          <h1>fill the <span className="color3">colors </span> with your gift</h1>
         </div>
         <div className="carousel-inner">
 

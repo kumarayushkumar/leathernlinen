@@ -241,17 +241,19 @@
       }
     }
     .heading {
+      color:#828282;
       font-weight: 600;
-      font-size: 2rem;
+      font-size: 1.5rem;
       position: absolute;
       left: 50%;
       top: -5%;
     }
     .text {
+      width: 40%;
       .content {
-        color: black;
+        color: #828282;
         font-weight: 500;
-        font-size: 1.5rem;
+        font-size: 1.2rem;
         margin-top: 5rem;
       }
     }
@@ -344,6 +346,7 @@
     }
     .text {
       .heading {
+        color: #828282;
         font-weight: 600;
         font-size: 1.5rem;
       }
@@ -351,6 +354,7 @@
         margin-top: 1rem;
         margin-left: 1rem;
         font-size: 1.2rem;
+        color: #828282;
       }
     }
     .image {

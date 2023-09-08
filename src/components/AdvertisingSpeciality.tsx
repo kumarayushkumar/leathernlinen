@@ -7,7 +7,7 @@ function AdvertisingSpeciality() {
             <div className="center">
                 <div className="background">
                     <Headphoneblob fill='#777777' className='blob' dur="15s" />
-                    <Headphoneblob fill='#b5b7a9' stroke='#b6ea01' strokeWidth='0.2rem' className='blob-inside-2' dur="14s" />
+                    <Headphoneblob fill='#cbc7c8' stroke='#b6ea01' strokeWidth='0.2rem' className='blob-inside-2' dur="14s" />
                 </div>
 
                 <div className="text">
