@@ -1,14 +1,13 @@
 import Footer from "../components/Footer"
 import Header from "../components/Header"
-import ProductContent from "../components/ProductContent"
-import ProductNavBar from "../components/ProductNavBar"
+import ProductContent from "../components/Product/ProductContent"
+import ProductNavBar from "../components/Product/ProductNavBar"
 import productList from "../data/productList"
 
 export default function Product() {
   return (
     <>
       <Header />
-
       <section id="product">
         <div className="container-fluid">
           <div className="row">

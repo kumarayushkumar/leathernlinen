@@ -38,6 +38,24 @@ import tumbler20 from '../assets/images/Tumblers_&_Mugs/tumbler-20.jpg'
 
 import tote1 from '../assets/images/Tote/tote-1.jpg'
 
+import backpack1 from '../assets/images/Backpacks_&_Bags/backpack-1.jpg'
+import backpack2 from '../assets/images/Backpacks_&_Bags/backpack-2.jpg'
+import backpack3 from '../assets/images/Backpacks_&_Bags/backpack-3.jpg'
+import backpack4 from '../assets/images/Backpacks_&_Bags/backpack-4.jpg'
+import backpack5 from '../assets/images/Backpacks_&_Bags/backpack-5.jpg'
+import backpack6 from '../assets/images/Backpacks_&_Bags/backpack-6.jpg'
+import backpack7 from '../assets/images/Backpacks_&_Bags/backpack-7.jpg'
+import backpack8 from '../assets/images/Backpacks_&_Bags/backpack-8.jpg'
+import backpack9 from '../assets/images/Backpacks_&_Bags/backpack-9.jpg'
+import backpack10 from '../assets/images/Backpacks_&_Bags/backpack-10.jpg'
+import backpack11 from '../assets/images/Backpacks_&_Bags/backpack-11.jpg'
+import backpack12 from '../assets/images/Backpacks_&_Bags/backpack-12.jpg'
+import backpack13 from '../assets/images/Backpacks_&_Bags/backpack-13.jpg'
+import backpack14 from '../assets/images/Backpacks_&_Bags/backpack-14.jpg'
+import backpack15 from '../assets/images/Backpacks_&_Bags/backpack-15.jpg'
+import backpack16 from '../assets/images/Backpacks_&_Bags/backpack-16.jpg'
+import backpack17 from '../assets/images/Backpacks_&_Bags/backpack-17.jpg'
+
 import pen1 from '../assets/images/Notebooks_&_Pens/notebookpen-1.jpg'
 import notebook1 from '../assets/images/Notebooks_&_Pens/notebookpen-2.webp'
 import notebook2 from '../assets/images/Notebooks_&_Pens/notebookpen-3.jpg'
@@ -87,6 +105,23 @@ import polos13 from '../assets/images/Polos_&_Shirts/polos-13.jpg'
 import polos14 from '../assets/images/Polos_&_Shirts/polos-14.jpg'
 import polos15 from '../assets/images/Polos_&_Shirts/polos-15.jpg'
 
+import custom1 from '../assets/images/Custom_Gifts_Boxes/custom-1.jpg'
+import custom2 from '../assets/images/Custom_Gifts_Boxes/custom-2.jpg'
+
+import accessories1 from '../assets/images/Accessories/accessories-1.jpg'
+import accessories2 from '../assets/images/Accessories/accessories-2.jpg'
+import accessories3 from '../assets/images/Accessories/accessories-3.jpg'
+import accessories4 from '../assets/images/Accessories/accessories-4.jpg'
+import accessories5 from '../assets/images/Accessories/accessories-5.jpg'
+import accessories6 from '../assets/images/Accessories/accessories-6.jpg'
+import accessories7 from '../assets/images/Accessories/accessories-7.jpg'
+import accessories8 from '../assets/images/Accessories/accessories-8.jpg'
+import accessories9 from '../assets/images/Accessories/accessories-9.jpg'
+import accessories10 from '../assets/images/Accessories/accessories-10.jpg'
+import accessories11 from '../assets/images/Accessories/accessories-11.jpg'
+import accessories12 from '../assets/images/Accessories/accessories-12.jpg'
+import accessories13 from '../assets/images/Accessories/accessories-13.jpg'
+
 import hospitality1 from '../assets/images/Hospitality/hospitality-1.jpg'
 import hospitality2 from '../assets/images/Hospitality/hospitality-2.jpg'
 import hospitality3 from '../assets/images/Hospitality/hospitality-3.jpg'
@@ -97,6 +132,18 @@ import hospitality7 from '../assets/images/Hospitality/hospitality-7.jpg'
 import hospitality8 from '../assets/images/Hospitality/hospitality-8.jpg'
 import hospitality9 from '../assets/images/Hospitality/hospitality-9.jpg'
 import hospitality10 from '../assets/images/Hospitality/hospitality-10.jpg'
+
+import tech1 from '../assets/images/Tech/tech-1.jpg'
+import tech2 from '../assets/images/Tech/tech-2.jpg'
+import tech3 from '../assets/images/Tech/tech-3.jpg'
+import tech4 from '../assets/images/Tech/tech-4.jpg'
+import tech5 from '../assets/images/Tech/tech-5.jpg'
+import tech6 from '../assets/images/Tech/tech-6.jpg'
+import tech7 from '../assets/images/Tech/tech-7.jpg'
+import tech8 from '../assets/images/Tech/tech-8.jpg'
+import tech9 from '../assets/images/Tech/tech-9.jpg'
+import tech10 from '../assets/images/Tech/tech-10.jpg'
+import tech11 from '../assets/images/Tech/tech-11.jpg'
 
 import health1 from '../assets/images/Health/health-1.jpg'
 import health2 from '../assets/images/Health/health-2.jpg'
@@ -117,6 +164,9 @@ import corporate6 from '../assets/images/Corporate/corporate-6.jpg'
 import corporate7 from '../assets/images/Corporate/corporate-7.jpg'
 import corporate8 from '../assets/images/Corporate/corporate-8.jpg'
 import corporate9 from '../assets/images/Corporate/corporate-9.jpg'
+
+import other1 from '../assets/images/Other/other-1.jpg'
+import other2 from '../assets/images/Other/other-2.jpg'
 
 import img from '../assets/images/Drink_Bottles/bottles-1.jpeg'
 
@@ -167,14 +217,23 @@ const productList = {
     product1: { name: 'Tote', image: tote1 },
   },
   'Backpacks & Bags': {
-    product1: {
-      name: 'Laptop',
-      image: img,
-    },
-    product2: {
-      name: 'Smartphone',
-      image: img,
-    }
+    product1: { name: 'Backpack', image: backpack1 },
+    product2: { name: 'Backpack', image: backpack2 },
+    product3: { name: 'Backpack', image: backpack3 },
+    product4: { name: 'Backpack', image: backpack4 },
+    product5: { name: 'Backpack', image: backpack5 },
+    product6: { name: 'Backpack', image: backpack6 },
+    product7: { name: 'Backpack', image: backpack7 },
+    product8: { name: 'Backpack', image: backpack8 },
+    product9: { name: 'Backpack', image: backpack9 },
+    product10: { name: 'Backpack', image: backpack10 },
+    product11: { name: 'Backpack', image: backpack11 },
+    product12: { name: 'Backpack', image: backpack12 },
+    product13: { name: 'Backpack', image: backpack13 },
+    product14: { name: 'Backpack', image: backpack14 },
+    product15: { name: 'Backpack', image: backpack15 },
+    product16: { name: 'Backpack', image: backpack16 },
+    product17: { name: 'Backpack', image: backpack17 },
   },
   'Notebooks & Pens': {
     product1: { name: 'Notebook', image: notebook1 },
@@ -240,34 +299,36 @@ const productList = {
     }
   },
   'Custom Gifts': {
-    product1: {
-      name: 'Laptop',
-      image: img,
-    },
-    product2: {
-      name: 'Smartphone',
-      image: img,
-    }
+    product1: { name: 'Custom', image: custom1 },
+    product2: { name: 'Custom', image: custom2 },
   },
   'Accessories': {
-    product1: {
-      name: 'Laptop',
-      image: img,
-    },
-    product2: {
-      name: 'Smartphone',
-      image: img,
-    }
+    product1: { name: 'Accessories', image: accessories1 },
+    product2: { name: 'Accessories', image: accessories2 },
+    product3: { name: 'Accessories', image: accessories3 },
+    product4: { name: 'Accessories', image: accessories4 },
+    product5: { name: 'Accessories', image: accessories5 },
+    product6: { name: 'Accessories', image: accessories6 },
+    product7: { name: 'Accessories', image: accessories7 },
+    product8: { name: 'Accessories', image: accessories8 },
+    product9: { name: 'Accessories', image: accessories9 },
+    product10: { name: 'Accessories', image: accessories10 },
+    product11: { name: 'Accessories', image: accessories11 },
+    product12: { name: 'Accessories', image: accessories12 },
+    product13: { name: 'Accessories', image: accessories13 },
   },
   'Tech': {
-    product1: {
-      name: 'Laptop',
-      image: img,
-    },
-    product2: {
-      name: 'Smartphone',
-      image: img,
-    }
+    product1: { name: 'Tech', image: tech1 },
+    product2: { name: 'Tech', image: tech2 },
+    product3: { name: 'Tech', image: tech3 },
+    product4: { name: 'Tech', image: tech4 },
+    product5: { name: 'Tech', image: tech5 },
+    product6: { name: 'Tech', image: tech6 },
+    product7: { name: 'Tech', image: tech7 },
+    product8: { name: 'Tech', image: tech8 },
+    product9: { name: 'Tech', image: tech9 },
+    product10: { name: 'Tech', image: tech10 },
+    product11: { name: 'Tech', image: tech11 },
   },
   'Hospitality': {
     product1: { name: 'Hospitality', image: hospitality1 },
@@ -334,14 +395,8 @@ const productList = {
     product9: { name: 'Corporate', image: corporate9 },
   },
   'Others': {
-    product1: {
-      name: 'Laptop',
-      image: img,
-    },
-    product2: {
-      name: 'Smartphone',
-      image: img,
-    }
+    product1: { name: 'Others', image: other1 },
+    product2: { name: 'Others', image: other2 },
   },
 }
 

@@ -58,20 +58,24 @@ export default function Footer() {
 
             </div>
           </div>
-
         </div>
-
-        
+        <div className="row text-center text-black pt-3 pb-3">
+          <div className="col-12 mt-1 mb-2 mt-sm-2 mb-sm-3 ">
+            <div className="mt-4">
+              <a className="growigh text-primary" href="https://www.growigh.com" target="_blank" rel="noopener noreferrrer">Developed and Maintained by  <span className="growigh__name">Gro<span className="growigh__name__w">w</span>igh</span></a>
+            </div>
+          </div>
+        </div>
 
       </div>
 
-      <a className="btt btt__whatsapp shadow rounded-circle" href="https://api.whatsapp.com/send/?phone=61415816522&text&app_absent=0" target="_blank" rel="noopener noreferrrer">
+      {/* <a className="btt btt__whatsapp shadow rounded-circle" href="https://api.whatsapp.com/send/?phone=61415816522&text&app_absent=0" target="_blank" rel="noopener noreferrrer">
         <FontAwesomeIcon className="icon-whatsapp" icon={faWhatsapp} />
       </a>
 
       <a className="btt btt__chevron-up shadow rounded-circle" href="#header">
         <FontAwesomeIcon className="icon-chevron-up" icon={faChevronUp} />
-      </a>
+      </a> */}
     </footer>
   )
 }

@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import dropdownBtnImage from '../assets/images/dropdown.svg'
+import dropdownBtnImage from '../../assets/images/dropdown.svg'
 import { IProductNavBar } from '../../interface'
 
 export default function ProductNavBar({ productList}: IProductNavBar) {

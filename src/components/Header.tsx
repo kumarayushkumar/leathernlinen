@@ -2,16 +2,16 @@ import { Link } from 'react-router-dom'
 import Logo from './Logo'
 import { Hamburger } from '../assets/images/icon'
 import { useState } from 'react'
-import productList from '../data/productList';
+import productList from '../data/productList'
 
 export default function Header() {
   const [nav, setnav] = useState(false);
   const navhandler = () => {
     setnav(!nav)
   }
-  const handleScrollToSection = (sectionId: string , offset?: number) => {
+  const handleScrollToSection = (sectionId: string, offset?: number) => {
     const section = document.getElementById(sectionId);
-    const headerOffset = offset!=null?offset:50;
+    const headerOffset = offset != null ? offset : 50;
     if (section != null) {
       const elementPosition = section.getBoundingClientRect().top;
       const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
@@ -33,7 +33,7 @@ export default function Header() {
             <div className="dropdown">
               <li><Link to="/product">Products</Link></li>
 
-              <div className="dropdown-content">
+              {/* <div className="dropdown-content">
                 <div className="row px-2">
                   <div className="col-6 p-2">
                     {Object.entries(productList).map(([productType]) => (
@@ -55,8 +55,7 @@ export default function Header() {
                     <Link to="/products/#headphones">Headphones</Link>
                   </div>
                 </div>
-
-              </div>
+              </div> */}
 
             </div>
             <li><Link to="/Services">Services</Link></li>
@@ -67,9 +66,9 @@ export default function Header() {
               <div className="dropdown-content w-auto">
                 <div className="row px-2">
                   <div className="col-12 p-2 vertical-line">
-                    <Link to="#whoweare" onClick={() => handleScrollToSection("whoweare")}>Who We Are?</Link>
-                    <Link to="#whymerchendise" onClick={() => handleScrollToSection("whymerchendise")}>Why merchendise & gift</Link>
-                    <Link to="#doyouknowthat" onClick={() => handleScrollToSection("doyouknowthat" ,150)}>Why to choose us</Link>
+                    <Link to="/#whoweare" onClick={() => handleScrollToSection("whoweare")}>Who We Are?</Link>
+                    <Link to="/#whymerchendise" onClick={() => handleScrollToSection("whymerchendise")}>Why merchendise & gift</Link>
+                    <Link to="/#doyouknowthat" onClick={() => handleScrollToSection("doyouknowthat", 150)}>Why to choose us</Link>
                     <Link to="/" onClick={() => handleScrollToSection("testimonial")}>Testimonials</Link>
                     <Link to="/" onClick={() => handleScrollToSection("/")}>our promise & commitment</Link>
                     <Link to="/">What we offer</Link>
