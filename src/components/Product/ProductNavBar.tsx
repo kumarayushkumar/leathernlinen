@@ -1,21 +1,8 @@
 import { useState } from 'react'
 import dropdownBtnImage from '../assets/images/dropdown.svg'
+import { IProductNavBar } from '../../interface'
 
-type ProductList = {
-  [key: string]: {
-    [key: string]: {
-      name: string
-      image: string
-      price: number
-    }
-  }
-}
-
-interface ProductNavBarProps {
-  productList: ProductList
-}
-
-function ProductNavBar({ productList }: ProductNavBarProps) {
+export default function ProductNavBar({ productList}: IProductNavBar) {
   const [activeIndex, setActiveIndex] = useState(0)
   const [isHidden, setIsHidden] = useState(false)
 
@@ -60,5 +47,3 @@ function ProductNavBar({ productList }: ProductNavBarProps) {
     </section>
   )
 }
-
-export default ProductNavBar

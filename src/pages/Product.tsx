@@ -7,7 +7,7 @@ import productList from "../data/productList"
 export default function Product() {
   return (
     <>
-      <Header productList={productList} />
+      <Header />
 
       <section id="product">
         <div className="container-fluid">
