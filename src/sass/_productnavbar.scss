@@ -4,8 +4,13 @@
 .navbar {
   position: sticky;
   top: 0;
+  
 }
-
+.col-2{
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+}
 .product_left {
   ul {
     padding: 0;
@@ -46,7 +51,7 @@
   }
 
   .list {
-    height: 100rem;
+    height: 2.1rem * 21;
     min-width: 15rem;
     transition-duration: 0.5s;
     overflow: hidden;

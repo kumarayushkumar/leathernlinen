@@ -31,12 +31,12 @@ export default function Header() {
           <ul>
             <li><Link to="/product">Products</Link></li>
             <div className="dropdown">
-              <li><Link to="/Services">Services</Link></li>
+              <li> <Link to="/Printing">Printing</Link></li>
 
               <div className="dropdown-content">
                 <div className="row px-2">
                   <div className="col-12 p-2 vertical-line">
-                    <Link to="/Services">Printing</Link>
+                    <Link to="/Printing">Printing</Link>
                     <Link to="/#whymerchendise">Embroidery</Link>
                     <Link to="/#doyouknowthat">product design and artwork</Link>
                   </div>

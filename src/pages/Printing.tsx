@@ -1,9 +1,8 @@
-import React from 'react'
 import { DefaultPlayer as Video } from 'react-html5video';
 import 'react-html5video/dist/styles.css';
 import vid from '../assets/videos/video.mp4';
 import Header from '../components/Header';
-function Services() {
+function Printing() {
   return (
     <>
     <Header/>
@@ -21,4 +20,4 @@ function Services() {
   )
 }
 
-export default Services
+export default Printing
