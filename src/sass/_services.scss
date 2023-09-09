@@ -1,0 +1,11 @@
+#services {
+  .video {
+    display: flex;
+    height: 40vw;
+    justify-content: center;
+    .rh5v-DefaultPlayer_component {
+      height: 100%;
+      width: 100%;
+    }
+  }
+}

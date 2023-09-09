@@ -3,7 +3,6 @@
 
 header {
   background-color: $white;
-  text-align: center;
   font-family: "Lead", "sans-serif";
   width: 100%;
   display: flex;
@@ -69,6 +68,7 @@ nav {
       display: inline;
       a{
         font-size: 1rem;
+        font-weight: 600;
         font-family: 'Font';
         color: #4c4c4c;
       }
@@ -90,9 +90,7 @@ nav {
     text-transform: uppercase;
     transition-duration: 0.2s;
 
-    &:hover {
-      scale: 1.05;
-    }
+    
   }
 
   .dropdown {
@@ -118,14 +116,12 @@ nav {
       color: black;
       text-decoration: none;
       display: inline-block;
-      font-size: 1.125rem;
-      font-weight: 600;
+      font-size: 0.9rem;
+      font-weight: 500;
       display: block;
+      font-family: "Font";
     }
 
-    a:hover {
-      scale: 1.1;
-    }
   }
 
   .dropdown:hover .dropdown-content {

@@ -5,6 +5,8 @@ import Product from './pages/Product.tsx'
 import ContactUs from './pages/ContactUs.tsx'
 
 import './sass/style.scss'
+import Ourpromise from './pages/OurPromise.tsx'
+import Services from './pages/Services.tsx'
 
 ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
   <BrowserRouter>
@@ -12,6 +14,8 @@ ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
       <Route path="/" element={<Home />} />
       <Route path="/product" element={<Product />} />
       <Route path="/contact-us" element={<ContactUs />} />
+      <Route path="/OurPromise" element={<Ourpromise/>} />
+      <Route path="/Services" element={<Services/>} />
     </Routes>
   </BrowserRouter>
 )
