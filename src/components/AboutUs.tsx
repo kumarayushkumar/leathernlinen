@@ -1,4 +1,4 @@
-import Whoweare from "./Whoweare"
+import WhoWeAre from "./Whoweare"
 import WhyChooseUs from "./WhyChooseUs"
 import WhyMerchenDise from "./WhyMerchenDise"
 import DoYouKnowThat from "./DoYouKnowThat"
@@ -14,7 +14,7 @@ import AdvertisingSpeciality from "./AdvertisingSpeciality"
 export default function AboutUs() {
   return (
     <>
-      <Whoweare />
+      <WhoWeAre />
       <WhyMerchenDise />
       <DoYouKnowThat />
       <AdvertisingSpeciality />

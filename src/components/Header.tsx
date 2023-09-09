@@ -56,8 +56,8 @@ export default function Header() {
                     <Link to="/#whymerchendise" onClick={() => handleScrollToSection("whymerchendise")}>Why merchendise & gift</Link>
                     <Link to="/#doyouknowthat" onClick={() => handleScrollToSection("doyouknowthat", 150)}>Why to choose us</Link>
                     <Link to="/" onClick={() => handleScrollToSection("testimonial")}>Testimonials</Link>
-                    <Link to="/OurPromise">our promise & commitment</Link>
-                    <Link to="/">What we offer</Link>
+                    <Link to="/our-promise">our promise & commitment</Link>
+                    <Link to="/our-promise/#what-we-offer">What we offer</Link>
 
                   </div>
                 </div>

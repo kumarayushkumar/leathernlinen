@@ -1,4 +1,5 @@
 import testimonials from '../data/testimonial.ts'
+
 export default function Testimonial() {
   return (
     <section className="testimonial" id="testimonial">

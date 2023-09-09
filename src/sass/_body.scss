@@ -6,11 +6,6 @@
     format("truetype");
 }
 
-@font-face {
-  font-family: "Lead";
-  src: url("../assets/fonts/Oswald-VariableFont_wght.ttf") format("truetype");
-}
-
 * {
   margin: 0;
   box-sizing: border-box;
@@ -34,8 +29,7 @@
   span {
     font-weight: 500;
     font-size: 2.5rem;
-    font-family: "Lead", "sans-serif";
-    
+    font-family: "Font", "sans-serif";
   }
   .merch {
     font-size: 2rem;

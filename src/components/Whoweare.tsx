@@ -1,8 +1,8 @@
 import whoweareimg from '../assets/images/About_Us/who_we_are.png'
 
-export default function Whoweare() {
+export default function WhoWeAre() {
   return (
-    <section className='whoweare' id='whoweare'>
+    <section className="whoweare" id="whoweare">
       <div className="fluid-container d-flex justify-content-around">
         <div className="text">
           <h1 className="heading">Who the hell we are</h1>

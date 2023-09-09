@@ -3,7 +3,7 @@
 
 header {
   background-color: $white;
-  font-family: "Lead", "sans-serif";
+  font-family: "Font", "sans-serif";
   width: 100%;
   display: flex;
   justify-content: center;
@@ -29,21 +29,6 @@ header {
     font-weight: 600;
     padding-top: 0;
   }
-
-  .phone-number {
-    border: 1.5px solid $black;
-    border-radius: 25px;
-    padding: 0.5rem 1.5rem;
-    transition-duration: 0.5s;
-    text-decoration: none;
-    color: $black;
-    font-family: 'Font';
-
-    &:hover {
-      color: $white;
-      background-color: $black;
-    }
-  }
 }
 
 .logo-img {
@@ -61,26 +46,27 @@ nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
+
   ul {
     padding: 0 !important;
     margin-top: 1rem;
+
     li {
       display: inline;
-      a{
-        font-size: 1rem;
-        font-weight: 600;
-        font-family: 'Font';
-        color: #4c4c4c;
-      }
-      a:hover{
-        font-size: 1.2rem;
-      }
+      // a {
+      //   font-size: 1rem;
+      //   font-weight: 500;
+      //   font-family: 'Font';
+      //   color: #4c4c4c;
+      // }
+      // a:hover{
+      //   font-size: 1.1rem;
+      // }
     }
-
   }
 
   a {
-    font-family: "Lead", "sans-serif";
+    font-family: "Font", "sans-serif";
     color: $black;
     text-decoration: none;
     font-size: 1rem;
@@ -88,9 +74,25 @@ nav {
     margin-left: 2rem;
     letter-spacing: 1.5px;
     text-transform: uppercase;
-    transition-duration: 0.2s;
-
+    transition: all 0.1s ease-in-out;
     
+    &:hover {
+      font-size: 1.1rem;
+    }
+  }
+
+  .phone-number {
+    border: 1.5px solid $black;
+    border-radius: 25px;
+    padding: 0.5rem 1.5rem;
+    text-decoration: none;
+    color: $black;
+    font-family: 'Font';
+
+    &:hover {
+      color: $white;
+      background-color: $black;
+    }
   }
 
   .dropdown {
@@ -146,9 +148,9 @@ nav {
         display: block;
         margin-block: 1rem;
 
-        .phone-number {
-          border: none !important;
-        }
+        // .phone-number {
+        //   border: none !important;
+        // }
       }
     }
   }

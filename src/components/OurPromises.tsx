@@ -1,8 +1,9 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faAward,faPenNib,faClipboardUser } from "@fortawesome/free-solid-svg-icons"
-function OurPromises() {
+
+export default function OurPromises() {
   return (
-    <div className="ourpromise" id="ourpromise">
+    <div className="ourpromise" id="our-promise">
       <div className="heading">Our Promises & Commitment</div>
       <div className="content">
         <div className="card">
@@ -48,5 +49,3 @@ function OurPromises() {
     </div>
   )
 }
-
-export default OurPromises

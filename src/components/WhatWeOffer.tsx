@@ -1,7 +1,6 @@
-
-function WhatWeOffer() {
+export default function WhatWeOffer() {
   return (
-    <div className="whatweoffer" id="whatweoffer">
+    <div className="whatweoffer" id="what-we-offer">
       <div className="heading">What We Offer</div>
       <div className="content">
         <div className="card">
@@ -38,5 +37,3 @@ function WhatWeOffer() {
     </div>
   )
 }
-
-export default WhatWeOffer

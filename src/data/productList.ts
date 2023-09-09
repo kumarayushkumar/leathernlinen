@@ -168,7 +168,7 @@ import corporate9 from '../assets/images/Corporate/corporate-9.jpg'
 import other1 from '../assets/images/Other/other-1.jpg'
 import other2 from '../assets/images/Other/other-2.jpg'
 
-import img from '../assets/images/Drink_Bottles/bottles-1.jpeg'
+import img from '../assets/images/bag.jpg'
 
 const productList = {
   'Uniform': {
