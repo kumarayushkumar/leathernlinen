@@ -1,45 +1,74 @@
+import hero from '../assets/images/Contact_us/contact us page.jpg'
 export default function Contact() {
   return (
-    <section id="contact-us">
-      <div className="container">
-
-        <div className="row text-center">
-          <h2 className="display-3 text-white fw-bold mt-3">Contact Us</h2>
-          <p className="fw-light mt-1 mt-md-2 text-white lead">Feel free to leave a message</p>
-        </div>
-
-        <div className="row text-white mt-2 bg-sec">
-          <div className="col-12 col-lg-6 shadow p-4 p-sm-5">
-            <div className="info">
-              <h4 className="display-4 fw-bold">100% Satisfaction Guaranteed</h4>
-              <p className="lh-lg">We do our best to satisfy our clients and</p>
-              <ul className="info__list">
-                <li>Let's start conversation</li>
-                <li>Let us know your requirements</li>
-                <li>We will full fill your requirements</li>
-              </ul>
-            </div>
-          </div>
-
-          <div className="col-12 col-lg-6 bg-white shadow p-4 p-sm-5 ">
-            <div className="form">
-              <h3 className="mb-3 mb-sm-5">Start Your Project</h3>
-              <form action="index1.php" method="POST" className="row">
-                <div className="col-md-12 mb-3"><input type="text" placeholder="Name" name="name" className="form-control shadow form-control-lg" required /></div>
-                <div className="col-md-12 mb-3"><input type="tel" pattern="[0-9]{10}" placeholder="Mobile number" name="mobile" className="form-control shadow form-control-lg" required /></div>
-                <div className="col-lg-12 mb-3"><input type="email" placeholder="Email Address" name="email" className="form-control shadow form-control-lg" required /></div>
-                <div className="col-lg-12 mb-3"><textarea name="message" placeholder="Message" className="form-control shadow form-control-lg" required></textarea></div>
-                <text className="center d-grid mt-1">
-                  <button className="btn btn-primary py-3 fw-bold text-white" type="submit">Submit
-                    {/* <div className="icon fas fa-paper-plane"></div> */}
-                  </button>
-                </text>
-              </form>
-            </div>
-          </div>
-        </div>
+    <div className="contact" id="contact">
+      <div className="hero">
+        <img src={hero} alt="" />
       </div>
-      
-    </section>
+      <div className="fluid-container">
+        <div className="address">
+          <div className="heading">
+            <h3>Contact us</h3>
+            <h3>MERCH N GIFT HQ</h3>
+          </div>
+          <div className="desc">
+            <p>Level 5/1-3 Fitzwilliam St, Parramatta NSW 215</p>
+            <p>P: +61415816522</p>
+            <p>E: naseem.khan10@gmail.com</p>
+            {/* <Socials/> */}
+          </div>
+        </div>
+        <form action="" className="form">
+          <div className="heading">
+            <h3>Leave us your details  and we'll be in touch</h3>
+          </div>
+          <div className="fname">
+            <label htmlFor="fname">First Name</label>
+            <input type="text" id='fname' />
+          </div>
+          <div className="lname">
+            <label htmlFor="lname">Last Name</label>
+            <input type="text" id='lname' />
+          </div>
+          <div className="email">
+            <label htmlFor="email">Email</label>
+            <input type="text" id='email' />
+          </div>
+          <div className="company-name">
+            <label htmlFor="company-name">Company Name</label>
+            <input type="text" id='company-name' />
+          </div>
+          <div className="message">
+            <label htmlFor="message">Your Message</label>
+            <input type="text" id='message' />
+          </div>
+          <div className="review">
+            <label htmlFor="review">How did you hear about us?</label>
+            <select id="review">
+              <option value="0"> </option>
+              <option value="1">X </option>
+            </select>
+          </div>
+
+          <div className="sector">
+            <label htmlFor="sector">Industry sector</label>
+            <select id="sector">
+              <option value="0"> </option>
+              <option value="1">X </option>
+            </select>
+          </div>
+
+          <div className="future-ref">
+            <label htmlFor="future-ref">Please let us know if you wish to recive future marketing communication</label>
+            <select id="future-ref">
+              <option value="0"> </option>
+              <option value="1">X </option>
+            </select>
+          </div>
+
+          <button type="submit" className='submit'>Send</button>
+        </form>
+      </div>
+    </div>
   )
 }

@@ -1,11 +1,93 @@
+$font-color:#afafaf;
 #printing {
-  .video {
-    display: flex;
-    height: 40vw;
-    justify-content: center;
-    .rh5v-DefaultPlayer_component {
-      height: 100%;
+  .hero {
+    position: relative;
+    img {
       width: 100%;
     }
+    .text {
+      position: absolute;
+      top: 40%;
+      left: 5%;
+      color: $font-color;
+      animation: apper 2s forwards;
+      h1 {
+        font-weight: 800;
+        font-size: 5rem;
+        letter-spacing: 4px;
+      }
+      p {
+        width: 65%;
+        font-size: 1.5rem;
+        word-wrap: break-word;
+        letter-spacing: 3px;
+        
+
+      }
+      @keyframes apper {
+        0%{
+          top:30%;
+          opacity: 0;
+        }
+        100%{
+          top:40%;
+          opacity: 1;
+        }
+        
+      }
+    }
   }
+
+  .content{
+    .heading{
+      font-size:1.5rem;
+      font-weight: 500;
+      text-align: center;
+      color: #9f9f9f;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      p{
+        padding-block: 2rem;
+        width:50%;
+        word-wrap: break-word;
+      }
+    }
+    .card{
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      margin-block: 2rem;
+      border: none;
+      overflow: hidden;
+      .image{
+        width: 60%;
+        max-height: 30rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        img{
+          width: 100%;
+          height: 100%;
+        }
+      }
+      .text{
+        width: 40%;
+        .sub-heading{
+          font-weight: 800;
+          margin-left: 2rem;
+        }
+        .card-text{
+          color: #fff;
+          background-color: #9f9f9f;
+          padding: 5%;
+        }
+      }
+    }
+    .card.alternative{
+      flex-direction: row-reverse;
+    }
+  }
+  
 }
