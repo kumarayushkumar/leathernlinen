@@ -1,4 +1,4 @@
-import { IProductList, IProduct } from '../../interface';
+import { IProductList} from '../../interface';
 import ProductTypeSection from './ProductTypeSection';
 
 function ProductContent({ productList }: { productList: IProductList }) {
