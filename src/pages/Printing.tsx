@@ -1,13 +1,13 @@
+import 'react-html5video/dist/styles.css'
+import Header from '../components/Header'
+import img from '../assets/images/Printing/Printing-cover.jpg'
+import printing from '../assets/images/Printing/brochure-design-printing.jpg'
+import flyer from '../assets/images/Printing/flyer 2.jpg'
+import pullupbanner from '../assets/images/Printing/Pull-Up-Banners-Header.jpg'
+import mediawall from '../assets/images/Printing/media-wall-edited.jpg'
+import poster from '../assets/images/Printing/poster 1.jpg'
+import Footer from '../components/Footer'
 
-import 'react-html5video/dist/styles.css';
-import Header from '../components/Header';
-import img from '../assets/images/Printing/Printing-cover.jpg';
-import printing from '../assets/images/Printing/brochure-design-printing.jpg';
-import flyer from '../assets/images/Printing/flyer 2.jpg';
-import pullupbanner from '../assets/images/Printing/Pull-Up-Banners-Header.jpg';
-import mediawall from '../assets/images/Printing/media-wall-edited.jpg';
-import poster from '../assets/images/Printing/poster 1.jpg';
-import Footer from '../components/Footer';
 function Printing() {
   return (
     <>

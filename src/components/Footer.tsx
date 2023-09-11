@@ -2,7 +2,6 @@ import { Link } from 'react-router-dom'
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faFacebookF, faInstagram, faWhatsapp } from '@fortawesome/free-brands-svg-icons'
-import { faChevronUp } from '@fortawesome/free-solid-svg-icons'
 import { faLinkedinIn } from '@fortawesome/free-brands-svg-icons/faLinkedinIn'
 
 import catalogueCover from '../assets/images/catalogue_cover.png'

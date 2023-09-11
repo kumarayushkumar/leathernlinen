@@ -32,10 +32,10 @@ interface IProductCardProps {
 }
 
 function ProductCard({ product }: IProductCardProps) {
-  const formattedPrice = new Intl.NumberFormat('en-US', {
-    style: 'currency',
-    currency: 'USD',
-  }).format(product.price)
+  // const formattedPrice = new Intl.NumberFormat('en-US', {
+  //   style: 'currency',
+  //   currency: 'USD',
+  // }).format(product.price)
 
   return (
     <div className="card mb-5">
@@ -44,7 +44,7 @@ function ProductCard({ product }: IProductCardProps) {
       </div>
       <div className="content">
         <h6>{product.name}</h6>
-        <p>From {formattedPrice} per unit</p>
+        {/* <p>From {formattedPrice} per unit</p> */}
       </div>
     </div>
   )

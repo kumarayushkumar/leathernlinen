@@ -1,13 +1,13 @@
-import { IProductType } from '../../interface'
-import ProductCard from './ProductCard'
+import { IProduct } from '../../interface';
+import ProductCard from './ProductCard';
 
 interface ProductTypeSectionProps {
-  productType: string
-  products: IProductType
+  productType: string;
+  products: { [key: string]: IProduct };
 }
 
 function ProductTypeSection({ productType, products }: ProductTypeSectionProps) {
-  const formattedProductType = productType.replace(/\s/g, '_')
+  const formattedProductType = productType.replace(/\s/g, '_');
 
   return (
     <div className="product-type" key={productType} id={formattedProductType}>
@@ -17,7 +17,7 @@ function ProductTypeSection({ productType, products }: ProductTypeSectionProps) 
         ))}
       </div>
     </div>
-  )
+  );
 }
 
-export default ProductTypeSection
+export default ProductTypeSection;

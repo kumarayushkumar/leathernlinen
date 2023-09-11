@@ -1,3 +1,5 @@
+import { IProductList } from '../interface'
+
 import bottle1 from '../assets/images/Drink_Bottles/bottles-1.jpeg'
 import bottle2 from '../assets/images/Drink_Bottles/bottles-2.jpeg'
 import bottle3 from '../assets/images/Drink_Bottles/bottles-3.jpeg'
@@ -170,9 +172,9 @@ import other2 from '../assets/images/Other/other-2.jpg'
 
 import img from '../assets/images/bag.jpg'
 
-const productList = {
-  'Uniform': {
-  },
+const productList : IProductList  = {
+  // 'Uniform': {
+  // },
   'Drink Bottles': {
     product1: { name: 'Bottle', image: bottle1 },
     product2: { name: 'Bottle', image: bottle2 },

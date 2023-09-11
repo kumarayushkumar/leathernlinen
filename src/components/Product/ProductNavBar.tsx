@@ -1,8 +1,8 @@
 import { useState } from 'react'
 import dropdownBtnImage from '../../assets/images/dropdown.svg'
-import { IProductNavBar } from '../../interface'
+import { IProductList } from '../../interface'
 
-export default function ProductNavBar({ productList}: IProductNavBar) {
+export default function ProductNavBar({ productList }: { productList: IProductList }) {
   const [activeIndex, setActiveIndex] = useState(0)
   const [isHidden, setIsHidden] = useState(false)
 

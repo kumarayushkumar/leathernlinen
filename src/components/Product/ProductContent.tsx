@@ -1,12 +1,7 @@
-// components/ProductContent.tsx
-import { IProductList } from '../../interface'
-import ProductTypeSection from './ProductTypeSection'
+import { IProductList, IProduct } from '../../interface';
+import ProductTypeSection from './ProductTypeSection';
 
-interface IProductContentProps {
-  productList: IProductList
-}
-
-function ProductContent({ productList }: IProductContentProps) {
+function ProductContent({ productList }: { productList: IProductList }) {
   return (
     <section className="product_content">
       <div>
@@ -15,7 +10,7 @@ function ProductContent({ productList }: IProductContentProps) {
         ))}
       </div>
     </section>
-  )
+  );
 }
 
-export default ProductContent
+export default ProductContent;

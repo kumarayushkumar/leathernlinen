@@ -1,7 +1,3 @@
-// type ProductList = {
-//   [key: string]: ProductType
-// }
-
 export default interface IProductContent {
   productList: IProductList
 }
@@ -12,14 +8,24 @@ export interface IProductNavBar {
 
 export interface IProduct {
   name: string
-  price: number
+  price?: number
   image: string
 }
 
-export interface IProductType {
-  [key: string]: IProduct
-}
+// export interface IProductList {
+//   [key: string]: {
+//     [key: string]: IProduct
+//   }
+// }
+
+// export interface IProductList {
+//   [key: string]: IProductType
+// }
 
 export interface IProductList {
-  [key: string]: IProductType
+  [key: string]: IProductCategory;
+}
+
+export interface IProductCategory {
+  [key: string]: IProduct;
 }
