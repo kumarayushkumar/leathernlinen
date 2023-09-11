@@ -3,7 +3,7 @@ import Header from "../components/Header"
 import ProductContent from "../components/Product/ProductContent"
 import ProductNavBar from "../components/Product/ProductNavBar"
 import productList from "../data/productList"
-import img from '../assets/images/bag.jpg'
+import img from '../assets/images/Product/products-cover.jpg'
 export default function Product() {
   return (
     <>
@@ -12,10 +12,10 @@ export default function Product() {
         <div className="hero">
           <img src={img} alt="" />
           <div className="text">
-            Merch can boost morale, create hype, raise revenue, maintain brand loyalty and just makes people feel good.
-
-
-          </div>
+            <div className="heading">Products</div>
+            <div className="content"> Merch can boost morale, create hype, raise revenue, maintain brand loyalty and just makes people feel good.
+</div>
+            </div>
         </div>
         <div className="container-fluid">
           <div className="row">

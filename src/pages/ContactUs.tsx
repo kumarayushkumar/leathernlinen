@@ -7,7 +7,7 @@ export default function ContactUs() {
     <>
       <Header />
       <Contact />
-      {/* <Footer /> */}
+      <Footer />
     </>
   )
 }

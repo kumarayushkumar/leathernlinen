@@ -9,13 +9,13 @@ function DoYouKnowThat() {
           <Tumblerblob fill='#cbc7c8' className='blob-inside' dur="30s" />
         </div>
 
-                <div className="text">
-                    <div className="content">
-                        <p>
-                            "A staggering 88% of individuals affirm that <br />
-                            they have a more lasting recall of brands <br />
-                            when they receive branded merchandise." <br />
-                        </p>
+        <div className="text">
+          <div className="content">
+            <p>
+              "A staggering 88% of individuals affirm that <br />
+              they have a more lasting recall of brands <br />
+              when they receive branded merchandise." <br />
+            </p>
 
             <p>
               "Employing promotional merchandise can <br />
@@ -23,15 +23,15 @@ function DoYouKnowThat() {
               customers by a remarkable 83%."<br />
             </p>
 
-                        <p>
-                            "A substantial 70% of enterprises hold the <br/>
-                            belief that promotional merchandise ra nks <br/>
-                            among the most potent strategies to achieve<br/>
-                            their marketing objectives."<br/>
-                        </p>
-                    </div>
-                </div>
-                <div className="heading">"Do you know that? <br /> The Evidence lies in the figures."</div>
+            <p>
+              "A substantial 70% of enterprises hold the <br />
+              belief that promotional merchandise ra nks <br />
+              among the most potent strategies to achieve<br />
+              their marketing objectives."<br />
+            </p>
+          </div>
+        </div>
+        <div className="heading">"Do you know that? <br /> The Evidence lies in the figures."</div>
 
         <div className="image">
           <img src={img} alt="" />
