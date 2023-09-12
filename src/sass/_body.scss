@@ -6,6 +6,18 @@
     format("truetype");
 }
 
+@font-face {
+  font-family: "Lead1";
+  src: url("../assets/fonts/Raleway-VariableFont_wght.ttf")
+    format("truetype");
+}
+
+@font-face {
+  font-family: "Lead2";
+  src: url("../assets/fonts/Oswald-VariableFont_wght.ttf")
+    format("truetype");
+}
+
 * {
   margin: 0;
   box-sizing: border-box;
