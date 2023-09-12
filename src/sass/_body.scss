@@ -38,16 +38,14 @@
   gap: 2px;
   color: #a9d705;
   font-weight: 600;
-  span {
+  .n {
     font-weight: 500;
     font-size: 2.5rem;
-    font-family: "Font", "sans-serif";
+    font-family: "Lead2";
   }
-  .merch {
+  .merch,.gifts {
     font-size: 2rem;
+    font-family: "Lead1";
   }
-  .gifts {
-    letter-spacing: 2px;
-    font-size: 2rem;
-  }
+   
 }

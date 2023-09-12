@@ -24,7 +24,7 @@ export default function Product() {
               <ProductNavBar productList={productList} />
             </div>
 
-            <div className="col-9">
+            <div className="col-10">
               <ProductContent productList={productList} />
             </div>
           </div>

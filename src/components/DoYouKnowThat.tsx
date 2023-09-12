@@ -5,7 +5,7 @@ function DoYouKnowThat() {
     <div className="doyouknowthat" id="doyouknowthat">
       <div className="center">
         <div className="background">
-          <Tumblerblob fill='#b6ea01' className='blob' dur="28s" />
+          <Tumblerblob fill='#b6ea01' className='blob' dur="30s" />
           <Tumblerblob fill='#cbc7c8' className='blob-inside' dur="30s" />
         </div>
 

@@ -1,18 +1,14 @@
 #hero {
-  overflow: hidden;
+  display: flex;
   align-items: center;
   justify-content: center;
-  .carousel{
-    display:flex;
-    // flex-direction: column-reverse; //1
-    
-
-  }
+  position: relative;
   .text{
-    position: absolute; //2
+    position: absolute; 
+    top: 0;
     z-index: 10;
     color:#cdcec8;
-    margin-left: 3rem;
+    margin-left: 4rem;
     width: 80%;
     animation: apper 2s forwards;
     h1{
@@ -42,32 +38,37 @@
     }
     
   }
- 
-  .carousel-item {
-    height: 40vw;
-    position: relative;
-    img {
-      position: absolute;
-      // left: 20%; //3
-      right: 0%;
+  .content{
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    height: 90vh;
+
+    .image{
       height: 100%;
-      
-
-    }
-  }
-
-  @media screen and (max-width:1380px){
-    .carousel{
-      flex-direction: column-reverse;
-    }
-    .text{
-      position: initial;
-    }
-    .carousel-item{
+      width: 60%;
+      display: none;
+      animation: fadeinout 10s infinite;
       img{
-        left: 20%;
-        right:initial ;
+        margin-right: 1rem;
+        width: 100%;
       }
     }
+    .image.active{
+      display: block;
+    }
+  }
+  @keyframes fadeinout{
+    0%,100%{
+      margin-top: -10%;
+      opacity: 0;
+    }
+    20%,80%{
+      margin-top:0%;
+      top: 15%;
+      opacity: 1;
+    }
+    
   }
 }

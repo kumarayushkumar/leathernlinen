@@ -8,7 +8,7 @@ import img8 from "../assets/images/hero_slider/slider-8.jpg"
 // import img9 from "../assets/images/hero_slider/slider-9.jpg"
 import img10 from "../assets/images/hero_slider/slider-10.jpg"
 import img11 from "../assets/images/hero_slider/slider-11.jpg"
-import img12 from "../assets/images/hero_slider/slider-12.webp"
+import img12 from "../assets/images/hero_slider/slider-12.jpg"
 
 const sliderimg = [
   { img: img1, status: "active" },

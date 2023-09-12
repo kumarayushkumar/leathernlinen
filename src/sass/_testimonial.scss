@@ -2,15 +2,19 @@
 @use './body' as *;
 
 #testimonial{
+  margin-top: 5rem;
   background-color: $primary;
-  padding-block: 2rem;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  position: relative;
   .heading{
-    font-size: 1.8rem;
+    font-size: 2.25rem;
+    font-weight: 600;
     width: 50%;
+    position: absolute;
+    top: -2rem;
     text-align: center;
   }
  .courosal-wrap{
@@ -23,7 +27,7 @@
   .content{
     font-size: 1.2rem;
     padding-block: 2rem;
-    padding-bottom: 5rem;
+    padding-bottom: 2.5rem;
   }
   
   .imagelogo{
@@ -31,7 +35,8 @@
     display: flex;
     justify-content: center;
     img{
-      height: 100%;
+
+      height: 70%;
       max-width: 100%;
     }
   }

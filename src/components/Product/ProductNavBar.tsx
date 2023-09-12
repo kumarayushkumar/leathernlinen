@@ -6,11 +6,18 @@ export default function ProductNavBar({ productList }: { productList: IProductLi
   const [activeIndex, setActiveIndex] = useState(0)
   const [isHidden, setIsHidden] = useState(false)
 
-  const handleScrollToSection = (sectionId: string, index: number) => {
-    const section = document.getElementById(sectionId)
+  const handleScrollToSection = (sectionId: string, index: number,offset?: number) => {
     setActiveIndex(index)
-    if (section !== null) {
-      section.scrollIntoView({ behavior: 'smooth' })
+    const section = document.getElementById(sectionId);
+    const headerOffset = offset != null ? offset : 50;
+    if (section != null) {
+      const elementPosition = section.getBoundingClientRect().top;
+      const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+
+      window.scrollTo({
+        top: offsetPosition,
+        behavior: "smooth"
+      });
     }
   }
 
@@ -34,7 +41,7 @@ export default function ProductNavBar({ productList }: { productList: IProductLi
               {Object.keys(productList).map((productType, index) => (
                 <li
                   key={productType}
-                  onClick={() => handleScrollToSection(productType.replace(/\s/g, '_'), index)}
+                  onClick={() => handleScrollToSection(productType.replace(/\s/g, '_'), index,75)}
                   className={`element ${activeIndex === index ? 'active' : ''}`}
                 >
                   {productType}

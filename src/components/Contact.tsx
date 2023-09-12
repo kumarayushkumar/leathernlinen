@@ -4,6 +4,9 @@ export default function Contact() {
     <div className="contact" id="contact">
       <div className="hero">
         <img src={hero} alt="" />
+        <div className="text">
+          <h1>Contact Us</h1>
+        </div>
       </div>
       <div className="fluid-container">
         <div className="address">
@@ -12,7 +15,7 @@ export default function Contact() {
             <h3>MERCH N GIFT HQ</h3>
           </div>
           <div className="desc">
-            <p>Level 5/1-3 Fitzwilliam St, Parramatta NSW 215</p>
+            <p>Level 5/1-3 Fitzwilliam St, Parramatta NSW 2150</p>
             <p>P: +61415816522</p>
             <p>E: naseem.khan10@gmail.com</p>
             {/* <Socials/> */}

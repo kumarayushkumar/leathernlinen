@@ -6,6 +6,7 @@ function ProductContent({ productList }: { productList: IProductList }) {
     <section className="product_content">
       <div>
         {Object.entries(productList).map(([productType, products]) => (
+          
           <ProductTypeSection key={productType} productType={productType} products={products} />
         ))}
       </div>

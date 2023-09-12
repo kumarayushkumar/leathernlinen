@@ -1,4 +1,4 @@
-$font-color:#afafaf;
+@use 'custom' as *;
 #printing {
   .hero {
     position: relative;
@@ -10,7 +10,7 @@ $font-color:#afafaf;
       top: 40%;
       left: 5%;
       color: $font-color;
-      animation: apper 2s forwards;
+      animation: cover-apper 2s forwards;
       h1 {
         font-weight: 800;
         font-size: 5rem;
@@ -24,7 +24,7 @@ $font-color:#afafaf;
         
 
       }
-      @keyframes apper {
+      @keyframes cover-apper {
         0%{
           top:30%;
           opacity: 0;
@@ -66,7 +66,7 @@ $font-color:#afafaf;
         max-height: 30rem;
         display: flex;
         justify-content: center;
-        align-items: center;
+        align-items:center;
         img{
           width: 100%;
           height: 100%;

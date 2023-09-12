@@ -71,7 +71,9 @@
     width: 70%;
     margin-top: 3%;
     .caption {
+      padding-right: 15%;
       width: 100%;
+      text-align: center;
       margin-left: 2rem;
     }
     .illustration {
@@ -221,11 +223,11 @@
     justify-content: space-around;
     .background {
       z-index: -5;
-      width: 60%;
+      width: 50%;
 
       position: absolute;
-      top: -50%;
-      left: -5%;
+      top: -20%;
+      left: 5%;
 
       display: flex;
       justify-content: center;
@@ -258,6 +260,7 @@
       }
     }
     .image {
+      margin-left: 10rem;
       width: 35rem;
       height: 35rem;
       img {

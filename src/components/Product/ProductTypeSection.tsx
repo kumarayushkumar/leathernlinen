@@ -11,6 +11,7 @@ function ProductTypeSection({ productType, products }: ProductTypeSectionProps) 
 
   return (
     <div className="product-type" key={productType} id={formattedProductType}>
+      <div className="heading">Would you like to add <span>{productType}</span> to your enquiry?</div>
       <div className="arr_card mt-4">
         {Object.entries(products).map(([productKey, product]) => (
           <ProductCard key={productKey} product={product} />

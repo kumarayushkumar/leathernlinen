@@ -29,25 +29,8 @@ export default function Header() {
         <nav className={nav ? "active" : ""}>
 
           <ul>
-            <li><Link to="/product">Products</Link></li>
-            <div className="dropdown">
-              <li> <Link to="/Printing">Printing</Link></li>
-
-              <div className="dropdown-content">
-                <div className="row px-2">
-                  <div className="col-12 p-2 vertical-line">
-                    <Link to="/Printing">Printing</Link>
-                    <Link to="/#whymerchendise">Embroidery</Link>
-                    <Link to="/#doyouknowthat">product design and artwork</Link>
-                  </div>
-                </div>
-
-              </div>
-
-            </div>
-            {/* <Link to="/#latest-work">Clients</Link> */}
-            <div className="dropdown">
-              <li><Link to="/#about-us">About Us</Link></li>
+          <div className="dropdown">
+              <li ><Link to="/#about-us" className='navbutton'>About Us</Link></li>
 
               <div className="dropdown-content">
                 <div className="row px-2">
@@ -65,7 +48,25 @@ export default function Header() {
               </div>
 
             </div>
-            <li><Link to="/contact-us">Contact Us</Link></li>
+            <li><Link to="/product" className='navbutton'>Products</Link></li>
+            <div className="dropdown">
+              <li> <Link to="/Printing" className='navbutton'>Printing</Link></li>
+
+              <div className="dropdown-content">
+                <div className="row px-2">
+                  <div className="col-12 p-2 vertical-line">
+                    <Link to="/Printing">Printing</Link>
+                    <Link to="/#whymerchendise">Embroidery</Link>
+                    <Link to="/#doyouknowthat">product design and artwork</Link>
+                  </div>
+                </div>
+
+              </div>
+
+            </div>
+            {/* <Link to="/#latest-work">Clients</Link> */}
+           
+            <li><Link to="/contact-us" className='navbutton'>Contact Us</Link></li>
             <a href="tel: +61415816522" className='phone-number'>P: +61415816522</a>
 
           </ul>
