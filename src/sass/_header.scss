@@ -4,7 +4,7 @@
 header {
   background-color: $white;
   font-family: "Font", "sans-serif";
-  width: 100%;
+  width:100%;
   display: flex;
   justify-content: center;
   z-index: 99;
@@ -145,6 +145,7 @@ nav {
     transform: translateX(-50%);
     display: block;
     ul {
+      flex-direction:column;
       li {
         display: block;
         margin-block: 1rem;

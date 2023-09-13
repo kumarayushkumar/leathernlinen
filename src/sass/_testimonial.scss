@@ -19,10 +19,17 @@
   }
  .courosal-wrap{
   width: 40%;
-  @media screen and (max-width: 952px) {
-    width: 80%;
-  }
+  
  }
+ @media screen and (max-width: 952px) {
+  .courosal-wrap{
+    margin-top: 3rem;
+    width: 80%;
+   }
+   .heading{
+    width: 80%;
+   }
+}
 
   .content{
     font-size: 1.2rem;

@@ -4,10 +4,7 @@ function DoYouKnowThat() {
   return (
     <div className="doyouknowthat" id="doyouknowthat">
       <div className="center">
-        <div className="background">
-          <Tumblerblob fill='#b6ea01' className='blob' dur="30s" />
-          <Tumblerblob fill='#cbc7c8' className='blob-inside' dur="30s" />
-        </div>
+        
 
         <div className="text">
           <div className="content">
@@ -34,6 +31,10 @@ function DoYouKnowThat() {
         <div className="heading">"Do you know that? <br /> The Evidence lies in the figures."</div>
 
         <div className="image">
+        <div className="background">
+          <Tumblerblob fill='#b6ea01' className='blob' dur="30s" />
+          <Tumblerblob fill='#cbc7c8' className='blob-inside' dur="30s" />
+        </div>
           <img src={img} alt="" />
         </div>
       </div>

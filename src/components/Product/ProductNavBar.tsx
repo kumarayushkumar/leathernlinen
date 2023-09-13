@@ -2,12 +2,26 @@ import { useState } from 'react'
 import dropdownBtnImage from '../../assets/images/dropdown.svg'
 import { IProductList } from '../../interface'
 
-export default function ProductNavBar({ productList }: { productList: IProductList }) {
-  const [activeIndex, setActiveIndex] = useState(0)
-  const [isHidden, setIsHidden] = useState(false)
+interface ProductNavBarProps {
+  merchendiseProductList: IProductList;
+  uniformProductList: IProductList;
+}
 
-  const handleScrollToSection = (sectionId: string, index: number,offset?: number) => {
-    setActiveIndex(index)
+const ProductNavBar: React.FC<ProductNavBarProps> = ({ merchendiseProductList, uniformProductList }) => {
+  const [catactiveIndex, setcatActiveIndex] = useState(9999)
+  const [uniactiveIndex, setuniActiveIndex] = useState(0)
+  const [isHidden, setIsHidden] = useState(true)
+  const [uniformisHidden, setuniformIsHidden] = useState(true)
+
+  const handleScrollToSection = (sectionId: string, index: number,offset?: number,uniform?: boolean) => {
+    if(!uniform){
+      setcatActiveIndex(index)
+      setuniActiveIndex(9999)
+    }
+    else{
+      setuniActiveIndex(index)
+      setcatActiveIndex(9999)
+    }
     const section = document.getElementById(sectionId);
     const headerOffset = offset != null ? offset : 50;
     if (section != null) {
@@ -26,6 +40,31 @@ export default function ProductNavBar({ productList }: { productList: IProductLi
       <div className="container-fluid">
         <div className="row">
           <div className="col-10 product_left">
+          <div className="uniform">
+           <button
+              className={`cat_btn ${uniformisHidden? 'active' : ''}`}
+              onClick={() => {
+                setuniformIsHidden(!uniformisHidden)
+              }}
+            >
+              Uniforms
+              <span className={`btn ${uniformisHidden? 'active' : ''}`}>
+                <img src={dropdownBtnImage} alt="Dropdown Icon" />
+              </span>
+            </button>
+            <ul className={`mt-2 list uniform ${uniformisHidden? 'active' : ''}`}>
+              {Object.keys(uniformProductList).map((productType, index) => (
+                <li
+                  key={productType}
+                  onClick={() => handleScrollToSection(productType.replace(/\s/g, '_'), index,75,true)}
+                  className={`element ${uniactiveIndex === index ? 'active' : ''}`}
+                >
+                  {productType}
+                </li>
+              ))}
+            </ul>
+           </div>
+            <div className="categories">
             <button
               className={`cat_btn ${isHidden ? 'active' : ''}`}
               onClick={() => {
@@ -38,19 +77,22 @@ export default function ProductNavBar({ productList }: { productList: IProductLi
               </span>
             </button>
             <ul className={`mt-2 list ${isHidden ? 'active' : ''}`}>
-              {Object.keys(productList).map((productType, index) => (
+              {Object.keys(merchendiseProductList).map((productType, index) => (
                 <li
                   key={productType}
                   onClick={() => handleScrollToSection(productType.replace(/\s/g, '_'), index,75)}
-                  className={`element ${activeIndex === index ? 'active' : ''}`}
+                  className={`element ${catactiveIndex === index ? 'active' : ''}`}
                 >
                   {productType}
                 </li>
               ))}
             </ul>
+            </div>
+           
           </div>
         </div>
       </div>
     </section>
   )
 }
+export default ProductNavBar

@@ -2,7 +2,8 @@ import Footer from "../components/Footer"
 import Header from "../components/Header"
 import ProductContent from "../components/Product/ProductContent"
 import ProductNavBar from "../components/Product/ProductNavBar"
-import productList from "../data/productList"
+import { merchendiseProductList } from "../data/productList"
+import { uniformProductList } from "../data/productList";
 import img from '../assets/images/Product/products-cover.jpg'
 
 export default function Product() {
@@ -21,11 +22,11 @@ export default function Product() {
         <div className="container-fluid">
           <div className="row">
             <div className="col-2">
-              <ProductNavBar productList={productList} />
+              <ProductNavBar merchendiseProductList={merchendiseProductList} uniformProductList={uniformProductList} />
             </div>
 
             <div className="col-10">
-              <ProductContent productList={productList} />
+              <ProductContent merchendiseProductList={merchendiseProductList} uniformProductList={uniformProductList} />
             </div>
           </div>
         </div>
