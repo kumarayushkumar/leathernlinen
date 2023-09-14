@@ -1,29 +1,37 @@
 @use 'custom' as *;
+
 #product {
   background-color: rgba($tertiary, 0.85);
 
-  a { text-decoration: none; }
-  .hero{
+  a {
+    text-decoration: none;
+  }
+
+  .hero {
     display: flex;
     justify-content: space-around;
     align-items: center;
     margin: auto;
     animation: cover-apper 5s forwards;
     position: relative;
-    img{
+
+    img {
       width: 100%;
     }
+
     .text {
       position: absolute;
       top: 40%;
       left: 5%;
       color: $font-color;
       animation: apper 2s forwards;
+
       .heading {
         font-weight: 800;
         font-size: 5rem;
         letter-spacing: 4px;
       }
+
       .content {
         width: 40%;
         font-size: 1.5rem;
@@ -35,19 +43,21 @@
 }
 
 .product-type {
-  
-  width:100%;
+
+  width: 100%;
+
   .heading {
     margin-top: 1rem;
     padding-block: 1rem;
     font-size: 1.5rem;
     font-family: "Font";
     position: sticky;
-    top:4rem;
+    top: 4rem;
     width: 100%;
     z-index: 98;
     background-color: #faf8f1;
     font-weight: 500;
+
     span {
       color: $primary;
       font-family: 'Lead1';
@@ -60,7 +70,10 @@
     display: flex;
     flex-wrap: wrap;
     width: 100%;
-    &::-webkit-scrollbar { display: none; }
+
+    &::-webkit-scrollbar {
+      display: none;
+    }
 
     .card {
 
@@ -83,7 +96,9 @@
           object-fit: cover;
           height: 100%;
 
-          &:hover { transform: scale(1.1); }
+          &:hover {
+            transform: scale(1.1);
+          }
         }
       }
 
@@ -96,7 +111,9 @@
           font-size: 1.3rem;
         }
 
-        p { margin: 0; }
+        p {
+          margin: 0;
+        }
       }
     }
   }
@@ -104,36 +121,43 @@
 }
 
 @media screen and (max-width: 952px) {
-  .col-2{
+  .col-2 {
     position: sticky;
     top: 3.5rem;
     z-index: 999;
     width: 10%;
   }
- .product-type{
-  margin-top: 4rem;
-  .heading{
-    top:7rem;
-    font-size:1rem ;
-  }
-  .card{
-    width: 40% !important;
-    height: 18rem !important;
-    margin: 0;
-    .content{
-      width: 100% !important;
-      h6{
-        font-size: 1rem !important;
-        
+
+  .product-type {
+    margin-top: 4rem;
+
+    .heading {
+      top: 7rem;
+      font-size: 1rem;
+    }
+
+    .card {
+      width: 40% !important;
+      height: 18rem !important;
+      margin: 0;
+
+      .content {
+        width: 100% !important;
+
+        h6 {
+          font-size: 1rem !important;
+
+        }
       }
     }
   }
- }
-  .content{
+
+  .content {
     font-size: 1.2rem !important;
     width: 50% !important;
   }
-  .hero{
+
+  .hero {
     display: none !important;
   }
 }

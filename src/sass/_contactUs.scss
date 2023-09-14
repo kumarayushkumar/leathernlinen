@@ -1,26 +1,31 @@
 @use 'custom' as *;
-#contact{
-  .hero{
+
+#contact {
+  .hero {
     width: 100%;
     position: relative;
     max-height: 25rem;
     overflow: hidden;
     display: flex;
     align-items: baseline;
-    img{
+
+    img {
       width: 100%;
     }
+
     .text {
       position: absolute;
       top: 40%;
       left: 5%;
       color: $font-color;
       animation: apper 2s forwards;
+
       h1 {
         font-weight: 800;
         font-size: 5rem;
         letter-spacing: 4px;
       }
+
       p {
         width: 65%;
         font-size: 1.5rem;
@@ -29,29 +34,44 @@
       }
     }
   }
-  .fluid-container{
+
+  .fluid-container {
     margin-top: 3rem;
     padding-inline: 3rem;
     display: flex;
     justify-content: space-around;
-    .address,.form{
-      .heading{
-        h3{
+
+    .address,
+    .form {
+      .heading {
+        h3 {
           font-size: 1.5rem;
           font-weight: 700;
           padding-bottom: 2rem;
         }
       }
-      .desc{
-        width:80%;
+
+      .desc {
+        width: 80%;
       }
     }
-    .form{
-      .fname,.lname,.email,.company-name,.message,.review,.sector,.future-ref{
+
+    .form {
+
+      .fname,
+      .lname,
+      .email,
+      .company-name,
+      .message,
+      .review,
+      .sector,
+      .future-ref {
         display: flex;
         flex-direction: column;
         margin: 1rem;
-        input,select{
+
+        input,
+        select {
           border: 1px solid #cfcfcf;
           background-color: #f1f1f1;
           border-radius: 5px;
@@ -59,17 +79,19 @@
           padding: 1.5rem;
           outline: none;
         }
-        label{
+
+        label {
           padding-block: 0.5rem;
         }
 
       }
-      .submit{
+
+      .submit {
         margin: 1rem;
         border: 1px solid rgb(135, 135, 135);
         padding: 0.5rem 1rem;
 
-        &:hover{
+        &:hover {
           background-color: #afafaf;
           color: #fff;
           border: 1px solid #afafaf;

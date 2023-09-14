@@ -2,20 +2,17 @@
 
 @font-face {
   font-family: "Font";
-  src: url("../assets/fonts/Montserrat-VariableFont_wght.ttf")
-    format("truetype");
+  src: url("../assets/fonts/Montserrat-VariableFont_wght.ttf") format("truetype");
 }
 
 @font-face {
   font-family: "Lead1";
-  src: url("../assets/fonts/Raleway-VariableFont_wght.ttf")
-    format("truetype");
+  src: url("../assets/fonts/Raleway-VariableFont_wght.ttf") format("truetype");
 }
 
 @font-face {
   font-family: "Lead2";
-  src: url("../assets/fonts/Oswald-VariableFont_wght.ttf")
-    format("truetype");
+  src: url("../assets/fonts/Oswald-VariableFont_wght.ttf") format("truetype");
 }
 
 * {
@@ -38,17 +35,21 @@
   gap: 2px;
   color: #a9d705;
   font-weight: 600;
+
   .n {
     font-weight: 500;
     font-size: 2.5rem;
     font-family: "Lead2";
   }
-  .merch,.gifts {
+
+  .merch,
+  .gifts {
     font-size: 2rem;
     font-family: "Lead1";
   }
-   
+
 }
-body{
+
+body {
   overflow-x: hidden;
 }

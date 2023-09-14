@@ -6,15 +6,19 @@ footer {
   background-color: $black;
   color: $primary;
 
-  
 
-  a { text-decoration: none; }
+
+  a {
+    text-decoration: none;
+  }
 
   ul {
     list-style: none;
     font-size: 1.2rem;
 
-    li { padding-bottom: 0.675rem; }
+    li {
+      padding-bottom: 0.675rem;
+    }
   }
 }
 
@@ -23,14 +27,18 @@ footer {
   font-size: 1.2rem;
 }
 
-.dowload-catalogue-img { max-width: 120px; }
+.dowload-catalogue-img {
+  max-width: 120px;
+}
 
 .f-social {
   svg {
     font-size: 1rem;
     margin: 0 0.675rem;
 
-    @include media-breakpoint-up(sm) { font-size: 2.5rem; }
+    @include media-breakpoint-up(sm) {
+      font-size: 2.5rem;
+    }
   }
 }
 
@@ -42,7 +50,9 @@ footer {
     color: rgba($white, 0.99);
     font-size: 1.2rem;
 
-    &__w { color: rgba(#ffb428, 0.99); }
+    &__w {
+      color: rgba(#ffb428, 0.99);
+    }
   }
 }
 
@@ -73,14 +83,18 @@ footer {
   bottom: 1rem;
   background-color: $primary;
 
-  @include media-breakpoint-up(sm) { bottom: 1.8rem; }
+  @include media-breakpoint-up(sm) {
+    bottom: 1.8rem;
+  }
 }
 
 .btt__whatsapp {
   bottom: 4rem;
   background-color: #49C95A;
 
-  @include media-breakpoint-up(sm) { bottom: 5.8rem; }
+  @include media-breakpoint-up(sm) {
+    bottom: 5.8rem;
+  }
 }
 
 .icon-chevron-up {

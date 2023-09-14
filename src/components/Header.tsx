@@ -23,13 +23,13 @@ export default function Header() {
   };
 
   return (
-    <header id="header" className="header">
+    <header id="header" className="header shadow">
       <div className="header-content">
         <Logo />
         <nav className={nav ? "active" : ""}>
 
           <ul>
-          <div className="dropdown">
+            <div className="dropdown">
               <li ><Link to="/#about-us" className='navbutton'>About Us</Link></li>
 
               <div className="dropdown-content">
@@ -65,7 +65,7 @@ export default function Header() {
 
             </div>
             {/* <Link to="/#latest-work">Clients</Link> */}
-           
+
             <li><Link to="/contact-us" className='navbutton'>Contact Us</Link></li>
             <a href="tel: +61415816522" className='phone-number'>P: +61415816522</a>
 

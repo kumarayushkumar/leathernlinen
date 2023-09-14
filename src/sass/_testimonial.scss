@@ -1,7 +1,7 @@
 @use './custom' as *;
 @use './body' as *;
 
-#testimonial{
+#testimonial {
   margin-top: 5rem;
   background-color: $primary;
   display: flex;
@@ -9,7 +9,8 @@
   align-items: center;
   justify-content: center;
   position: relative;
-  .heading{
+
+  .heading {
     font-size: 2.25rem;
     font-weight: 600;
     width: 50%;
@@ -17,31 +18,35 @@
     top: -2rem;
     text-align: center;
   }
- .courosal-wrap{
-  width: 40%;
-  
- }
- @media screen and (max-width: 952px) {
-  .courosal-wrap{
-    margin-top: 3rem;
-    width: 80%;
-   }
-   .heading{
-    width: 80%;
-   }
-}
 
-  .content{
+  .courosal-wrap {
+    width: 40%;
+
+  }
+
+  @media screen and (max-width: 952px) {
+    .courosal-wrap {
+      margin-top: 3rem;
+      width: 80%;
+    }
+
+    .heading {
+      width: 80%;
+    }
+  }
+
+  .content {
     font-size: 1.2rem;
     padding-block: 2rem;
     padding-bottom: 2.5rem;
   }
-  
-  .imagelogo{
+
+  .imagelogo {
     height: 10rem;
     display: flex;
     justify-content: center;
-    img{
+
+    img {
 
       height: 70%;
       max-width: 100%;

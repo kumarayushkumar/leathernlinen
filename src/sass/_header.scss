@@ -4,12 +4,13 @@
 header {
   background-color: $white;
   font-family: "Font", "sans-serif";
-  width:100%;
+  width: 100%;
   display: flex;
   justify-content: center;
   z-index: 99;
   position: sticky;
   top: 0;
+
   @media screen and (max-width: 1064px) {
     z-index: 99999;
     position: sticky;
@@ -37,6 +38,7 @@ header {
     max-width: 140px;
   }
 }
+
 .hamburger {
   width: 2rem;
   height: 2rem;
@@ -45,26 +47,29 @@ header {
 
 nav {
   ul {
-    
+
     padding: 0 !important;
     margin-top: 1rem;
 
     display: flex;
     justify-content: space-around;
     align-items: center;
+
     li {
-      max-width:fit-content;
+      max-width: fit-content;
       overflow: hidden;
+
       a {
         font-size: 1rem;
         font-weight: 500;
         font-family: 'Font';
         color: #4c4c4c;
       }
-      a:hover{
+
+      a:hover {
         font-size: 1.1rem;
       }
-      
+
     }
   }
 
@@ -132,6 +137,7 @@ nav {
     display: block;
   }
 }
+
 @media screen and (max-width: 1064px) {
   nav {
     background-color: rgb(231, 231, 231);
@@ -144,8 +150,10 @@ nav {
     transition-duration: 1s;
     transform: translateX(-50%);
     display: block;
+
     ul {
-      flex-direction:column;
+      flex-direction: column;
+
       li {
         display: block;
         margin-block: 1rem;
@@ -156,6 +164,7 @@ nav {
       }
     }
   }
+
   nav.active {
     top: 100%;
   }
