@@ -3,8 +3,7 @@
 
 .navbar {
   position: sticky;
-  top: 4rem;
-  left: 2rem;
+  top: 3.5rem;
   margin-bottom: 50rem;
 }
 
@@ -15,8 +14,6 @@
 }
 
 .product_left {
-  margin-left: 3rem;
-
   ul {
     padding: 0;
     padding-left: 0.5rem;
@@ -55,20 +52,17 @@
     border: none;
   }
 
-
   .list {
     height: 2.1rem * 21;
     min-width: 15rem;
     transition-duration: 0.5s;
     overflow: hidden;
-  }
-
-  .list.uniform {
-    height: 2.3rem * 2;
+    position: absolute;
+    z-index: 50;
   }
 
   .btn {
-    transform: rotate(-180deg);
+    transform: rotate(0deg);
     transition: all 0.5s linear;
     outline: none;
     border: none;
@@ -79,43 +73,6 @@
   }
 
   .btn.active {
-    transform: rotate(0deg)
-  }
-}
-
-@media screen and (max-width: 952px) {
-
-  .uniform,
-  .categories,
-  .navbar {
-    background-color: #faf8f1;
-  }
-
-  .uniform,
-  .categories {
-    min-width: 40%;
-  }
-
-  .product_left {
-    display: flex;
-  }
-
-  .navbar {
-    width: 100%;
-    top: 3.2rem;
-  }
-
-  .row {
-    flex-direction: column;
-    width: 100%;
-
-    .col-2 {
-      height: 1vh;
-      width: 100%;
-    }
-
-    .col-10 {
-      width: 100%;
-    }
+    transform: rotate(-180deg)
   }
 }

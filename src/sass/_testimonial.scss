@@ -18,6 +18,12 @@
     top: -2rem;
     text-align: center;
   }
+ .courosal-wrap{
+  width: 40%;
+  @media screen and (max-width: 952px) {
+    width: 80%;
+  }
+ }
 
   .courosal-wrap {
     width: 40%;

@@ -6,23 +6,6 @@
   background-color: #c3f905;
   width: 100%;
 
-  @media screen and (max-width: 700px) {
-    .d-flex {
-      flex-direction: column-reverse;
-      justify-content: center !important;
-      align-items: center;
-
-      .image {
-        margin-top: 10rem;
-        margin-right: 0;
-      }
-
-      .text {
-        width: 80%;
-      }
-    }
-  }
-
   .text {
     width: 50%;
     margin-left: 1rem;
@@ -37,13 +20,16 @@
 
     .content {
       margin-top: 8rem;
+      p{
+        font-size: 1.2vw;
+        margin-left: 1rem;
+      }
     }
   }
 
   .image {
     margin-right: 1rem;
-    min-width: 23rem;
-
+    width: 50%;
     display: flex;
     justify-content: center;
 
@@ -53,6 +39,56 @@
       height: 100%;
     }
   }
+  @media screen and (max-width:800px) {
+    .text {
+      .heading{
+        font-size: 10vw;
+        margin-left: 0;
+        left: 1rem;
+        width: 80%;
+      }
+      .content {
+        margin-top: 5rem;
+        p{
+          font-size: 2vw;
+        }
+      }
+    }
+    .image{
+      width: 100%;
+    }
+    .d-flex {
+      flex-direction: column-reverse;
+      justify-content: center !important;
+      align-items: center;
+
+      .image {
+        margin-top: 5rem;
+        margin-right: 0;
+      }
+
+      .text {
+        width: 80%;
+      }
+    }
+
+  }
+  @media screen and (max-width:900px){
+    .text {
+      .content {
+        p{
+          font-size: 3vw;
+        }
+      }
+    }
+  }
+  @media screen and (max-width:1200px){
+    .content {
+      p{
+        font-size: 2vw;
+      }
+    }
+  }
 }
 
 #whychooseus {
@@ -60,7 +96,6 @@
   background: linear-gradient(#dcdcdc 75%, #ffffff 25%);
   position: relative;
   padding-top: 4rem;
-
 
   .heading {
     position: absolute;
@@ -82,6 +117,8 @@
     margin-top: 3%;
 
     .caption {
+      padding-right: 15%;
+      width: 100%;
       text-align: center;
       margin-left: 2rem;
     }
@@ -123,7 +160,6 @@
 }
 
 #whymerchendise {
-  overflow: hidden;
   margin-top: 10rem;
   display: flex;
   justify-content: center;
@@ -137,11 +173,11 @@
 
     .background {
       z-index: -5;
-      width: 50rem;
-
+      width: 120%;
+      height: 120%;
       position: absolute;
-      top: -10rem;
-      right: -10rem;
+      top: -10%;
+      right: 0;
 
       display: flex;
       justify-content: center;
@@ -163,7 +199,6 @@
       width: 35rem;
       height: 35rem;
       position: relative;
-
       img {
         height: 100%;
         width: 100%;
@@ -197,6 +232,7 @@
   }
 
   @media screen and (max-width: 952px) {
+    margin-top: 0;
     .center {
       flex-direction: column-reverse;
       align-items: center;
@@ -205,8 +241,7 @@
         margin: auto;
         width: 40rem;
         right: -25%;
-        top: -10%;
-
+        top: 3%;
         .blob {
           height: 100%;
           width: 100%;
@@ -238,9 +273,8 @@
         .content {
           margin-left: 1rem;
         }
-
         .content p:nth-child(odd) {
-          margin-left: 0%;
+          margin-left:0;
         }
       }
     }
@@ -248,7 +282,6 @@
 }
 
 #doyouknowthat {
-
   margin-top: 10rem;
   display: flex;
   justify-content: center;
@@ -263,11 +296,11 @@
     .background {
       z-index: -5;
       width: 150%;
+      height: 150%;
 
       position: absolute;
       top: -20%;
-      left: -30%;
-
+      left: -40%;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -318,17 +351,14 @@
   }
 
   @media screen and (max-width: 952px) {
-    overflow-x: hidden;
-
+    margin-left: 0;
     .center {
       flex-direction: column-reverse;
       align-items: center;
 
       .background {
         margin: auto;
-        width: 150%;
-        left: -30%;
-        top: -10%;
+        left: -20%;
 
         .blob {
           height: 100%;
@@ -349,11 +379,11 @@
       }
 
       .image {
+        margin-left: 0;
         width: 25rem;
         height: 25rem;
-        margin-left: 0;
-
         img {
+          margin-top: 0;
           height: 100%;
           width: 100%;
         }
@@ -361,8 +391,6 @@
 
       .text {
         margin-left: 2rem;
-        width: 80%;
-
         .content {
           margin-left: 1rem;
           font-size: 1.2rem;
@@ -373,7 +401,6 @@
 }
 
 #advertisingspecialty {
-  overflow-x: hidden;
   margin-top: 15rem;
   display: flex;
   justify-content: center;
@@ -444,15 +471,13 @@
     align-items: center;
 
     .center {
-      width: 95%;
       flex-direction: column-reverse;
 
       .background {
         margin: auto;
         width: 100%;
         left: -5%;
-        top: -5%;
-
+        top: -10%;
         .blob {
           height: 100%;
           width: 100%;
@@ -466,7 +491,6 @@
       }
 
       .heading {
-        margin-left: 1rem;
         margin-top: 5rem;
         font-size: 1.8rem;
         position: initial;
@@ -475,17 +499,15 @@
       .image {
         width: 25rem;
         height: 18rem;
-        display: flex;
-        align-items: center;
-
         img {
           margin-top: 5rem;
-          height: 80%;
-          width: 80%;
+          height: 100%;
+          width: 100%;
         }
       }
 
       .text {
+        margin-left: 2rem;
         .content {
           margin-left: 1rem;
           font-size: 1.2rem;

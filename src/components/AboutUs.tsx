@@ -17,8 +17,8 @@ export default function AboutUs() {
       <WhoWeAre />
       <WhyMerchenDise />
       <DoYouKnowThat />
-      <AdvertisingSpeciality />
-      <WhyChooseUs />
+      {/* <AdvertisingSpeciality /> */}
+      {/* <WhyChooseUs /> */}
     </>
   )
 }

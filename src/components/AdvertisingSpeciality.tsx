@@ -17,34 +17,34 @@ function AdvertisingSpeciality() {
 
           <div className="content">
             <p>
-              The study focussed in customer satisfaction
-              and looked into exactly how promo merch
-              made an impact.
+              The study focussed in customer satisfaction <br />
+              and looked into exactly how promo merch <br />
+              made an impact.<br />
             </p>
             <p>
               The result showed that:
             </p>
 
             <p>
-              more than 83% of people say that they like
-              receiving promotional items 83% of people
-              said that the promo merch gave them a
-              positive impression
+              more than 83% of people say that they like <br />
+              receiving promotional items 83% of people <br />
+              said that the promo merch gave them a <br />
+              positive impression <br />
             </p>
 
             <p>
-              81% of people will use a piece of merch for
-              a year or longer
+              81% of people will use a piece of merch for <br />
+              a year or longer <br />
             </p>
 
             <p>
-              80% of people state that they have at least
-              one promotional item at home or in the office
+              80% of people state that they have at least <br />
+              one promotional item at home or in the office <br />
             </p>
 
             <p>
-              53% of people said that they use one or more
-              promotional items frequently, at least once in
+              53% of people said that they use one or more <br />
+              promotional items frequently, at least once in <br />
               seven days
             </p>
           </div>

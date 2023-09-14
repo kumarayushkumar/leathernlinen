@@ -5,10 +5,7 @@ export default function WhyMerchenDise() {
   return (
     <div className="whymerchendise" id="whymerchendise">
       <div className="center">
-        {/* <div className="background">
-          <Clothblob fill='#cbc7c8' className='blob' dur="15s" />
-          <Clothblob fill='#b6ea01' className='blob-inside' dur="14s" />
-        </div> */}
+
 
         <div className="text">
           <div className="heading">Why merchandise <br /> and gifts
@@ -37,10 +34,10 @@ export default function WhyMerchenDise() {
         </div>
 
         <div className="image">
-        <div className="background">
-          <Clothblob fill='#cbc7c8' className='blob' dur="15s" />
-          <Clothblob fill='#b6ea01' className='blob-inside' dur="14s" />
-        </div>
+          <div className="background">
+            <Clothblob fill='#cbc7c8' className='blob' dur="15s" />
+            <Clothblob fill='#b6ea01' className='blob-inside' dur="14s" />
+          </div>
           <img src={img} alt="" />
         </div>
       </div>

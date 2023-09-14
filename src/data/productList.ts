@@ -172,8 +172,9 @@ import other2 from '../assets/images/Other/other-2.jpg'
 
 import img from '../assets/images/bag.jpg'
 
-const merchendiseProductList : IProductList  = {
- 
+const productList : IProductList  = {
+  // 'Uniform': {
+  // },
   'Drink Bottles': {
     product1: { name: 'Bottle', image: bottle1 },
     product2: { name: 'Bottle', image: bottle2 },
@@ -331,6 +332,29 @@ const merchendiseProductList : IProductList  = {
     product10: { name: 'Tech', image: tech10 },
     product11: { name: 'Tech', image: tech11 },
   },
+  'Hospitality': {
+    product1: { name: 'Hospitality', image: hospitality1 },
+    product2: { name: 'Hospitality', image: hospitality2 },
+    product3: { name: 'Hospitality', image: hospitality3 },
+    product4: { name: 'Hospitality', image: hospitality4 },
+    product5: { name: 'Hospitality', image: hospitality5 },
+    product6: { name: 'Hospitality', image: hospitality6 },
+    product7: { name: 'Hospitality', image: hospitality7 },
+    product8: { name: 'Hospitality', image: hospitality8 },
+    product9: { name: 'Hospitality', image: hospitality9 },
+    product10: { name: 'Hospitality', image: hospitality10 },
+  },
+  'Health': {
+    product1: { name: 'Health', image: health1 },
+    product2: { name: 'Health', image: health2 },
+    product3: { name: 'Health', image: health3 },
+    product4: { name: 'Health', image: health4 },
+    product5: { name: 'Health', image: health5 },
+    product6: { name: 'Health', image: health6 },
+    product7: { name: 'Health', image: health7 },
+    product8: { name: 'Health', image: health8 },
+    product9: { name: 'Health', image: health9 },
+  },
   'Badges/Lapel pins': {
     product1: {
       name: 'Laptop',
@@ -377,30 +401,5 @@ const merchendiseProductList : IProductList  = {
     product2: { name: 'Others', image: other2 },
   },
 }
-const uniformProductList : IProductList  = {
-  'Hospitality': {
-    product1: { name: 'Hospitality', image: hospitality1 },
-    product2: { name: 'Hospitality', image: hospitality2 },
-    product3: { name: 'Hospitality', image: hospitality3 },
-    product4: { name: 'Hospitality', image: hospitality4 },
-    product5: { name: 'Hospitality', image: hospitality5 },
-    product6: { name: 'Hospitality', image: hospitality6 },
-    product7: { name: 'Hospitality', image: hospitality7 },
-    product8: { name: 'Hospitality', image: hospitality8 },
-    product9: { name: 'Hospitality', image: hospitality9 },
-    product10: { name: 'Hospitality', image: hospitality10 },
-  },
-  'Health': {
-    product1: { name: 'Health', image: health1 },
-    product2: { name: 'Health', image: health2 },
-    product3: { name: 'Health', image: health3 },
-    product4: { name: 'Health', image: health4 },
-    product5: { name: 'Health', image: health5 },
-    product6: { name: 'Health', image: health6 },
-    product7: { name: 'Health', image: health7 },
-    product8: { name: 'Health', image: health8 },
-    product9: { name: 'Health', image: health9 },
-  }
-}
 
-export {merchendiseProductList,uniformProductList}
+export default productList
