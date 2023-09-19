@@ -82,6 +82,16 @@
       }
     }
   }
+  @media screen and (max-width:500px){
+    .text {
+      margin-left: 0;
+      .content {
+        p{
+          font-size: 1.2rem;
+        }
+      }
+    }
+  }
   @media screen and (max-width:1200px){
     .content {
       p{
@@ -120,7 +130,6 @@
       padding-right: 15%;
       width: 100%;
       text-align: center;
-      margin-left: 2rem;
     }
 
     .illustration {
@@ -134,8 +143,16 @@
     .fluid-container {
       flex-direction: column;
 
-      .text {
+      .text{
         width: 100%;
+        display: flex;
+        justify-content: center;
+      }
+      .content {
+        width:80%;
+        display: flex;
+        justify-content: center;
+
       }
     }
 
@@ -232,6 +249,7 @@
   }
 
   @media screen and (max-width: 952px) {
+    overflow-x: hidden;
     margin-top: 0;
     .center {
       flex-direction: column-reverse;
@@ -269,7 +287,9 @@
 
       .text {
         margin-left: 2rem;
-
+        .heading{
+          margin-inline: 0;
+        }
         .content {
           margin-left: 1rem;
         }
@@ -352,6 +372,7 @@
 
   @media screen and (max-width: 952px) {
     margin-left: 0;
+    overflow-x: hidden;
     .center {
       flex-direction: column-reverse;
       align-items: center;
@@ -391,6 +412,7 @@
 
       .text {
         margin-left: 2rem;
+        width: 80%;
         .content {
           margin-left: 1rem;
           font-size: 1.2rem;
@@ -413,10 +435,10 @@
 
     .background {
       z-index: -5;
-      width: 60%;
+      width: 50%;
 
       position: absolute;
-      top: -15%;
+      top: -20%;
       right: 0%;
 
       display: flex;
@@ -442,6 +464,7 @@
     }
 
     .text {
+      width:40%;
       .heading {
         color: #828282;
         font-weight: 600;
@@ -468,7 +491,8 @@
 
   @media screen and (max-width: 952px) {
     margin-top: 5rem;
-    align-items: center;
+    align-items: center; 
+    overflow-x: hidden;
 
     .center {
       flex-direction: column-reverse;
@@ -477,7 +501,7 @@
         margin: auto;
         width: 100%;
         left: -5%;
-        top: -10%;
+        top: -5%;
         .blob {
           height: 100%;
           width: 100%;
@@ -498,7 +522,7 @@
 
       .image {
         width: 25rem;
-        height: 18rem;
+        height: 15rem;
         img {
           margin-top: 5rem;
           height: 100%;
@@ -507,7 +531,9 @@
       }
 
       .text {
+        width:80%;
         margin-left: 2rem;
+       
         .content {
           margin-left: 1rem;
           font-size: 1.2rem;
