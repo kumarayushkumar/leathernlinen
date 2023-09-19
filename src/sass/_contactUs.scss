@@ -15,14 +15,16 @@
 
     .text {
       position: absolute;
-      top: 40%;
+      top:50%;
       left: 5%;
+      transform: translateY(50%);
       color: $font-color;
       animation: apper 2s forwards;
+      
 
       h1 {
         font-weight: 800;
-        font-size: 5rem;
+        font-size: 5vw;
         letter-spacing: 4px;
       }
 
@@ -39,6 +41,7 @@
     margin-top: 3rem;
     padding-inline: 3rem;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
 
     .address,

@@ -1,4 +1,4 @@
-@use 'custom' as *;
+@use "custom" as *;
 
 #printing {
   .hero {
@@ -17,17 +17,18 @@
 
       h1 {
         font-weight: 800;
-        font-size: 5rem;
+        font-size: 5vw;
         letter-spacing: 4px;
       }
 
       p {
         width: 65%;
-        font-size: 1.5rem;
+        font-size: 1.5vw;
         word-wrap: break-word;
         letter-spacing: 3px;
-
-
+        @media screen and (max-width: 952px) {
+          font-size: 0.8rem;
+        }
       }
 
       @keyframes cover-apper {
@@ -40,7 +41,6 @@
           top: 40%;
           opacity: 1;
         }
-
       }
     }
   }
@@ -60,6 +60,9 @@
         padding-block: 2rem;
         width: 50%;
         word-wrap: break-word;
+        @media screen and (max-width: 952px) {
+          width: 90%;
+        }
       }
     }
 
@@ -98,11 +101,24 @@
           padding: 5%;
         }
       }
+      @media screen and (max-width: 952px) {
+        flex-direction: column-reverse;
+        .text,
+        .image {
+          width: 100%;
+        }
+      }
     }
 
     .card.alternative {
       flex-direction: row-reverse;
+      @media screen and (max-width: 952px) {
+        flex-direction: column-reverse;
+        .text,
+        .image {
+          width: 100%;
+        }
+      }
     }
   }
-
 }

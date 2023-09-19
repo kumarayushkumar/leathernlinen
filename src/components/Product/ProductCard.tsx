@@ -13,7 +13,7 @@ function ProductCard({ product }: IProductCardProps) {
   // }).format(product.price)
 
   return (
-    <div className="card mb-5">
+    <div className="card">
       <div className="image">
         <img src={product.image} alt={product.name} />
       </div>

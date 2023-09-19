@@ -28,13 +28,13 @@
 
       .heading {
         font-weight: 800;
-        font-size: 5rem;
+        font-size: 3.8vw;
         letter-spacing: 4px;
       }
 
       .content {
         width: 40%;
-        font-size: 1.5rem;
+        font-size: 1.8vw;
         word-wrap: break-word;
         letter-spacing: 3px;
       }
@@ -47,16 +47,24 @@
   width: 100%;
 
   .heading {
-    margin-top: 1rem;
-    padding-block: 1rem;
+    margin-top: 2rem;
     font-size: 1.5rem;
     font-family: "Font";
     position: sticky;
-    top: 3.5rem;
+    top:4rem;
     width: 100%;
-    z-index: 98;
+    z-index: 96;
     background-color: #faf8f1;
     font-weight: 500;
+    padding-block: 1.5rem;
+    @media screen and (max-width: 952px) {
+      top:7.3rem;
+      z-index: 90;
+      padding-block: 0;
+    }
+    @media screen and (max-width: 565px) {
+      font-size: 5vw;
+    }
 
     span {
       color: $primary;
@@ -69,6 +77,9 @@
   .arr_card {
     display: flex;
     flex-wrap: wrap;
+    @media screen and (max-width:952px) {
+      justify-content: center;
+    }
     width: 100%;
 
     &::-webkit-scrollbar {
@@ -76,10 +87,16 @@
     }
 
     .card {
-      max-width: 20rem;
-      min-width: 20rem;
+      width: 20rem;
       height: 25rem;
+      margin-bottom: 2rem;
       margin-inline: 0.7rem;
+      @media screen and (max-width: 952px) {
+        margin-inline:0;
+        margin-bottom: 0;
+        width: 10rem;
+        height: 15rem;
+      }
 
       // overflow: hidden;
       .image {

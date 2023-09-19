@@ -3,7 +3,7 @@
 
 .navbar {
   position: sticky;
-  top: 3.5rem;
+  top: 5rem;
   margin-bottom: 50rem;
 }
 
@@ -14,19 +14,29 @@
 }
 
 .product_left {
+  margin: auto;
+  padding-right: 0;
   ul {
     padding: 0;
     padding-left: 0.5rem;
+    margin-bottom: 0;
   }
 
   .cat_btn {
     width: fit-content;
     text-align: left;
     border: none;
-    font-size: 1.5rem;
     font-weight: 500;
     display: flex;
     background-color: transparent;
+    font-size: 1.5rem;
+    @media screen and (max-width:565px) {
+      font-size: 5vw;
+      
+      .btn{
+        padding-block: 0;
+      }
+    }
   }
 
   .element {
@@ -54,15 +64,14 @@
 
   .list {
     height: 2.1rem * 21;
-    min-width: 15rem;
     transition-duration: 0.5s;
     overflow: hidden;
-    position: absolute;
-    z-index: 50;
   }
-
+  .list.uniform {
+    height: 2.3rem * 2;
+  }
   .btn {
-    transform: rotate(0deg);
+    transform: rotate(-180deg);
     transition: all 0.5s linear;
     outline: none;
     border: none;
@@ -73,6 +82,43 @@
   }
 
   .btn.active {
-    transform: rotate(-180deg)
+    transform: rotate(0deg)
+  }
+}
+
+@media screen and (max-width: 952px) {
+  .uniform,.categories,.navbar{
+    background-color: #faf8f1;
+  }
+  .uniform,.categories{
+    min-width: 40%;
+  }
+  
+  .product_left{
+    display: flex;
+    
+    
+  }
+  .navbar{
+    width: 100%;
+    top: 3.2rem;
+    padding-bottom: 0;
+
+  }
+  .row{
+    flex-direction: column;
+    width: 100%;
+    margin-left: 0;
+    .col-2{
+      height:1vh;
+      width: 100%;
+      position: sticky;
+      top: 4.5rem;
+      background-color: #faf8f1;
+      z-index: 98;
+    }
+    .col-10{
+      width: 100%;
+    }
   }
 }

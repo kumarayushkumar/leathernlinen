@@ -10,6 +10,7 @@ header {
   z-index: 99;
   position: sticky;
   top: 0;
+  min-height: 4.5rem;
 
   @media screen and (max-width: 1064px) {
     position: sticky;
@@ -147,6 +148,7 @@ nav {
     transition-duration: 1s;
     transform: translateX(-50%);
     display: block;
+    
 
     ul {
       flex-direction: column;
