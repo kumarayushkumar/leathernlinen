@@ -47,23 +47,25 @@
   width: 100%;
 
   .heading {
-    margin-top: 2rem;
+    margin-top: 3.8rem;
     font-size: 1.5rem;
     font-family: "Font";
     position: sticky;
     top:4rem;
     width: 100%;
+    
     z-index: 96;
     background-color: #faf8f1;
     font-weight: 500;
     padding-block: 1.5rem;
     @media screen and (max-width: 952px) {
-      top:7.3rem;
+      top:8.5rem;
       z-index: 90;
       padding-block: 0;
+      padding-inline:5% ;
     }
     @media screen and (max-width: 565px) {
-      font-size: 5vw;
+      font-size: 1rem;
     }
 
     span {
@@ -78,7 +80,7 @@
     display: flex;
     flex-wrap: wrap;
     @media screen and (max-width:952px) {
-      justify-content: center;
+      justify-content:start;
     }
     width: 100%;
 
@@ -91,12 +93,7 @@
       height: 25rem;
       margin-bottom: 2rem;
       margin-inline: 0.7rem;
-      @media screen and (max-width: 952px) {
-        margin-inline:0;
-        margin-bottom: 0;
-        width: 10rem;
-        height: 15rem;
-      }
+      
 
       // overflow: hidden;
       .image {
@@ -117,6 +114,7 @@
             transform: scale(1.1);
           }
         }
+        
       }
 
       .content {
@@ -130,6 +128,17 @@
 
         p {
           margin: 0;
+        }
+      }
+      @media screen and (max-width: 952px) {
+        margin-inline:0.2rem;
+        margin-bottom: 0.2rem;
+        width: 10rem;
+        height: 15rem;
+        .content{
+          h6{
+            font-size: 1rem;
+          }
         }
       }
     }
