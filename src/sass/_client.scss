@@ -1,0 +1,95 @@
+@use 'custom' as *;
+
+#client {
+	margin-top: 6rem;
+	overflow-x: hidden;
+	h5 {
+		font-weight: 500;
+		font-family: 'Font';
+		font-size: 2vw;
+		color: #595959;
+
+		@media screen and (max-width:1100px) {
+			font-size: 4vw;
+		}
+	}
+
+	.card {
+		margin-inline: 1rem;
+		border: none;
+		height: 50px;
+		img {
+			width: 100%;
+			filter: grayscale(10%);
+			max-width: 150px;
+			margin:auto;
+			height: 100%;
+			@media screen and (max-width:450px) {
+				margin: 0;
+			}
+		}
+	}
+}
+
+.carousel {
+	align-items: center;
+	display: flex;
+	justify-content: center;
+}
+
+$animationSpeed: 60s;
+
+// Animation
+@keyframes scroll {
+	0% {
+		transform: translateX(0);
+	}
+
+	100% {
+		transform: translateX(calc(-250px * 7))
+	}
+}
+
+.slidernew {
+	width: 100%
+}
+
+// Styling
+.slider {
+	height: fit-content;
+	margin: auto;
+	overflow: hidden;
+	position: relative;
+	width: 100%;
+
+	img {
+		filter: grayscale(10%);
+		max-width: 150px;
+		margin: 0 1rem;
+	}
+
+
+	&::after {
+		right: 0;
+		top: 0;
+		transform: rotateZ(180deg);
+	}
+
+	&::before {
+		left: 0;
+		top: 0;
+	}
+
+	.slide-track {
+		animation: scroll $animationSpeed linear infinite;
+		display: flex;
+		width: fit-content;
+		height: fit-content;
+	}
+
+	.slide {
+		margin: 1rem;
+		overflow: hidden;
+		margin: 1.25rem;
+	}
+}

@@ -1,0 +1,133 @@
+@use 'custom' as *;
+
+#our-promise {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 2rem;
+
+  .heading {
+    color: #a9a9a9;
+    font-family: 'font';
+    font-weight: 600;
+    padding-block: 1rem;
+    font-size: 2rem;
+    position: relative;
+
+    &::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      right: 50%;
+      width: 35px;
+      height: 4px;
+      border-radius: 2px 0 0 2px;
+      background-color: #a9a9a9;
+      transition: 0.5s;
+    }
+
+    &::before {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      width: 35px;
+      height: 4px;
+      border-radius: 0 2px 2px 0;
+      background-color: #a9a9a9;
+      transition: 0.5s;
+    }
+  }
+
+  .content {
+    margin-top: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    .card {
+      border: none;
+      width: 25%;
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+
+      .image {
+        display: flex;
+        justify-content: center;
+
+        .icon {
+          height: 8rem;
+          width: 4rem;
+          color: #a9d705;
+        }
+      }
+
+      .title {
+        font-weight: 800;
+        padding-block: 1rem;
+        font-size: 1.2rem;
+      }
+
+      .desc {
+        text-align: center;
+        font-weight: 600;
+        color: rgba(184, 181, 181, 0.972);
+      }
+    }
+
+  }
+}
+
+#what-we-offer {
+  margin-top: 5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .heading {
+    width: 95%;
+    color: #a9a9a9;
+    font-family: 'font';
+    font-weight: 600;
+    padding-block: 1rem;
+    font-size: 2rem;
+    position: relative;
+  }
+
+  .content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    .card {
+      max-width: 28rem;
+      margin: 2rem;
+      border: none;
+      width: 25%;
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+
+      .image {
+        display: flex;
+        justify-content: center;
+
+      }
+
+      .title {
+        font-weight: 800;
+        padding-block: 1rem;
+        font-size: 1.2rem;
+      }
+
+      .desc {
+        text-align: center;
+        font-weight: 600;
+        color: rgba(184, 181, 181, 0.972);
+      }
+    }
+
+  }
+}

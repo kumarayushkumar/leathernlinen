@@ -1,0 +1,128 @@
+@use "custom" as *;
+
+#printing {
+  .hero {
+    position: relative;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+
+    .text {
+      position: absolute;
+      top: 0%;
+      left: 5%;
+      color: $font-color;
+      animation: cover-apper 2s forwards;
+
+      h1 {
+        font-weight: 800;
+        font-size: 5vw;
+        letter-spacing: 4px;
+      }
+
+      p {
+        width: 65%;
+        font-size: 1.5vw;
+        word-wrap: break-word;
+        letter-spacing: 3px;
+        @media screen and (max-width: 952px) {
+          font-size: 0.8rem;
+        }
+      }
+
+      @keyframes cover-apper {
+        0% {
+          top: 20%;
+          opacity: 0;
+        }
+
+        100% {
+          top: 30%;
+          opacity: 1;
+        }
+      }
+    }
+  }
+
+  .content {
+    .heading {
+      font-size: 1.5rem;
+      font-weight: 500;
+      text-align: center;
+      color: #9f9f9f;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      p {
+        padding-block: 2rem;
+        width: 50%;
+        word-wrap: break-word;
+        @media screen and (max-width: 952px) {
+          width: 90%;
+        }
+      }
+    }
+
+    .card {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      margin-block: 2rem;
+      border: none;
+      overflow: hidden;
+
+      .image {
+        width: 60%;
+        max-width: 65rem;
+        max-height: 30rem;
+        display: flex;
+        justify-content: bottom;
+        align-items: center;
+
+        img {
+          width: 100%;
+          height:100%;
+          margin-bottom: 3rem;
+        }
+      }
+
+      .text {
+        max-width: 45%;
+
+        .sub-heading {
+          font-weight: 800;
+          margin-left: 2rem;
+        }
+
+        .card-text {
+          color: #fff;
+          background-color: #9f9f9f;
+          padding: 5%;
+        }
+      }
+      @media screen and (max-width: 952px) {
+        flex-direction: column-reverse;
+        .text,
+        .image {
+          width: 100%;
+        }
+      }
+    }
+
+    .card.alternative {
+      flex-direction: row-reverse;
+      @media screen and (max-width: 952px) {
+        flex-direction: column-reverse;
+        .text,
+        .image {
+          width: 100%;
+        }
+      }
+    }
+  }
+}

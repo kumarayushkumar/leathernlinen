@@ -1,0 +1,105 @@
+@use 'custom' as *;
+
+#contact {
+  .hero {
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: baseline;
+
+    img {
+      width: 100%;
+    }
+
+    .text {
+      position: absolute;
+      top:50%;
+      left: 5%;
+      transform: translateY(50%);
+      color: $font-color;
+      animation: apper 2s forwards;
+      
+
+      h1 {
+        font-weight: 800;
+        font-size: 5vw;
+        letter-spacing: 4px;
+      }
+
+      p {
+        width: 65%;
+        font-size: 1.5rem;
+        word-wrap: break-word;
+        letter-spacing: 3px;
+      }
+    }
+  }
+
+  .fluid-container {
+    margin-top: 3rem;
+    padding-inline: 3rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+    .address,
+    .form {
+      .heading {
+        h3 {
+          font-size: 1.5rem;
+          font-weight: 700;
+          padding-bottom: 2rem;
+        }
+      }
+
+      .desc {
+        width: 80%;
+      }
+    }
+
+    .form {
+
+      .fname,
+      .lname,
+      .email,
+      .company-name,
+      .message,
+      .review,
+      .sector,
+      .future-ref {
+        display: flex;
+        flex-direction: column;
+        margin: 1rem;
+
+        input,
+        select {
+          border: 1px solid #cfcfcf;
+          background-color: #f1f1f1;
+          border-radius: 5px;
+          height: 2.5rem;
+          padding: 1.5rem;
+          outline: none;
+        }
+
+        label {
+          padding-block: 0.5rem;
+        }
+
+      }
+
+      .submit {
+        margin: 1rem;
+        border: 1px solid rgb(135, 135, 135);
+        padding: 0.5rem 1rem;
+
+        &:hover {
+          background-color: #afafaf;
+          color: #fff;
+          border: 1px solid #afafaf;
+        }
+      }
+    }
+
+  }
+}
