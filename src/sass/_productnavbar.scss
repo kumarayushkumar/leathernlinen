@@ -5,16 +5,25 @@
   position: sticky;
   top: 5rem;
   margin-bottom: 50rem;
+  width: 20rem;
+  margin-top: 5rem;
+  .nav-container{
+    width: 100%;
+    .row{
+      width: 100%;
+    }
+  }
 }
 
 .col-2 {
   display: flex;
   justify-content: space-around;
   align-items: flex-start;
+  padding: 0;
+  padding-left:1% ;
 }
 
 .product_left {
-  margin: auto;
   padding-right: 0;
   ul {
     padding: 0;
@@ -43,14 +52,14 @@
   .element {
     font-family: 'Font';
     font-weight: 500;
-    font-size: 1.1rem;
+    font-size: 1rem;
     padding-bottom: 1px;
     padding-top: 0.5rem;
     display: block;
     color: black;
     transition-duration: 0.5s;
     cursor: default;
-    @media screen and (max-width: 952px) {
+    @media screen and (max-width: 1213px) {
       font-size: 0.8rem;
     }
   }
@@ -90,7 +99,7 @@
   }
 }
 
-@media screen and (max-width: 952px) {
+@media screen and (max-width: 1213px) {
   .uniform,.categories,.navbar{
     background-color: #faf8f1;
   }
@@ -101,17 +110,20 @@
   .product_left{
     padding-block: 1rem;
     display: flex;
-    
+    justify-content: center;
+    font-size: 1.5rem;
     
   }
   .navbar{
     width: 100%;
     top: 3.2rem;
     padding-bottom: 0;
+    margin-top: 0;
 
   }
   .row{
     flex-direction: column;
+    
     width: 100%;
     margin-left: 0;
     .col-2{

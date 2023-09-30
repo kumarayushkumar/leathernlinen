@@ -71,14 +71,15 @@
     background-color: #faf8f1;
     font-weight: 500;
     padding-block: 1.5rem;
-    @media screen and (max-width: 952px) {
-      top:8.5rem;
+    @media screen and (max-width: 1213px) {
+      top:9.5rem;
       z-index: 90;
-      padding-block: 0;
+      padding-block: 0.5rem;
       padding-inline:5% ;
     }
     @media screen and (max-width: 565px) {
       font-size: 1rem;
+      top: 8rem;
     }
 
     span {
@@ -92,7 +93,7 @@
   .arr_card {
     display: flex;
     flex-wrap: wrap;
-    @media screen and (max-width:952px) {
+    @media screen and (max-width:1213px) {
       justify-content:start;
     }
     width: 100%;

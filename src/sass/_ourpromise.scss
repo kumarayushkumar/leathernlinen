@@ -86,13 +86,36 @@
   align-items: center;
 
   .heading {
-    width: 95%;
     color: #a9a9a9;
     font-family: 'font';
     font-weight: 600;
     padding-block: 1rem;
     font-size: 2rem;
     position: relative;
+
+    &::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      right: 50%;
+      width: 35px;
+      height: 4px;
+      border-radius: 2px 0 0 2px;
+      background-color: #a9a9a9;
+      transition: 0.5s;
+    }
+
+    &::before {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      width: 35px;
+      height: 4px;
+      border-radius: 0 2px 2px 0;
+      background-color: #a9a9a9;
+      transition: 0.5s;
+    }
   }
 
   .content {
