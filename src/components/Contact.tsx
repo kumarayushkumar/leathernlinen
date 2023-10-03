@@ -1,4 +1,5 @@
 import hero from '../assets/images/Contact_us/contact us page.jpg'
+
 export default function Contact() {
   return (
     <div className="contact" id="contact">

@@ -1,12 +1,10 @@
 import { Headphoneblob } from '../assets/images/About_Us/illustrations/Blobs'
 import img from '../assets/images/About_Us/img3.png'
 
-function AdvertisingSpeciality() {
+export default function AdvertisingSpeciality() {
   return (
     <div className="advertisingspecialty" id="advertisingspecialty">
       <div className="center">
-
-
         <div className="text">
           <div className="heading">THE ADVERTISING SPECIALTY <br />
             INSTITUTE DID A STUDY.
@@ -58,5 +56,3 @@ function AdvertisingSpeciality() {
     </div>
   )
 }
-
-export default AdvertisingSpeciality

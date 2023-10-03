@@ -1,17 +1,10 @@
-
-
 import { IProduct } from '../../interface'
 
 interface IProductCardProps {
   product: IProduct
 }
 
-function ProductCard({ product }: IProductCardProps) {
-  // const formattedPrice = new Intl.NumberFormat('en-US', {
-  //   style: 'currency',
-  //   currency: 'USD',
-  // }).format(product.price)
-
+export default function ProductCard({ product }: IProductCardProps) {
   return (
     <div className="card">
       <div className="image">
@@ -24,5 +17,3 @@ function ProductCard({ product }: IProductCardProps) {
     </div>
   )
 }
-
-export default ProductCard

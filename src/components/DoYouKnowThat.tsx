@@ -1,6 +1,7 @@
 import { Tumblerblob } from '../assets/images/About_Us/illustrations/Blobs'
 import img from '../assets/images/About_Us/img2.png'
-function DoYouKnowThat() {
+
+export default function DoYouKnowThat() {
   return (
     <div className="doyouknowthat" id="doyouknowthat">
       <div className="center">
@@ -41,5 +42,3 @@ function DoYouKnowThat() {
     </div>
   )
 }
-
-export default DoYouKnowThat

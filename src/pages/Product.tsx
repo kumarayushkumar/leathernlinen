@@ -3,14 +3,11 @@ import Header from "../components/Header"
 import ProductContent from "../components/Product/ProductContent"
 import ProductNavBar from "../components/Product/ProductNavBar"
 import { merchendiseProductList } from "../data/productList"
-import { uniformProductList } from "../data/productList";
-import img from '../assets/images/Product/products-cover.jpg'
-import { IProductPage } from "../interface"
+import { uniformProductList } from "../data/productList"
+import { IScrollToTop } from "../interface"
 
-
-
-export default function Product({ scrolltoTop }:IProductPage) {
-  scrolltoTop();
+export default function Product({ scrolltoTop }: IScrollToTop) {
+  scrolltoTop()
   return (
     <>
       <Header />

@@ -3,23 +3,23 @@ import dropdownBtnImage from '../../assets/images/dropdown.svg'
 import { IProductList } from '../../interface'
 
 interface ProductNavBarProps {
-  merchendiseProductList: IProductList;
-  uniformProductList: IProductList;
+  merchendiseProductList: IProductList
+  uniformProductList: IProductList
 }
 
 const ProductNavBar: React.FC<ProductNavBarProps> = ({ merchendiseProductList, uniformProductList }) => {
   const [catactiveIndex, setcatActiveIndex] = useState(9999)
-  const windowSize = useRef([window.innerWidth]);
+  const windowSize = useRef([window.innerWidth])
   const [uniactiveIndex, setuniActiveIndex] = useState(0)
-  const [mobilewidth]=useState(1213)
+  const [mobilewidth] = useState(1213)
   const [isHidden, setIsHidden] = useState(false)
   const [uniformisHidden, setuniformIsHidden] = useState(false)
   useEffect(() => {
-    const handleResize =()=>{
-        setuniformIsHidden(mobilewidth >= window.innerWidth ? true : false);
-        setIsHidden(mobilewidth >= window.innerWidth ? true : false);
-      }
-    
+    const handleResize = () => {
+      setuniformIsHidden(mobilewidth >= window.innerWidth ? true : false)
+      setIsHidden(mobilewidth >= window.innerWidth ? true : false)
+    }
+
     window.addEventListener('resize', handleResize)
 
     // Initial call to set the correct number of slides on component mount
@@ -28,7 +28,7 @@ const ProductNavBar: React.FC<ProductNavBarProps> = ({ merchendiseProductList, u
     return () => {
       window.removeEventListener('resize', handleResize)
     }
-   }, [])
+  })
   const handleScrollToSection = (sectionId: string, index: number, offset?: number, uniform?: boolean) => {
     if (!uniform) {
       setcatActiveIndex(index)
@@ -38,15 +38,15 @@ const ProductNavBar: React.FC<ProductNavBarProps> = ({ merchendiseProductList, u
       setuniActiveIndex(index)
       setcatActiveIndex(9999)
     }
-    const section = document.getElementById(sectionId);
-    const headerOffset = offset != null ? offset : 50;
+    const section = document.getElementById(sectionId)
+    const headerOffset = offset != null ? offset : 50
     if (section != null) {
-      const elementPosition = section.getBoundingClientRect().top;
-      const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+      const elementPosition = section.getBoundingClientRect().top
+      const offsetPosition = elementPosition + window.pageYOffset - headerOffset
       window.scrollTo({
         top: offsetPosition,
         behavior: "smooth"
-      });
+      })
     }
   }
 
@@ -79,13 +79,13 @@ const ProductNavBar: React.FC<ProductNavBarProps> = ({ merchendiseProductList, u
               ))}
             </ul>
           </div>
-          <div className="categories">
+          <div className="categories mt-4">
             <button
               className={`cat_btn ${isHidden ? 'active' : ''}`}
               onClick={() => {
                 setIsHidden(!isHidden)
                 if (mobilewidth >= windowSize.current[0]) {
-                  setuniformIsHidden(!uniformisHidden);
+                  setuniformIsHidden(!uniformisHidden)
                 }
               }}
             >

@@ -5,8 +5,6 @@ export default function WhyMerchenDise() {
   return (
     <div className="whymerchendise" id="whymerchendise">
       <div className="center">
-
-
         <div className="text">
           <div className="heading">Why merchandise <br /> and gifts
           </div>

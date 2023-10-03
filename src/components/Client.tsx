@@ -1,10 +1,12 @@
-import clientLogo from '../data/client'
+import { useState, useEffect } from 'react'
 import Slider from "react-slick"
+
 import "slick-carousel/slick/slick.css"
 import "slick-carousel/slick/slick-theme.css"
-import { useState, useEffect } from 'react'
 
-function Client() {
+import clientLogo from '../data/client'
+
+export default function Client() {
   const [slidesToShow, setSlidesToShow] = useState(4) // Default slides to show
 
   useEffect(() => {
@@ -64,5 +66,3 @@ function Client() {
     </section>
   )
 }
-
-export default Client

@@ -12,41 +12,15 @@ export interface IProduct {
   image: string
 }
 
-// export interface IProductList {
-//   [key: string]: {
-//     [key: string]: IProduct
-//   }
-// }
-
-// export interface IProductList {
-//   [key: string]: IProductType
-// }
-
 export interface IProductList {
-  [key: string]: IProductCategory;
+  [key: string]: IProductCategory
 }
 
 export interface IProductCategory {
-  [key: string]: IProduct;
+  [key: string]: IProduct
 }
 
 
-export interface IContactUs {
-  scrolltoTop:() => void;
-}
-
-export interface IHome {
-  scrolltoTop:() => void;
-}
-
-export interface IPromise {
-  scrolltoTop:() => void;
-}
-
-export interface IPrinting {
-  scrolltoTop:() => void;
-}
-
-export interface IProductPage {
-  scrolltoTop:() => void;
+export interface IScrollToTop {
+  scrolltoTop: () => void
 }

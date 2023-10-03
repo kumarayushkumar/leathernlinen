@@ -9,10 +9,8 @@ import OurPromise from './pages/OurPromise.tsx'
 import Printing from './pages/Printing.tsx'
 
 const scrollToTop = () => {
-  window.scrollTo({ top: 0, left: 0, behavior: 'instant' });
-};
-
-
+  window.scrollTo({ top: 0, left: 0, behavior: 'instant' })
+}
 
 ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
   <BrowserRouter>
