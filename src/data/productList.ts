@@ -87,17 +87,14 @@ import tees9 from '../assets/images/Tees_and_Singlets/tees-9.jpg'
 import tees10 from '../assets/images/Tees_and_Singlets/tees-10.jpg'
 import tees11 from '../assets/images/Tees_and_Singlets/tees-11.jpg'
 import tees12 from '../assets/images/Tees_and_Singlets/tees-12.jpg'
-import tees13 from '../assets/images/Tees_and_Singlets/tees-13.jpg'
-import tees14 from '../assets/images/Tees_and_Singlets/tees-14.jpg'
-import tees15 from '../assets/images/Tees_and_Singlets/tees-15.jpg'
 
 import polos1 from '../assets/images//Polos_&_Shirts/polos-1.jpg'
 import polos2 from '../assets//images/Polos_&_Shirts/polos-2.jpg'
 import polos3 from '../assets/images/Polos_&_Shirts/polos-3.jpg'
 import polos4 from '../assets/images/Polos_&_Shirts/polos-4.jpg'
 import polos5 from '../assets/images/Polos_&_Shirts/polos-5.jpg'
-import polos6 from '../assets/images/Polos_&_Shirts/polos-6.jpg'
-import polos7 from '../assets/images/Polos_&_Shirts/polos-7.jpg'
+// import polos6 from '../assets/images/Polos_&_Shirts/polos-6.jpg'
+// import polos7 from '../assets/images/Polos_&_Shirts/polos-7.jpg'
 import polos8 from '../assets/images/Polos_&_Shirts/polos-8.jpg'
 import polos9 from '../assets/images/Polos_&_Shirts/polos-9.jpg'
 import polos10 from '../assets/images/Polos_&_Shirts/polos-10.jpg'
@@ -134,6 +131,8 @@ import hospitality7 from '../assets/images/Hospitality/hospitality-7.jpg'
 import hospitality8 from '../assets/images/Hospitality/hospitality-8.jpg'
 import hospitality9 from '../assets/images/Hospitality/hospitality-9.jpg'
 import hospitality10 from '../assets/images/Hospitality/hospitality-10.jpg'
+import hospitality11 from '../assets/images/Hospitality/hospitality-11.jpg'
+import hospitality12 from '../assets/images/Hospitality/hospitality-12.jpg'
 
 import tech1 from '../assets/images/Tech/tech-1.jpg'
 import tech2 from '../assets/images/Tech/tech-2.jpg'
@@ -156,6 +155,8 @@ import health6 from '../assets/images/Health/health-6.jpg'
 import health7 from '../assets/images/Health/health-7.jpg'
 import health8 from '../assets/images/Health/health-8.jpg'
 import health9 from '../assets/images/Health/health-9.jpg'
+import health10 from '../assets/images/Health/health-10.jpg'
+import health11 from '../assets/images/Health/health-11.jpg'
 
 import corporate1 from '../assets/images/Corporate/corporate-1.jpg'
 import corporate2 from '../assets/images/Corporate/corporate-2.jpg'
@@ -167,239 +168,240 @@ import corporate7 from '../assets/images/Corporate/corporate-7.jpg'
 import corporate8 from '../assets/images/Corporate/corporate-8.jpg'
 import corporate9 from '../assets/images/Corporate/corporate-9.jpg'
 
+import hoodie1 from '../assets/images/Hoodies_&_Sweats/hoodie-1.png'
+import hoodie2 from '../assets/images/Hoodies_&_Sweats/hoodie-2.png'
+import hoodie3 from '../assets/images/Hoodies_&_Sweats/hoodie-3.png'
+import hoodie4 from '../assets/images/Hoodies_&_Sweats/hoodie-4.png'
+
 import other1 from '../assets/images/Other/other-1.jpg'
 import other2 from '../assets/images/Other/other-2.jpg'
 
 import img from '../assets/images/bag.jpg'
 
 const merchendiseProductList : IProductList  = {
- 
   'Drink Bottles': {
-    product1: { name: 'Bottle', image: bottle1 },
-    product2: { name: 'Bottle', image: bottle2 },
-    product3: { name: 'Bottle', image: bottle3 },
-    product4: { name: 'Bottle', image: bottle4 },
-    product5: { name: 'Bottle', image: bottle5 },
-    product6: { name: 'Bottle', image: bottle6 },
-    product7: { name: 'Bottle', image: bottle7 },
-    product8: { name: 'Bottle', image: bottle8 },
-    product9: { name: 'Bottle', image: bottle9 },
-    product10: { name: 'Bottle', image: bottle10 },
-    product11: { name: 'Bottle', image: bottle11 },
-    product12: { name: 'Bottle', image: bottle12 },
-    product13: { name: 'Bottle', image: bottle13 },
-    product14: { name: 'Bottle', image: bottle14 },
-    product15: { name: 'Bottle', image: bottle15 },
-    product16: { name: 'Bottle', image: bottle16 },
+    product1: { name: 'Drink Bottles-1', image: bottle1 },
+    product2: { name: 'Drink Bottles-2', image: bottle2 },
+    product3: { name: 'Drink Bottles-3', image: bottle3 },
+    product4: { name: 'Drink Bottles-4', image: bottle4 },
+    product5: { name: 'Drink Bottles-5', image: bottle5 },
+    product6: { name: 'Drink Bottles-6', image: bottle6 },
+    product7: { name: 'Drink Bottles-7', image: bottle7 },
+    product8: { name: 'Drink Bottles-8', image: bottle8 },
+    product9: { name: 'Drink Bottles-9', image: bottle9 },
+    product10: { name: 'Drink Bottles-10', image: bottle10 },
+    product11: { name: 'Drink Bottles-11', image: bottle11 },
+    product12: { name: 'Drink Bottles-12', image: bottle12 },
+    product13: { name: 'Drink Bottles-13', image: bottle13 },
+    product14: { name: 'Drink Bottles-14', image: bottle14 },
+    product15: { name: 'Drink Bottles-15', image: bottle15 },
+    product16: { name: 'Drink Bottles-16', image: bottle16 },
   },
   'Tumblers & Mugs': {
-    product1: { name: 'Tumbler', image: tumbler1 },
-    product2: { name: 'Tumbler', image: tumbler2 },
-    product3: { name: 'Tumbler', image: tumbler3 },
-    product4: { name: 'Tumbler', image: tumbler4 },
-    product5: { name: 'Tumbler', image: tumbler5 },
-    product6: { name: 'Tumbler', image: tumbler6 },
-    product7: { name: 'Tumbler', image: tumbler7 },
-    product8: { name: 'Tumbler', image: tumbler8 },
-    product9: { name: 'Tumbler', image: tumbler9 },
-    product10: { name: 'Tumbler', image: tumbler10 },
-    product11: { name: 'Tumbler', image: tumbler11 },
-    product12: { name: 'Tumbler', image: tumbler12 },
-    product13: { name: 'Tumbler', image: tumbler13 },
-    product14: { name: 'Tumbler', image: tumbler14 },
-    product15: { name: 'Tumbler', image: tumbler15 },
-    product16: { name: 'Tumbler', image: tumbler16 },
-    product17: { name: 'Tumbler', image: tumbler17 },
-    product18: { name: 'Tumbler', image: tumbler18 },
-    product19: { name: 'Tumbler', image: tumbler19 },
-    product20: { name: 'Tumbler', image: tumbler20 },
+    product1: { name: 'Tumblers & Mugs-1', image: tumbler1 },
+    product2: { name: 'Tumblers & Mugs-2', image: tumbler2 },
+    product3: { name: 'Tumblers & Mugs-3', image: tumbler3 },
+    product4: { name: 'Tumblers & Mugs-4', image: tumbler4 },
+    product5: { name: 'Tumblers & Mugs-5', image: tumbler5 },
+    product6: { name: 'Tumblers & Mugs-6', image: tumbler6 },
+    product7: { name: 'Tumblers & Mugs-7', image: tumbler7 },
+    product8: { name: 'Tumblers & Mugs-8', image: tumbler8 },
+    product9: { name: 'Tumblers & Mugs-9', image: tumbler9 },
+    product10: { name: 'Tumblers & Mugs-10', image: tumbler10 },
+    product11: { name: 'Tumblers & Mugs-11', image: tumbler11 },
+    product12: { name: 'Tumblers & Mugs-12', image: tumbler12 },
+    product13: { name: 'Tumblers & Mugs-13', image: tumbler13 },
+    product14: { name: 'Tumblers & Mugs-14', image: tumbler14 },
+    product15: { name: 'Tumblers & Mugs-15', image: tumbler15 },
+    product16: { name: 'Tumblers & Mugs-16', image: tumbler16 },
+    product17: { name: 'Tumblers & Mugs-17', image: tumbler17 },
+    product18: { name: 'Tumblers & Mugs-18', image: tumbler18 },
+    product19: { name: 'Tumblers & Mugs-19', image: tumbler19 },
+    product20: { name: 'Tumblers & Mugs-20', image: tumbler20 },
   },
   'Totes': {
-    product1: { name: 'Tote', image: tote1 },
+    product1: { name: 'Totes-1', image: tote1 },
   },
   'Backpacks & Bags': {
-    product1: { name: 'Backpack', image: backpack1 },
-    product2: { name: 'Backpack', image: backpack2 },
-    product3: { name: 'Backpack', image: backpack3 },
-    product4: { name: 'Backpack', image: backpack4 },
-    product5: { name: 'Backpack', image: backpack5 },
-    product6: { name: 'Backpack', image: backpack6 },
-    product7: { name: 'Backpack', image: backpack7 },
-    product8: { name: 'Backpack', image: backpack8 },
-    product9: { name: 'Backpack', image: backpack9 },
-    product10: { name: 'Backpack', image: backpack10 },
-    product11: { name: 'Backpack', image: backpack11 },
-    product12: { name: 'Backpack', image: backpack12 },
-    product13: { name: 'Backpack', image: backpack13 },
-    product14: { name: 'Backpack', image: backpack14 },
-    product15: { name: 'Backpack', image: backpack15 },
-    product16: { name: 'Backpack', image: backpack16 },
-    product17: { name: 'Backpack', image: backpack17 },
+    product1: { name: 'Backpacks & Bags-1', image: backpack1 },
+    product2: { name: 'Backpacks & Bags-2', image: backpack2 },
+    product3: { name: 'Backpacks & Bags-3', image: backpack3 },
+    product4: { name: 'Backpacks & Bags-4', image: backpack4 },
+    product5: { name: 'Backpacks & Bags-5', image: backpack5 },
+    product6: { name: 'Backpacks & Bags-6', image: backpack6 },
+    product7: { name: 'Backpacks & Bags-7', image: backpack7 },
+    product8: { name: 'Backpacks & Bags-8', image: backpack8 },
+    product9: { name: 'Backpacks & Bags-9', image: backpack9 },
+    product10: { name: 'Backpacks & Bags-10', image: backpack10 },
+    product11: { name: 'Backpacks & Bags-11', image: backpack11 },
+    product12: { name: 'Backpacks & Bags-12', image: backpack12 },
+    product13: { name: 'Backpacks & Bags-13', image: backpack13 },
+    product14: { name: 'Backpacks & Bags-14', image: backpack14 },
+    product15: { name: 'Backpacks & Bags-15', image: backpack15 },
+    product16: { name: 'Backpacks & Bags-16', image: backpack16 },
+    product17: { name: 'Backpacks & Bags-17', image: backpack17 },
   },
   'Notebooks & Pens': {
-    product1: { name: 'Notebook', image: notebook1 },
-    product2: { name: 'Notebook', image: notebook2 },
-    product3: { name: 'Notebook', image: notebook3 },
-    product4: { name: 'Notebook', image: notebook4 },
-    product5: { name: 'Notebook', image: notebook5 },
-    product6: { name: 'Notebook', image: notebook6 },
-    product7: { name: 'Notebook', image: notebook7 },
-    product8: { name: 'Pen', image: pen1 },
-    product9: { name: 'Pen', image: pen2 },
-    product10: { name: 'Pen', image: pen3 },
-    product11: { name: 'Pen', image: pen4 },
-    product12: { name: 'Pen', image: pen5 },
-    product13: { name: 'Pen', image: pen6 },
-    product14: { name: 'Pen', image: pen7 },
-    product15: { name: 'Pen', image: pen8 },
-    product16: { name: 'Pen', image: pen9 },
-
+    product1: { name: 'Notebooks & Pens-1', image: notebook1 },
+    product2: { name: 'Notebooks & Pens-2', image: notebook2 },
+    product3: { name: 'Notebooks & Pens-3', image: notebook3 },
+    product4: { name: 'Notebooks & Pens-4', image: notebook4 },
+    product5: { name: 'Notebooks & Pens-5', image: notebook5 },
+    product6: { name: 'Notebooks & Pens-6', image: notebook6 },
+    product7: { name: 'Notebooks & Pens-7', image: notebook7 },
+    product8: { name: 'Notebooks & Pens-8', image: pen1 },
+    product9: { name: 'Notebooks & Pens-9', image: pen2 },
+    product10: { name: 'Notebooks & Pens-10', image: pen3 },
+    product11: { name: 'Notebooks & Pens-11', image: pen4 },
+    product12: { name: 'Notebooks & Pens-12', image: pen5 },
+    product13: { name: 'Notebooks & Pens-13', image: pen6 },
+    product14: { name: 'Notebooks & Pens-14', image: pen7 },
+    product15: { name: 'Notebooks & Pens-15', image: pen8 },
+    product16: { name: 'Notebooks & Pens-16', image: pen9 },
   },
   'Tees & Singlets': {
-    product1: { name: 'Tees', image: tees1 },
-    product2: { name: 'Tees', image: tees2 },
-    product3: { name: 'Tees', image: tees3 },
-    product4: { name: 'Tees', image: tees4 },
-    product5: { name: 'Tees', image: tees5 },
-    product6: { name: 'Tees', image: tees6 },
-    product7: { name: 'Tees', image: tees7 },
-    product8: { name: 'Tees', image: tees8 },
-    product9: { name: 'Tees', image: tees9 },
-    product10: { name: 'Tees', image: tees10 },
-    product11: { name: 'Tees', image: tees11 },
-    product12: { name: 'Tees', image: tees12 },
-    product13: { name: 'Tees', image: tees13 },
-    product14: { name: 'Tees', image: tees14 },
-    product15: { name: 'Tees', image: tees15 },
+    product1: { name: 'Tees & Singlets-1', image: tees1 },
+    product2: { name: 'Tees & Singlets-2', image: tees2 },
+    product3: { name: 'Tees & Singlets-3', image: tees3 },
+    product4: { name: 'Tees & Singlets-4', image: tees4 },
+    product5: { name: 'Tees & Singlets-5', image: tees5 },
+    product6: { name: 'Tees & Singlets-6', image: tees6 },
+    product7: { name: 'Tees & Singlets-7', image: tees7 },
+    product8: { name: 'Tees & Singlets-8', image: tees8 },
+    product9: { name: 'Tees & Singlets-9', image: tees9 },
+    product10: { name: 'Tees & Singlets-10', image: tees10 },
+    product11: { name: 'Tees & Singlets-11', image: tees11 },
+    product12: { name: 'Tees & Singlets-12', image: tees12 },
   },
   'Polos & Shirts': {
-    product1: { name: 'Polos', image: polos1 },
-    product2: { name: 'Polos', image: polos2 },
-    product3: { name: 'Polos', image: polos3 },
-    product4: { name: 'Polos', image: polos4 },
-    product5: { name: 'Polos', image: polos5 },
-    product6: { name: 'Polos', image: polos6 },
-    product7: { name: 'Polos', image: polos7 },
-    product8: { name: 'Polos', image: polos8 },
-    product9: { name: 'Polos', image: polos9 },
-    product10: { name: 'Polos', image: polos10 },
-    product11: { name: 'Polos', image: polos11 },
-    product12: { name: 'Polos', image: polos12 },
-    prodict13: { name: 'Polos', image: polos13 },
-    prodict14: { name: 'Polos', image: polos14 },
-    prodict15: { name: 'Polos', image: polos15 },
+    product1: { name: 'Polos & Shirts-1', image: polos1 },
+    product2: { name: 'Polos & Shirts-2', image: polos2 },
+    product3: { name: 'Polos & Shirts-3', image: polos3 },
+    product4: { name: 'Polos & Shirts-4', image: polos4 },
+    product5: { name: 'Polos & Shirts-5', image: polos5 },
+    // product6: { name: 'Polos & Shirts-6', image: polos6 },
+    // product7: { name: 'Polos & Shirts-7', image: polos7 },
+    product8: { name: 'Polos & Shirts-8', image: polos8 },
+    product9: { name: 'Polos & Shirts-9', image: polos9 },
+    product10: { name: 'Polos & Shirts-10', image: polos10 },
+    product11: { name: 'Polos & Shirts-11', image: polos11 },
+    product12: { name: 'Polos & Shirts-12', image: polos12 },
+    product13: { name: 'Polos & Shirts-13', image: polos13 },
+    product14: { name: 'Polos & Shirts-14', image: polos14 },
+    product15: { name: 'Polos & Shirts-15', image: polos15 },
   },
   'Hoodies & Sweats': {
-    product1: {
-      name: 'Laptop',
-      image: img,
-    },
-    product2: {
-      name: 'Smartphone',
-      image: img,
-    }
+    product1: { name: 'Hoodies & Sweats-1', image: hoodie1},
+    product2: { name: 'Hoodies & Sweats-2', image: hoodie2},
+    product3: { name: 'Hoodies & Sweats-3', image: hoodie3},
+    product4: { name: 'Hoodies & Sweats-4', image: hoodie4},
   },
   'Custom Gifts': {
-    product1: { name: 'Custom', image: custom1 },
-    product2: { name: 'Custom', image: custom2 },
+    product1: { name: 'Custom Gifts-1', image: custom1 },
+    product2: { name: 'Custom Gifts-2', image: custom2 },
   },
   'Accessories': {
-    product1: { name: 'Accessories', image: accessories1 },
-    product2: { name: 'Accessories', image: accessories2 },
-    product3: { name: 'Accessories', image: accessories3 },
-    product4: { name: 'Accessories', image: accessories4 },
-    product5: { name: 'Accessories', image: accessories5 },
-    product6: { name: 'Accessories', image: accessories6 },
-    product7: { name: 'Accessories', image: accessories7 },
-    product8: { name: 'Accessories', image: accessories8 },
-    product9: { name: 'Accessories', image: accessories9 },
-    product10: { name: 'Accessories', image: accessories10 },
-    product11: { name: 'Accessories', image: accessories11 },
-    product12: { name: 'Accessories', image: accessories12 },
-    product13: { name: 'Accessories', image: accessories13 },
+    product1: { name: 'Accessories-1', image: accessories1 },
+    product2: { name: 'Accessories-2', image: accessories2 },
+    product3: { name: 'Accessories-3', image: accessories3 },
+    product4: { name: 'Accessories-4', image: accessories4 },
+    product5: { name: 'Accessories-5', image: accessories5 },
+    product6: { name: 'Accessories-6', image: accessories6 },
+    product7: { name: 'Accessories-7', image: accessories7 },
+    product8: { name: 'Accessories-8', image: accessories8 },
+    product9: { name: 'Accessories-9', image: accessories9 },
+    product10: { name: 'Accessories-10', image: accessories10 },
+    product11: { name: 'Accessories-11', image: accessories11 },
+    product12: { name: 'Accessories-12', image: accessories12 },
+    product13: { name: 'Accessories-13', image: accessories13 },
   },
   'Tech': {
-    product1: { name: 'Tech', image: tech1 },
-    product2: { name: 'Tech', image: tech2 },
-    product3: { name: 'Tech', image: tech3 },
-    product4: { name: 'Tech', image: tech4 },
-    product5: { name: 'Tech', image: tech5 },
-    product6: { name: 'Tech', image: tech6 },
-    product7: { name: 'Tech', image: tech7 },
-    product8: { name: 'Tech', image: tech8 },
-    product9: { name: 'Tech', image: tech9 },
-    product10: { name: 'Tech', image: tech10 },
-    product11: { name: 'Tech', image: tech11 },
+    product1: { name: 'Tech-1', image: tech1 },
+    product2: { name: 'Tech-2', image: tech2 },
+    product3: { name: 'Tech-3', image: tech3 },
+    product4: { name: 'Tech-4', image: tech4 },
+    product5: { name: 'Tech-5', image: tech5 },
+    product6: { name: 'Tech-6', image: tech6 },
+    product7: { name: 'Tech-7', image: tech7 },
+    product8: { name: 'Tech-8', image: tech8 },
+    product9: { name: 'Tech-9', image: tech9 },
+    product10: { name: 'Tech-10', image: tech10 },
+    product11: { name: 'Tech-11', image: tech11 },
   },
   'Badges/Lapel pins': {
     product1: {
-      name: 'Laptop',
+      name: 'Badges/Lapel pins-1',
       image: img,
     },
     product2: {
-      name: 'Smartphone',
+      name: 'Badges/Lapel pins-2',
       image: img,
     }
   },
   'School': {
     product1: {
-      name: 'Laptop',
+      name: 'School-1',
       image: img,
     },
     product2: {
-      name: 'Smartphone',
+      name: 'School-2',
       image: img,
     }
   },
   'Lanyard/Card Holder': {
     product1: {
-      name: 'Laptop',
+      name: 'Lanyard/Card Holder-1',
       image: img,
     },
     product2: {
-      name: 'Smartphone',
+      name: 'Lanyard/Card Holder-2',
       image: img,
     }
   },
   'Corporate': {
-    product1: { name: 'Corporate', image: corporate1 },
-    product2: { name: 'Corporate', image: corporate2 },
-    product3: { name: 'Corporate', image: corporate3 },
-    product4: { name: 'Corporate', image: corporate4 },
-    product5: { name: 'Corporate', image: corporate5 },
-    product6: { name: 'Corporate', image: corporate6 },
-    product7: { name: 'Corporate', image: corporate7 },
-    product8: { name: 'Corporate', image: corporate8 },
-    product9: { name: 'Corporate', image: corporate9 },
+    product1: { name: 'Corporate-1', image: corporate1 },
+    product2: { name: 'Corporate-2', image: corporate2 },
+    product3: { name: 'Corporate-3', image: corporate3 },
+    product4: { name: 'Corporate-4', image: corporate4 },
+    product5: { name: 'Corporate-5', image: corporate5 },
+    product6: { name: 'Corporate-6', image: corporate6 },
+    product7: { name: 'Corporate-7', image: corporate7 },
+    product8: { name: 'Corporate-8', image: corporate8 },
+    product9: { name: 'Corporate-9', image: corporate9 },
   },
   'Others': {
-    product1: { name: 'Others', image: other1 },
-    product2: { name: 'Others', image: other2 },
+    product1: { name: 'Others-1', image: other1 },
+    product2: { name: 'Others-2', image: other2 },
   },
-}
+};
+
 const uniformProductList : IProductList  = {
   'Hospitality': {
-    product1: { name: 'Hospitality', image: hospitality1 },
-    product2: { name: 'Hospitality', image: hospitality2 },
-    product3: { name: 'Hospitality', image: hospitality3 },
-    product4: { name: 'Hospitality', image: hospitality4 },
-    product5: { name: 'Hospitality', image: hospitality5 },
-    product6: { name: 'Hospitality', image: hospitality6 },
-    product7: { name: 'Hospitality', image: hospitality7 },
-    product8: { name: 'Hospitality', image: hospitality8 },
-    product9: { name: 'Hospitality', image: hospitality9 },
-    product10: { name: 'Hospitality', image: hospitality10 },
+    product1: { name: 'Hospitality-1', image: hospitality1 },
+    product2: { name: 'Hospitality-2', image: hospitality2 },
+    product3: { name: 'Hospitality-3', image: hospitality3 },
+    product4: { name: 'Hospitality-4', image: hospitality4 },
+    product5: { name: 'Hospitality-5', image: hospitality5 },
+    product6: { name: 'Hospitality-6', image: hospitality6 },
+    product7: { name: 'Hospitality-7', image: hospitality7 },
+    product8: { name: 'Hospitality-8', image: hospitality8 },
+    product9: { name: 'Hospitality-9', image: hospitality9 },
+    product10: { name: 'Hospitality-10', image: hospitality10 },
+    product11: { name: 'Hospitality-11', image: hospitality11 },
+    product12: { name: 'Hospitality-12', image: hospitality12 },
   },
   'Health': {
-    product1: { name: 'Health', image: health1 },
-    product2: { name: 'Health', image: health2 },
-    product3: { name: 'Health', image: health3 },
-    product4: { name: 'Health', image: health4 },
-    product5: { name: 'Health', image: health5 },
-    product6: { name: 'Health', image: health6 },
-    product7: { name: 'Health', image: health7 },
-    product8: { name: 'Health', image: health8 },
-    product9: { name: 'Health', image: health9 },
+    product1: { name: 'Health-1', image: health1 },
+    product2: { name: 'Health-2', image: health2 },
+    product3: { name: 'Health-3', image: health3 },
+    product4: { name: 'Health-4', image: health4 },
+    product5: { name: 'Health-5', image: health5 },
+    product6: { name: 'Health-6', image: health6 },
+    product7: { name: 'Health-7', image: health7 },
+    product8: { name: 'Health-8', image: health8 },
+    product9: { name: 'Health-9', image: health9 },
+    product10: { name: 'Health-10', image: health10 },
+    product11: { name: 'Health-11', image: health11 },
   }
 }
 
