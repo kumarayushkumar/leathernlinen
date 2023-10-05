@@ -1,5 +1,6 @@
 import { IProductList } from '../../interface'
 import ProductTypeSection from './ProductTypeSection'
+
 interface ProductNavBarProps {
   merchendiseProductList: IProductList
   uniformProductList: IProductList
