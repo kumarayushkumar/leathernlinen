@@ -79,7 +79,7 @@ const ProductNavBar: React.FC<ProductNavBarProps> = ({ merchendiseProductList, u
               ))}
             </ul>
           </div>
-          <div className="categories mt-4">
+          <div className="categories mt-md-4">
             <button
               className={`cat_btn ${isHidden ? 'active' : ''}`}
               onClick={() => {
