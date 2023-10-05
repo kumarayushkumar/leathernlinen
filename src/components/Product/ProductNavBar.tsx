@@ -28,7 +28,7 @@ const ProductNavBar: React.FC<ProductNavBarProps> = ({ merchendiseProductList, u
     return () => {
       window.removeEventListener('resize', handleResize)
     }
-  })
+  }, [])
   const handleScrollToSection = (sectionId: string, index: number, offset?: number, uniform?: boolean) => {
     if (!uniform) {
       setcatActiveIndex(index)
