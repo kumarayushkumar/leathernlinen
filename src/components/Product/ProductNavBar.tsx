@@ -41,6 +41,8 @@ const ProductNavBar: React.FC<ProductNavBarProps> = ({ merchendiseProductList, u
     const section = document.getElementById(sectionId)
     const headerOffset = offset != null ? offset : 50
     if (section != null) {
+      setuniformIsHidden(true)
+      setIsHidden(true)
       const elementPosition = section.getBoundingClientRect().top
       const offsetPosition = elementPosition + window.pageYOffset - headerOffset
       window.scrollTo({
