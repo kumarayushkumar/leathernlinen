@@ -178,7 +178,7 @@ import other2 from '../assets/images/Other/other-2.jpg'
 
 import img from '../assets/images/bag.jpg'
 
-const merchendiseProductList = {
+const merchendiseProductList: IProductList = {
   'Drink Bottles': {
     product1: { name: 'DB1', image: bottle1 },
     product2: { name: 'DB2', image: bottle2 },
@@ -357,7 +357,7 @@ const merchendiseProductList = {
   },
 };
 
-const uniformProductList = {
+const uniformProductList: IProductList = {
   'Hospitality': {
     product1: { name: 'H1', image: hospitality1 },
     product2: { name: 'H2', image: hospitality2 },
