@@ -173,8 +173,14 @@ import hoodie2 from '../assets/images/Hoodies_&_Sweats/hoodie-2.png'
 import hoodie3 from '../assets/images/Hoodies_&_Sweats/hoodie-3.png'
 import hoodie4 from '../assets/images/Hoodies_&_Sweats/hoodie-4.png'
 
+import lanyard1 from '../assets/images/Lanyard_Card_Holder/lanyard-1.jpg'
+import lanyard2 from '../assets/images/Lanyard_Card_Holder/lanyard-2.jpeg'
+
+import paperBag1 from '../assets/images/Custom_Paper_Bags/paper-bag-1.jpeg'
+
 import other1 from '../assets/images/Other/other-1.jpg'
 import other2 from '../assets/images/Other/other-2.jpg'
+
 
 import img from '../assets/images/bag.jpg'
 
@@ -337,8 +343,8 @@ const merchendiseProductList: IProductList = {
     product2: { name: 'S2', image: img },
   },
   'Lanyard/Card Holder': {
-    product1: { name: 'LCH1', image: img },
-    product2: { name: 'LCH2', image: img },
+    product1: { name: 'LCH1', image: lanyard1 },
+    product2: { name: 'LCH2', image: lanyard2 },
   },
   'Corporate': {
     product1: { name: 'C1', image: corporate1 },
@@ -350,6 +356,9 @@ const merchendiseProductList: IProductList = {
     product7: { name: 'C7', image: corporate7 },
     product8: { name: 'C8', image: corporate8 },
     product9: { name: 'C9', image: corporate9 },
+  },
+  'Custom paper bags' : {
+    product1: { name: 'CPB1', image: paperBag1 },
   },
   'Others': {
     product1: { name: 'O1', image: other1 },
