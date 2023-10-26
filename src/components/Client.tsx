@@ -29,7 +29,6 @@ export default function Client() {
 
     window.addEventListener('resize', handleResize)
 
-    // Initial call to set the correct number of slides on component mount
     handleResize()
 
     return () => {
