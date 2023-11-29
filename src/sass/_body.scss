@@ -1,24 +1,25 @@
-@use "custom" as *;
+@use 'custom' as *;
 
 @font-face {
-  font-family: "Font";
-  src: url("../assets/fonts/Montserrat-VariableFont_wght.ttf") format("truetype");
+  font-family: 'Font';
+  src: url('../assets/fonts/Montserrat-VariableFont_wght.ttf')
+    format('truetype');
 }
 
 @font-face {
-  font-family: "Lead1";
-  src: url("../assets/fonts/Raleway-VariableFont_wght.ttf") format("truetype");
+  font-family: 'Lead1';
+  src: url('../assets/fonts/Raleway-VariableFont_wght.ttf') format('truetype');
 }
 
 @font-face {
-  font-family: "Lead2";
-  src: url("../assets/fonts/Oswald-VariableFont_wght.ttf") format("truetype");
+  font-family: 'Lead2';
+  src: url('../assets/fonts/Oswald-VariableFont_wght.ttf') format('truetype');
 }
 
 * {
   margin: 0;
   box-sizing: border-box;
-  font-family: "Font", sans-serif;
+  font-family: 'Font', sans-serif;
   scroll-behavior: smooth;
   list-style: none;
 }
@@ -39,15 +40,12 @@
   .n {
     font-weight: 500;
     font-size: 2.5rem;
-    font-family: "Lead2";
+    font-family: 'Lead2';
   }
 
   .merch,
   .gifts {
     font-size: 2rem;
-    font-family: "Lead1";
+    font-family: 'Lead1';
   }
-
 }
-
-

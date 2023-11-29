@@ -3,8 +3,8 @@
   align-items: center;
   justify-content: center;
   position: relative;
-  .text{
-    position: absolute; 
+  .text {
+    position: absolute;
     top: 50%;
     z-index: 10;
     color: #cdcec8;
@@ -15,8 +15,8 @@
     h1 {
       font-size: 1.8vw;
 
-      @media screen and (max-width:1200px) {
-        font-size:2vw;
+      @media screen and (max-width: 1200px) {
+        font-size: 2vw;
       }
     }
 
@@ -42,30 +42,30 @@
       top: 30%;
       opacity: 1;
     }
-
   }
-  .content{
+  .content {
     width: 100%;
     display: flex;
     justify-content: end;
     align-items: center;
     height: 40vw;
 
-    .image{
+    .image {
       height: 100%;
       width: 60%;
       display: none;
       animation: fadeinout 10s infinite;
-      img{
+      img {
         width: 100%;
       }
     }
-    .image.active{
+    .image.active {
       display: block;
     }
   }
-  @keyframes fadeinout{
-    0%,100%{
+  @keyframes fadeinout {
+    0%,
+    100% {
       margin-top: -10%;
       opacity: 0;
     }
@@ -76,24 +76,21 @@
       top: 15%;
       opacity: 1;
     }
-    
   }
-  @media screen and (max-width:1100px) {
-    flex-direction:column-reverse;
-    .text{
+  @media screen and (max-width: 1100px) {
+    flex-direction: column-reverse;
+    .text {
       position: relative;
       width: 90%;
       margin-left: 1rem;
-      h1{
+      h1 {
         font-size: 4vw;
       }
     }
-    .content{
+    .content {
       display: flex;
       justify-content: center;
       max-height: 50vw;
-      
     }
-    
   }
 }

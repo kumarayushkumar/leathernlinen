@@ -24,27 +24,27 @@ export default function Contact() {
         </div>
         <form action="" className="form">
           <div className="heading">
-            <h3>Leave us your details  and we'll be in touch</h3>
+            <h3>Leave us your details and we'll be in touch</h3>
           </div>
           <div className="fname">
             <label htmlFor="fname">First Name</label>
-            <input type="text" id='fname' />
+            <input type="text" id="fname" />
           </div>
           <div className="lname">
             <label htmlFor="lname">Last Name</label>
-            <input type="text" id='lname' />
+            <input type="text" id="lname" />
           </div>
           <div className="email">
             <label htmlFor="email">Email</label>
-            <input type="text" id='email' />
+            <input type="text" id="email" />
           </div>
           <div className="company-name">
             <label htmlFor="company-name">Company Name</label>
-            <input type="text" id='company-name' />
+            <input type="text" id="company-name" />
           </div>
           <div className="message">
             <label htmlFor="message">Your Message</label>
-            <input type="text" id='message' />
+            <input type="text" id="message" />
           </div>
           <div className="review">
             <label htmlFor="review">How did you hear about us?</label>
@@ -63,16 +63,21 @@ export default function Contact() {
           </div>
 
           <div className="future-ref">
-            <label htmlFor="future-ref">Please let us know if you wish to recive future marketing communication</label>
+            <label htmlFor="future-ref">
+              Please let us know if you wish to recive future marketing
+              communication
+            </label>
             <select id="future-ref">
               <option value="0"> </option>
               <option value="1">X </option>
             </select>
           </div>
 
-          <button type="submit" className='submit'>Send</button>
+          <button type="submit" className="submit">
+            Send
+          </button>
         </form>
-      </div> 
+      </div>
     </div>
   )
 }

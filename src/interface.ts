@@ -20,7 +20,6 @@ export interface IProductCategory {
   [key: string]: IProduct
 }
 
-
 export interface IScrollToTop {
   scrolltoTop: () => void
 }

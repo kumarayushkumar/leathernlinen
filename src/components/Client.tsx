@@ -1,8 +1,8 @@
 import { useState, useEffect } from 'react'
-import Slider from "react-slick"
+import Slider from 'react-slick'
 
-import "slick-carousel/slick/slick.css"
-import "slick-carousel/slick/slick-theme.css"
+import 'slick-carousel/slick/slick.css'
+import 'slick-carousel/slick/slick-theme.css'
 
 import clientLogo from '../data/client'
 
@@ -49,14 +49,14 @@ export default function Client() {
       <div className="container">
         <div className="row text-center">
           <div className="col-12">
-            <h5 className='text-black'>Brands we've worked with:</h5>
+            <h5 className="text-black">Brands we've worked with:</h5>
           </div>
         </div>
       </div>
-      <div className='container mt-4 pt-3'>
-        <Slider className='slidernew' {...settings}>
+      <div className="container mt-4 pt-3">
+        <Slider className="slidernew" {...settings}>
           {clientLogo.map((client, index) => (
-            <div key={index} className='card'>
+            <div key={index} className="card">
               <img src={client.img} alt={`Client Logo ${index}`} />
             </div>
           ))}

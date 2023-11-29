@@ -8,8 +8,12 @@
   }
 
   .hero {
-    
-    background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.568) 50%, rgba(253, 253, 253, 0)),url('../assets/images/Product/products-cover.jpg');
+    background-image: linear-gradient(
+        90deg,
+        rgba(0, 0, 0, 0.568) 50%,
+        rgba(253, 253, 253, 0)
+      ),
+      url('../assets/images/Product/products-cover.jpg');
     background-size: 100% 100%;
     background-repeat: no-repeat;
     display: flex;
@@ -20,18 +24,20 @@
     position: relative;
     height: 40vw;
 
-    
     img::before {
-      content: ""; /* Required for pseudo-elements */
+      content: ''; /* Required for pseudo-elements */
       position: absolute; /* Position the gradient overlay */
       top: 0;
       right: 0;
       bottom: 0;
       left: 0;
-      background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0) 100%); /* Define your gradient here */
+      background: linear-gradient(
+        to bottom,
+        rgba(0, 0, 0, 0.5) 0%,
+        rgba(0, 0, 0, 0) 100%
+      ); /* Define your gradient here */
       pointer-events: none; /* Allows clicks to pass through the overlay to the image */
     }
-    
 
     .text {
       position: absolute;
@@ -56,26 +62,25 @@
 }
 
 .product-type {
-
   width: 100%;
 
   .heading {
     margin-top: 3.8rem;
     font-size: 1.5rem;
-    font-family: "Font";
+    font-family: 'Font';
     position: sticky;
-    top:4rem;
+    top: 4rem;
     width: 100%;
-    
+
     z-index: 96;
     background-color: #faf8f1;
     font-weight: 500;
     padding-block: 1.5rem;
     @media screen and (max-width: 1213px) {
-      top:9.5rem;
+      top: 9.5rem;
       z-index: 90;
       padding-block: 0.5rem;
-      padding-inline:5% ;
+      padding-inline: 5%;
     }
     @media screen and (max-width: 565px) {
       font-size: 1rem;
@@ -93,8 +98,8 @@
   .arr_card {
     display: flex;
     flex-wrap: wrap;
-    @media screen and (max-width:1213px) {
-      justify-content:start;
+    @media screen and (max-width: 1213px) {
+      justify-content: start;
     }
     width: 100%;
 
@@ -107,7 +112,6 @@
       height: 25rem;
       margin-bottom: 2rem;
       margin-inline: 0.7rem;
-      
 
       // overflow: hidden;
       .image {
@@ -128,7 +132,6 @@
             transform: scale(1.1);
           }
         }
-        
       }
 
       .content {
@@ -145,17 +148,16 @@
         }
       }
       @media screen and (max-width: 552px) {
-        margin-inline:0.2rem;
+        margin-inline: 0.2rem;
         margin-bottom: 0.2rem;
         width: 10rem;
         height: 15rem;
-        .content{
-          h6{
+        .content {
+          h6 {
             font-size: 1rem;
           }
         }
       }
     }
   }
-
 }

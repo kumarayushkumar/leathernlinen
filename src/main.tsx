@@ -17,9 +17,18 @@ ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
     <Routes>
       <Route path="/" element={<Home scrolltoTop={scrollToTop} />} />
       <Route path="/product" element={<Product scrolltoTop={scrollToTop} />} />
-      <Route path="/contact-us" element={<ContactUs scrolltoTop={scrollToTop} />} />
-      <Route path="/our-promise" element={<OurPromise scrolltoTop={scrollToTop} />} />
-      <Route path="/printing" element={<Printing scrolltoTop={scrollToTop} />} />
+      <Route
+        path="/contact-us"
+        element={<ContactUs scrolltoTop={scrollToTop} />}
+      />
+      <Route
+        path="/our-promise"
+        element={<OurPromise scrolltoTop={scrollToTop} />}
+      />
+      <Route
+        path="/printing"
+        element={<Printing scrolltoTop={scrollToTop} />}
+      />
     </Routes>
   </BrowserRouter>
 )

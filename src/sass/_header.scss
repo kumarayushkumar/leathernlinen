@@ -1,9 +1,9 @@
-@use "custom" as *;
-@use "body" as *;
+@use 'custom' as *;
+@use 'body' as *;
 
 header {
   background-color: $white;
-  font-family: "Font", "sans-serif";
+  font-family: 'Font', 'sans-serif';
   width: 100%;
   display: flex;
   justify-content: center;
@@ -47,7 +47,6 @@ header {
 
 nav {
   ul {
-
     padding: 0 !important;
     margin-top: 1rem;
     z-index: 5;
@@ -69,12 +68,11 @@ nav {
       // a:hover {
       //   font-size: 1.1rem;
       // }
-
     }
   }
 
   a {
-    font-family: "Font", "sans-serif";
+    font-family: 'Font', 'sans-serif';
     color: $black;
     text-decoration: none;
     padding-inline: 1rem;
@@ -83,7 +81,6 @@ nav {
     letter-spacing: 1.5px;
     text-transform: uppercase;
     transition: all 0.1s ease-in-out;
-
   }
 
   .phone-number {
@@ -92,7 +89,7 @@ nav {
     padding: 0.5rem 1.5rem;
     text-decoration: none;
     color: $black;
-    font-family: "Font";
+    font-family: 'Font';
 
     &:hover {
       color: $white;
@@ -126,7 +123,7 @@ nav {
       font-size: 0.9rem;
       font-weight: 500;
       display: block;
-      font-family: "Font";
+      font-family: 'Font';
     }
   }
 
@@ -136,7 +133,6 @@ nav {
 }
 
 @media screen and (max-width: 1064px) {
- 
   nav {
     background-color: rgb(231, 231, 231);
     border-radius: 15px;
@@ -148,14 +144,12 @@ nav {
     transition-duration: 1s;
     transform: translateX(-50%);
     display: block;
-    
 
     ul {
       flex-direction: column;
       li {
         display: block;
         margin-block: 1rem;
-
       }
     }
   }

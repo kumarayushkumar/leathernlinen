@@ -6,25 +6,36 @@ export default function WhatWeOffer() {
         <div className="card">
           <div className="title">MerchnGifts Bulk Ordering</div>
           <div className="desc">
-            <p>Easily shop our curated selection of the highest quality merch</p>
+            <p>
+              Easily shop our curated selection of the highest quality merch
+            </p>
           </div>
         </div>
         <div className="card">
           <div className="title">MerchnGifts Distribution</div>
           <div className="desc">
-            <p>Send merch to one location or to thousands of locations at once.</p>
+            <p>
+              Send merch to one location or to thousands of locations at once.
+            </p>
           </div>
         </div>
         <div className="card">
           <div className="title">MerchnGifts In a Box</div>
           <div className="desc">
-            <p>Show your employees and customers some love. Send them the good stuff in a box!</p>
+            <p>
+              Show your employees and customers some love. Send them the good
+              stuff in a box!
+            </p>
           </div>
         </div>
         <div className="card">
           <div className="title">MerchnGifts Corporate Gifting</div>
           <div className="desc">
-            <p> Allow your audience to choose what they want. We'll send it right to their door!</p>
+            <p>
+              {' '}
+              Allow your audience to choose what they want. We'll send it right
+              to their door!
+            </p>
           </div>
         </div>
         {/* <div className="card">
@@ -35,6 +46,5 @@ export default function WhatWeOffer() {
         </div> */}
       </div>
     </div>
-  
   )
 }

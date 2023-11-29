@@ -33,7 +33,7 @@ const clientLogo = [
   { img: client14 },
   { img: client15 },
   { img: client16 },
-  { img: client17 },
+  { img: client17 }
 ]
 
 export default clientLogo

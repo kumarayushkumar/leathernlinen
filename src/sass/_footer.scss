@@ -6,8 +6,6 @@ footer {
   background-color: $black;
   color: $primary;
 
-
-
   a {
     text-decoration: none;
   }
@@ -43,8 +41,8 @@ footer {
 }
 
 .growigh {
-  font-size: 1.0rem;
-  color: rgba($white, 0.80);
+  font-size: 1rem;
+  color: rgba($white, 0.8);
 
   .growigh__name {
     color: rgba($white, 0.99);
@@ -90,7 +88,7 @@ footer {
 
 .btt__whatsapp {
   bottom: 4rem;
-  background-color: #49C95A;
+  background-color: #49c95a;
 
   @include media-breakpoint-up(sm) {
     bottom: 5.8rem;

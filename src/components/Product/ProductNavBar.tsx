@@ -7,7 +7,10 @@ interface ProductNavBarProps {
   uniformProductList: IProductList
 }
 
-const ProductNavBar: React.FC<ProductNavBarProps> = ({ merchendiseProductList, uniformProductList }) => {
+const ProductNavBar: React.FC<ProductNavBarProps> = ({
+  merchendiseProductList,
+  uniformProductList
+}) => {
   const [catactiveIndex, setcatActiveIndex] = useState(9999)
   const windowSize = useRef([window.innerWidth])
   const [uniactiveIndex, setuniActiveIndex] = useState(0)
@@ -29,12 +32,16 @@ const ProductNavBar: React.FC<ProductNavBarProps> = ({ merchendiseProductList, u
       window.removeEventListener('resize', handleResize)
     }
   }, [])
-  const handleScrollToSection = (sectionId: string, index: number, offset?: number, uniform?: boolean) => {
+  const handleScrollToSection = (
+    sectionId: string,
+    index: number,
+    offset?: number,
+    uniform?: boolean
+  ) => {
     if (!uniform) {
       setcatActiveIndex(index)
       setuniActiveIndex(9999)
-    }
-    else {
+    } else {
       setuniActiveIndex(index)
       setcatActiveIndex(9999)
     }
@@ -47,7 +54,7 @@ const ProductNavBar: React.FC<ProductNavBarProps> = ({ merchendiseProductList, u
       const offsetPosition = elementPosition + window.pageYOffset - headerOffset
       window.scrollTo({
         top: offsetPosition,
-        behavior: "smooth"
+        behavior: 'smooth'
       })
     }
   }
@@ -55,15 +62,13 @@ const ProductNavBar: React.FC<ProductNavBarProps> = ({ merchendiseProductList, u
   return (
     <section className="navbar">
       <div className="nav-container">
-
         <div className="col-10 product_left">
           <div className="uniform">
             <button
               className={`cat_btn ${uniformisHidden ? 'active' : ''}`}
               onClick={() => {
                 setuniformIsHidden(!uniformisHidden)
-              }}
-            >
+              }}>
               Uniforms
               <span className={`btn ${uniformisHidden ? 'active' : ''}`}>
                 <img src={dropdownBtnImage} alt="Dropdown Icon" />
@@ -73,9 +78,17 @@ const ProductNavBar: React.FC<ProductNavBarProps> = ({ merchendiseProductList, u
               {Object.keys(uniformProductList).map((productType, index) => (
                 <li
                   key={productType}
-                  onClick={() => handleScrollToSection(productType.replace(/\s/g, '_'), index, 75, true)}
-                  className={`element ${uniactiveIndex === index ? 'active' : ''}`}
-                >
+                  onClick={() =>
+                    handleScrollToSection(
+                      productType.replace(/\s/g, '_'),
+                      index,
+                      75,
+                      true
+                    )
+                  }
+                  className={`element ${
+                    uniactiveIndex === index ? 'active' : ''
+                  }`}>
                   {productType}
                 </li>
               ))}
@@ -89,8 +102,7 @@ const ProductNavBar: React.FC<ProductNavBarProps> = ({ merchendiseProductList, u
                 if (mobilewidth >= windowSize.current[0]) {
                   setuniformIsHidden(!uniformisHidden)
                 }
-              }}
-            >
+              }}>
               Categories
               <span className={`btn ${isHidden ? 'active' : ''}`}>
                 <img src={dropdownBtnImage} alt="Dropdown Icon" />
@@ -100,17 +112,22 @@ const ProductNavBar: React.FC<ProductNavBarProps> = ({ merchendiseProductList, u
               {Object.keys(merchendiseProductList).map((productType, index) => (
                 <li
                   key={productType}
-                  onClick={() => handleScrollToSection(productType.replace(/\s/g, '_'), index, 75)}
-                  className={`element ${catactiveIndex === index ? 'active' : ''}`}
-                >
+                  onClick={() =>
+                    handleScrollToSection(
+                      productType.replace(/\s/g, '_'),
+                      index,
+                      75
+                    )
+                  }
+                  className={`element ${
+                    catactiveIndex === index ? 'active' : ''
+                  }`}>
                   {productType}
                 </li>
               ))}
             </ul>
           </div>
-
         </div>
-
       </div>
     </section>
   )

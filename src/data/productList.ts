@@ -181,7 +181,6 @@ import paperBag1 from '../assets/images/Custom_Paper_Bags/paper-bag-1.jpeg'
 import other1 from '../assets/images/Other/other-1.jpg'
 import other2 from '../assets/images/Other/other-2.jpg'
 
-
 import img from '../assets/images/bag.jpg'
 
 const merchendiseProductList: IProductList = {
@@ -201,7 +200,7 @@ const merchendiseProductList: IProductList = {
     product13: { name: 'DB13', image: bottle13 },
     product14: { name: 'DB14', image: bottle14 },
     product15: { name: 'DB15', image: bottle15 },
-    product16: { name: 'DB16', image: bottle16 },
+    product16: { name: 'DB16', image: bottle16 }
   },
   'Tumblers & Mugs': {
     product1: { name: 'TM1', image: tumbler1 },
@@ -223,10 +222,10 @@ const merchendiseProductList: IProductList = {
     product17: { name: 'TM17', image: tumbler17 },
     product18: { name: 'TM18', image: tumbler18 },
     product19: { name: 'TM19', image: tumbler19 },
-    product20: { name: 'TM20', image: tumbler20 },
+    product20: { name: 'TM20', image: tumbler20 }
   },
-  'Totes': {
-    product1: { name: 'Tote1', image: tote1 },
+  Totes: {
+    product1: { name: 'Tote1', image: tote1 }
   },
   'Backpacks & Bags': {
     product1: { name: 'BB1', image: backpack1 },
@@ -245,7 +244,7 @@ const merchendiseProductList: IProductList = {
     product14: { name: 'BB14', image: backpack14 },
     product15: { name: 'BB15', image: backpack15 },
     product16: { name: 'BB16', image: backpack16 },
-    product17: { name: 'BB17', image: backpack17 },
+    product17: { name: 'BB17', image: backpack17 }
   },
   'Notebooks & Pens': {
     product1: { name: 'NP1', image: notebook1 },
@@ -263,7 +262,7 @@ const merchendiseProductList: IProductList = {
     product13: { name: 'NP13', image: pen6 },
     product14: { name: 'NP14', image: pen7 },
     product15: { name: 'NP15', image: pen8 },
-    product16: { name: 'NP16', image: pen9 },
+    product16: { name: 'NP16', image: pen9 }
   },
   'Tees & Singlets': {
     product1: { name: 'TS1', image: tees1 },
@@ -277,7 +276,7 @@ const merchendiseProductList: IProductList = {
     product9: { name: 'TS9', image: tees9 },
     product10: { name: 'TS10', image: tees10 },
     product11: { name: 'TS11', image: tees11 },
-    product12: { name: 'TS12', image: tees12 },
+    product12: { name: 'TS12', image: tees12 }
   },
   'Polos & Shirts': {
     product1: { name: 'PS1', image: polos1 },
@@ -294,19 +293,19 @@ const merchendiseProductList: IProductList = {
     product12: { name: 'PS12', image: polos12 },
     product13: { name: 'PS13', image: polos13 },
     product14: { name: 'PS14', image: polos14 },
-    product15: { name: 'PS15', image: polos15 },
+    product15: { name: 'PS15', image: polos15 }
   },
   'Hoodies & Sweats': {
     product1: { name: 'HS1', image: hoodie1 },
     product2: { name: 'HS2', image: hoodie2 },
     product3: { name: 'HS3', image: hoodie3 },
-    product4: { name: 'HS4', image: hoodie4 },
+    product4: { name: 'HS4', image: hoodie4 }
   },
   'Custom Gifts': {
     product1: { name: 'CG1', image: custom1 },
-    product2: { name: 'CG2', image: custom2 },
+    product2: { name: 'CG2', image: custom2 }
   },
-  'Accessories': {
+  Accessories: {
     product1: { name: 'A1', image: accessories1 },
     product2: { name: 'A2', image: accessories2 },
     product3: { name: 'A3', image: accessories3 },
@@ -319,9 +318,9 @@ const merchendiseProductList: IProductList = {
     product10: { name: 'A10', image: accessories10 },
     product11: { name: 'A11', image: accessories11 },
     product12: { name: 'A12', image: accessories12 },
-    product13: { name: 'A13', image: accessories13 },
+    product13: { name: 'A13', image: accessories13 }
   },
-  'Tech': {
+  Tech: {
     product1: { name: 'T1', image: tech1 },
     product2: { name: 'T2', image: tech2 },
     product3: { name: 'T3', image: tech3 },
@@ -332,21 +331,21 @@ const merchendiseProductList: IProductList = {
     product8: { name: 'T8', image: tech8 },
     product9: { name: 'T9', image: tech9 },
     product10: { name: 'T10', image: tech10 },
-    product11: { name: 'T11', image: tech11 },
+    product11: { name: 'T11', image: tech11 }
   },
   'Badges/Lapel pins': {
     product1: { name: 'BL1', image: img },
-    product2: { name: 'BL2', image: img },
+    product2: { name: 'BL2', image: img }
   },
-  'School': {
+  School: {
     product1: { name: 'S1', image: img },
-    product2: { name: 'S2', image: img },
+    product2: { name: 'S2', image: img }
   },
   'Lanyard/Card Holder': {
     product1: { name: 'LCH1', image: lanyard1 },
-    product2: { name: 'LCH2', image: lanyard2 },
+    product2: { name: 'LCH2', image: lanyard2 }
   },
-  'Corporate': {
+  Corporate: {
     product1: { name: 'C1', image: corporate1 },
     product2: { name: 'C2', image: corporate2 },
     product3: { name: 'C3', image: corporate3 },
@@ -355,19 +354,19 @@ const merchendiseProductList: IProductList = {
     product6: { name: 'C6', image: corporate6 },
     product7: { name: 'C7', image: corporate7 },
     product8: { name: 'C8', image: corporate8 },
-    product9: { name: 'C9', image: corporate9 },
+    product9: { name: 'C9', image: corporate9 }
   },
-  'Custom paper bags' : {
-    product1: { name: 'CPB1', image: paperBag1 },
+  'Custom paper bags': {
+    product1: { name: 'CPB1', image: paperBag1 }
   },
-  'Others': {
+  Others: {
     product1: { name: 'O1', image: other1 },
-    product2: { name: 'O2', image: other2 },
-  },
-};
+    product2: { name: 'O2', image: other2 }
+  }
+}
 
 const uniformProductList: IProductList = {
-  'Hospitality': {
+  Hospitality: {
     product1: { name: 'H1', image: hospitality1 },
     product2: { name: 'H2', image: hospitality2 },
     product3: { name: 'H3', image: hospitality3 },
@@ -379,9 +378,9 @@ const uniformProductList: IProductList = {
     product9: { name: 'H9', image: hospitality9 },
     product10: { name: 'H10', image: hospitality10 },
     product11: { name: 'H11', image: hospitality11 },
-    product12: { name: 'H12', image: hospitality12 },
+    product12: { name: 'H12', image: hospitality12 }
   },
-  'Health': {
+  Health: {
     product1: { name: 'H1', image: health1 },
     product2: { name: 'H2', image: health2 },
     product3: { name: 'H3', image: health3 },
@@ -392,9 +391,8 @@ const uniformProductList: IProductList = {
     product8: { name: 'H8', image: health8 },
     product9: { name: 'H9', image: health9 },
     product10: { name: 'H10', image: health10 },
-    product11: { name: 'H11', image: health11 },
-  },
-};
+    product11: { name: 'H11', image: health11 }
+  }
+}
 
-
-export {merchendiseProductList,uniformProductList}
+export { merchendiseProductList, uniformProductList }

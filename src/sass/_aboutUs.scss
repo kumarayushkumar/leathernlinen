@@ -1,4 +1,4 @@
-@use "custom" as *;
+@use 'custom' as *;
 
 #whoweare {
   margin-top: 5rem;
@@ -20,7 +20,7 @@
 
     .content {
       margin-top: 8rem;
-      p{
+      p {
         font-size: 1.2vw;
         margin-left: 1rem;
       }
@@ -39,9 +39,9 @@
       height: 100%;
     }
   }
-  @media screen and (max-width:800px) {
+  @media screen and (max-width: 800px) {
     .text {
-      .heading{
+      .heading {
         font-size: 10vw;
         margin-left: 0;
         left: 1rem;
@@ -49,12 +49,12 @@
       }
       .content {
         margin-top: 5rem;
-        p{
+        p {
           font-size: 2vw;
         }
       }
     }
-    .image{
+    .image {
       width: 100%;
     }
     .d-flex {
@@ -71,30 +71,29 @@
         width: 80%;
       }
     }
-
   }
-  @media screen and (max-width:900px){
+  @media screen and (max-width: 900px) {
     .text {
       .content {
-        p{
+        p {
           font-size: 3vw;
         }
       }
     }
   }
-  @media screen and (max-width:500px){
+  @media screen and (max-width: 500px) {
     .text {
       margin-left: 0;
       .content {
-        p{
+        p {
           font-size: 1.2rem;
         }
       }
     }
   }
-  @media screen and (max-width:1200px){
+  @media screen and (max-width: 1200px) {
     .content {
-      p{
+      p {
         font-size: 2vw;
       }
     }
@@ -143,16 +142,15 @@
     .fluid-container {
       flex-direction: column;
 
-      .text{
+      .text {
         width: 100%;
         display: flex;
         justify-content: center;
       }
       .content {
-        width:80%;
+        width: 80%;
         display: flex;
         justify-content: center;
-
       }
     }
 
@@ -292,7 +290,7 @@
         margin-top: 4rem;
         margin-left: 1.5rem;
         width: 100%;
-        .heading{
+        .heading {
           margin-inline: 0;
           font-size: 2rem;
         }
@@ -300,7 +298,7 @@
           margin-left: 1rem;
         }
         .content p:nth-child(odd) {
-          margin-left:0;
+          margin-left: 0;
         }
       }
     }
@@ -470,7 +468,7 @@
     }
 
     .text {
-      width:40%;
+      width: 40%;
       .heading {
         color: #828282;
         font-weight: 600;
@@ -489,7 +487,7 @@
     .image {
       position: relative;
       width: 30%;
-      
+
       img {
         margin-top: 10rem;
         width: 100%;
@@ -499,7 +497,7 @@
 
   @media screen and (max-width: 952px) {
     margin-top: 5rem;
-    align-items: center; 
+    align-items: center;
     overflow-x: hidden;
 
     .center {
@@ -539,9 +537,9 @@
       }
 
       .text {
-        width:80%;
+        width: 80%;
         margin-left: 2rem;
-       
+
         .content {
           margin-left: 1rem;
           font-size: 1.2rem;

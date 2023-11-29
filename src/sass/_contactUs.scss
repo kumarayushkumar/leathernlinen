@@ -14,12 +14,11 @@
 
     .text {
       position: absolute;
-      top:50%;
+      top: 50%;
       left: 5%;
       transform: translateY(50%);
       color: $font-color;
       animation: apper 2s forwards;
-      
 
       h1 {
         font-weight: 800;
@@ -59,7 +58,6 @@
     }
 
     .form {
-
       .fname,
       .lname,
       .email,
@@ -85,7 +83,6 @@
         label {
           padding-block: 0.5rem;
         }
-
       }
 
       .submit {
@@ -100,6 +97,5 @@
         }
       }
     }
-
   }
 }
