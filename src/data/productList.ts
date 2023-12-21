@@ -337,10 +337,6 @@ const merchendiseProductList: IProductList = {
     product1: { name: 'BL1', image: img },
     product2: { name: 'BL2', image: img }
   },
-  School: {
-    product1: { name: 'S1', image: img },
-    product2: { name: 'S2', image: img }
-  },
   'Lanyard/Card Holder': {
     product1: { name: 'LCH1', image: lanyard1 },
     product2: { name: 'LCH2', image: lanyard2 }

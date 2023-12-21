@@ -57,11 +57,11 @@ export default function Header() {
                       Why merchendise & gift
                     </Link>
                     <Link
-                      to="/#doyouknowthat"
+                      to="/#whychooseus"
                       onClick={() =>
-                        handleScrollToSection('doyouknowthat', 150)
+                        handleScrollToSection('whychooseus', 150)
                       }>
-                      Why to choose us
+                      Why to choose us ?
                     </Link>
                     <Link
                       to="/"

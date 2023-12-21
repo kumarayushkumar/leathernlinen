@@ -31,7 +31,7 @@ export default function Footer() {
                 E: naseem.khan10@gmail.com
               </a>
             </h5>
-            <h5> Address: Level 5/1-3 Fitzwilliam St, Parramatta NSW 2150</h5>
+            <h5> Address: Level 5/1-3 Fitzwilliam St, Parramatta NSW 2150, Australlia</h5>
             <h5 className="mt-4">Copyright @ merchNgifts</h5>
           </div>
 

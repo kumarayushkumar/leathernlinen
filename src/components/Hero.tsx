@@ -7,13 +7,11 @@ export default function Hero() {
 
   useEffect(() => {
     const interval = setInterval(() => {
-      document
-        .querySelectorAll('.child')
-        [activeIndex]?.classList.remove('active')
+      document.querySelectorAll('.child')[activeIndex]?.classList.remove('active')
       const nextIndex = (activeIndex + 1) % 8
       document.querySelectorAll('.child')[nextIndex]?.classList.add('active')
       setActiveIndex(nextIndex)
-    }, 10000)
+    }, 3000)
     return () => clearInterval(interval)
   }, [activeIndex])
 
@@ -28,7 +26,7 @@ export default function Hero() {
           fill the <span className="color2">colors </span> at your merchandise
         </h1>
         <h1>
-          fill the <span className="color3">colors </span> with your gift
+          fill the <span className="color3">colors </span> with your gifts
         </h1>
       </div>
       <div className="content">

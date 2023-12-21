@@ -16,7 +16,7 @@ export default function Contact() {
             <h3>MERCH N GIFT HQ</h3>
           </div>
           <div className="desc">
-            <p>Level 5/1-3 Fitzwilliam St, Parramatta NSW 2150</p>
+            <p>Level 5/1-3 Fitzwilliam St, Parramatta NSW 2150, Australlia</p>
             <p>P: +61415816522</p>
             <p>E: naseem.khan10@gmail.com</p>
             {/* <Socials/> */}
