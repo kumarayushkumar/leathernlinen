@@ -91,7 +91,7 @@ export default function Header() {
                 <div className="row px-2">
                   <div className="col-12 p-2 vertical-line">
                     <Link to="/Printing">Printing</Link>
-                    <Link to="/#whymerchendise">Embroidery</Link>
+                    {/* <Link to="/#whymerchendise">Embroidery</Link> */}
                     <Link to="/#doyouknowthat">product design and artwork</Link>
                   </div>
                 </div>

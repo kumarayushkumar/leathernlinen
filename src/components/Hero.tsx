@@ -26,7 +26,7 @@ export default function Hero() {
           fill the <span className="color2">colors </span> at your merchandise
         </h1>
         <h1>
-          fill the <span className="color3">colors </span> with your gifts
+          fill the <span className="color3">colors </span> with your gift
         </h1>
       </div>
       <div className="content">

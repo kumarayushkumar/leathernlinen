@@ -23,19 +23,39 @@ export default function Footer() {
 
         <div className="row">
           <div className="col-md-4">
+            <h4 className="pb-3">Australia Office</h4>
             <h5>
               <a href="tel: +61415816522">P: +61415816522</a>
             </h5>
             <h5>
-              <a href="mailto:naseem.khan10@gmail.com">
-                E: naseem.khan10@gmail.com
+              <a href="mailto:sales.australia@merchngifts.com">
+                E: sales.australia@merchngifts.com
               </a>
             </h5>
-            <h5> Address: Level 5/1-3 Fitzwilliam St, Parramatta NSW 2150, Australlia</h5>
+            <h5>
+              {' '}
+              Address: Level 5/1-3 Fitzwilliam St, Parramatta NSW 2150
+            </h5>
             <h5 className="mt-4">Copyright @ merchNgifts</h5>
           </div>
 
-          <div className="col-md-2">
+          <div className="col-md-4">
+            <h4 className="pb-3">India Office</h4>
+            <h5>
+              <a href="tel: +917983008573">P: +917983008573</a>
+            </h5>
+            <h5>
+              <a href="mailto:sales.india@merchngifts.com">
+                E: sales.india@merchngifts.com
+              </a>
+            </h5>
+            <h5>
+              {' '}
+              Address: Chhattarpur, New delhi
+            </h5>
+          </div>
+
+          {/* <div className="col-md-2">
             <ul>
               <li>
                 <Link to="/#header">Home</Link>
@@ -50,9 +70,9 @@ export default function Footer() {
                 <Link to="/contact-us">Contact Us</Link>
               </li>
             </ul>
-          </div>
+          </div> */}
 
-          <div className="col-md-3 text-center">
+          <div className="col-md-2 text-center">
             <img
               src={catalogueCover}
               alt=""
@@ -63,7 +83,7 @@ export default function Footer() {
             </Link>
           </div>
 
-          <div className="col-md-3">
+          <div className="col-md-2">
             <div className="d-flex mt-4 f-social">
               <a
                 className=""

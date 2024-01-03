@@ -5,7 +5,7 @@ export default function WhoWeAre() {
     <section className="whoweare" id="whoweare">
       <div className="fluid-container d-flex justify-content-around">
         <div className="text">
-          <h1 className="heading">Who the hell we are</h1>
+          <h1 className="heading">Who we are</h1>
           <div className="content ">
             <p>
               A diverse and talented team working in the field of merchandising

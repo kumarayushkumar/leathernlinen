@@ -13,12 +13,21 @@ export default function Contact() {
         <div className="address">
           <div className="heading">
             <h3>Contact us</h3>
-            <h3>MERCH N GIFT HQ</h3>
+            <h3>MerchNGifts HQ Australia</h3>
           </div>
           <div className="desc">
-            <p>Level 5/1-3 Fitzwilliam St, Parramatta NSW 2150, Australlia</p>
-            <p>P: +61415816522</p>
-            <p>E: naseem.khan10@gmail.com</p>
+            <p>Level 5/1-3 Fitzwilliam St, Parramatta NSW 2150</p>
+            <p>P: +61 415816522</p>
+            <p>E: sales.australia@merchngifts.com</p>
+            {/* <Socials/> */}
+          </div>
+          <div className="heading mt-5">
+            <h3>MerchNGifts HQ India</h3>
+          </div>
+          <div className="desc">
+            <p>Chhattarpur, New delhi</p>
+            <p>P: +91 7983008573</p>
+            <p>E: sales.india@merchngifts.com</p>
             {/* <Socials/> */}
           </div>
         </div>
