@@ -178,10 +178,17 @@ import lanyard2 from '../assets/images/Lanyard_Card_Holder/lanyard-2.jpeg'
 
 import paperBag1 from '../assets/images/Custom_Paper_Bags/paper-bag-1.jpeg'
 
+import badgesLapelPins1 from '../assets/images/Badges_&_LapelPins/badgesLapelpins-1.jpg'
+import badgesLapelPins2 from '../assets/images/Badges_&_LapelPins/badgesLapelpins-2.jpg'
+import badgesLapelPins3 from '../assets/images/Badges_&_LapelPins/badgesLapelpins-3.jpg'
+import badgesLapelPins4 from '../assets/images/Badges_&_LapelPins/badgesLapelpins-4.jpg'
+import badgesLapelPins5 from '../assets/images/Badges_&_LapelPins/badgesLapelpins-5.jpg'
+import badgesLapelPins6 from '../assets/images/Badges_&_LapelPins/badgesLapelpins-6.jpg'
+
 import other1 from '../assets/images/Other/other-1.jpg'
 import other2 from '../assets/images/Other/other-2.jpg'
 
-import img from '../assets/images/bag.jpg'
+// import img from '../assets/images/bag.jpg'
 
 const merchendiseProductList: IProductList = {
   'Drink Bottles': {
@@ -334,8 +341,12 @@ const merchendiseProductList: IProductList = {
     product11: { name: 'T11', image: tech11 }
   },
   'Badges/Lapel pins': {
-    product1: { name: 'BL1', image: img },
-    product2: { name: 'BL2', image: img }
+    product1: { name: 'BL1', image: badgesLapelPins1 },
+    product2: { name: 'BL2', image: badgesLapelPins2 },
+    product3: { name: 'BL3', image: badgesLapelPins3 },
+    product4: { name: 'BL4', image: badgesLapelPins4 },
+    product5: { name: 'BL5', image: badgesLapelPins5 },
+    product6: { name: 'BL6', image: badgesLapelPins6 }
   },
   'Lanyard/Card Holder': {
     product1: { name: 'LCH1', image: lanyard1 },

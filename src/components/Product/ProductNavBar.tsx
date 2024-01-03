@@ -1,5 +1,5 @@
-import { useEffect, useRef, useState } from 'react'
-import dropdownBtnImage from '../../assets/images/dropdown.svg'
+import { useEffect, useState } from 'react'
+// import dropdownBtnImage from '../../assets/images/dropdown.svg'
 import { IProductList } from '../../interface'
 
 interface ProductNavBarProps {
@@ -12,7 +12,7 @@ const ProductNavBar: React.FC<ProductNavBarProps> = ({
   uniformProductList
 }) => {
   const [catactiveIndex, setcatActiveIndex] = useState(9999)
-  const windowSize = useRef([window.innerWidth])
+  // const windowSize = useRef([window.innerWidth])
   const [uniactiveIndex, setuniActiveIndex] = useState(0)
   const [mobilewidth] = useState(1213)
   const [isHidden, setIsHidden] = useState(false)
@@ -66,15 +66,16 @@ const ProductNavBar: React.FC<ProductNavBarProps> = ({
           <div className="uniform">
             <button
               className={`cat_btn ${uniformisHidden ? 'active' : ''}`}
-              onClick={() => {
-                setuniformIsHidden(!uniformisHidden)
-              }}>
+              // onClick={() => {
+              //   setuniformIsHidden(!uniformisHidden)
+              // }}
+            >
               Uniforms
-              <span className={`btn ${uniformisHidden ? 'active' : ''}`}>
+              {/* <span className={`btn ${uniformisHidden ? 'active' : ''}`}>
                 <img src={dropdownBtnImage} alt="Dropdown Icon" />
-              </span>
+              </span> */}
             </button>
-            <ul className={`list uniform ${uniformisHidden ? 'active' : ''}`}>
+            <ul className={`list uniform `}>
               {Object.keys(uniformProductList).map((productType, index) => (
                 <li
                   key={productType}
@@ -97,18 +98,19 @@ const ProductNavBar: React.FC<ProductNavBarProps> = ({
           <div className="categories mt-md-4">
             <button
               className={`cat_btn ${isHidden ? 'active' : ''}`}
-              onClick={() => {
-                setIsHidden(!isHidden)
-                if (mobilewidth >= windowSize.current[0]) {
-                  setuniformIsHidden(!uniformisHidden)
-                }
-              }}>
+              // onClick={() => {
+              //   setIsHidden(!isHidden)
+              //   if (mobilewidth >= windowSize.current[0]) {
+              //     setuniformIsHidden(!uniformisHidden)
+              //   }
+              // }}
+            >
               Categories
-              <span className={`btn ${isHidden ? 'active' : ''}`}>
+              {/* <span className={`btn ${isHidden ? 'active' : ''}`}>
                 <img src={dropdownBtnImage} alt="Dropdown Icon" />
-              </span>
+              </span> */}
             </button>
-            <ul className={`mt-2 list ${isHidden ? 'active' : ''}`}>
+            <ul className={`mt-2 list `}>
               {Object.keys(merchendiseProductList).map((productType, index) => (
                 <li
                   key={productType}
