@@ -45,15 +45,15 @@ export default function Client() {
     pauseOnHover: false
   }
   return (
-    <section id="client" className="d-block pt-4 md:pt-6 md:pb-5">
+    <section id="client" className="d-block pt-4 pt-md-5 pb-md-4">
       <div className="container">
-        <div className="row md:text-center">
+        <div className="row text-md-center">
           <div className="col-12">
             <h5 className="text-black md">Brands we've worked with:</h5>
           </div>
         </div>
       </div>
-      <div className="container mt-2 md:mt-4 pt-3">
+      <div className="container pt-4 pt-md-5">
         <Slider className="slidernew" {...settings}>
           {clientLogo.map((client, index) => (
             <div key={index} className="card">
