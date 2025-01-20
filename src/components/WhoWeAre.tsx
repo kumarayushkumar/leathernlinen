@@ -5,8 +5,8 @@ export default function WhoWeAre() {
     <section className="whoweare" id="whoweare">
       <div className="fluid-container d-flex justify-content-around">
         <div className="text">
-          <h1 className="heading">Who we are</h1>
-          <div className="content ">
+          <h1 className="heading mt-4 md:mt-0">Who we are</h1>
+          <div className="d-flex flex-column justify-content-center px-2 md:px-4">
             <p>
               A diverse and talented team working in the field of merchandising
               and gifts with a global presence, operating from offices in

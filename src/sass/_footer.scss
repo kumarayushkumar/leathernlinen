@@ -12,7 +12,7 @@ footer {
 
   ul {
     list-style: none;
-    font-size: 1.2rem;
+    font-size: 1rem;
 
     li {
       padding-bottom: 0.675rem;
@@ -22,7 +22,7 @@ footer {
 
 .dowload-catalogue {
   text-decoration: none;
-  font-size: 1.2rem;
+  font-size: 1rem;
 }
 
 .dowload-catalogue-img {
@@ -35,7 +35,7 @@ footer {
     margin: 0 0.675rem;
 
     @include media-breakpoint-up(sm) {
-      font-size: 2.5rem;
+      font-size: 2rem;
     }
   }
 }

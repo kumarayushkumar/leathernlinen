@@ -45,19 +45,19 @@ export default function Client() {
     pauseOnHover: false
   }
   return (
-    <section id="client" className="d-block pt-2">
+    <section id="client" className="d-block pt-4 md:pt-6 md:pb-5">
       <div className="container">
-        <div className="row text-center">
+        <div className="row md:text-center">
           <div className="col-12">
-            <h5 className="text-black">Brands we've worked with:</h5>
+            <h5 className="text-black md">Brands we've worked with:</h5>
           </div>
         </div>
       </div>
-      <div className="container mt-4 pt-3">
+      <div className="container mt-2 md:mt-4 pt-3">
         <Slider className="slidernew" {...settings}>
           {clientLogo.map((client, index) => (
             <div key={index} className="card">
-              <img src={client.img} alt={`Client Logo ${index}`} />
+              <img src={client.img} alt={`Client Logo ${index}`} className='imgage' />
             </div>
           ))}
         </Slider>
